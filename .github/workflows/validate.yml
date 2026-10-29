@@ -11,4 +11,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python3 scripts/brief.py validate data/latest.json data/archive/2*.json
+      - run: |
+          python3 scripts/brief.py validate data/latest.json data/archive/2*.json
+          python3 -c "import json; json.load(open('data/calendar.json'))"

@@ -12,8 +12,12 @@ companies listed on the Egyptian Exchange (EGX). EGP base. Live at
 | `data/latest.json` | The current edition. The daily routine replaces only this (through the script below). |
 | `data/archive/<YYYY-MM-DD>.json` | Every published edition, opened with `?d=YYYY-MM-DD` or the Edition picker. |
 | `data/archive/index.json` | The list of archived editions for the picker. |
-| `scripts/brief.py` | Validates an edition and publishes it (rolls "previous", derives 5-session stock changes, archives). |
-| `ROUTINE.md` | The instructions for the scheduled daily task. |
+| `data/calendar.json` | Verified upcoming events; publishing adds those due within 14 days to "Week ahead". |
+| `scripts/brief.py` | Validates and publishes an edition: date check, calendar merge, derived stock changes, source, quote and data checks, archive. |
+| `scripts/smoke.js` | Renders the site in headless Chromium at desktop and phone width and fails on anything broken. |
+| `scripts/check_live.py` | After a push, waits until the live site serves the new edition. |
+| `.claude/skills/` | Skills for the daily run: `egx-data`, `fact-check`, `house-style`, `egx-calendar`, `edition-qa`. |
+| `ROUTINE.md` | The exact prompt of the scheduled daily task (09:47 Cairo). |
 | `vercel.json` | Static hosting config: no caching on `data/` so a new edition shows at once. |
 | `.github/workflows/validate.yml` | Checks every pushed edition against the schema. |
 
@@ -40,10 +44,22 @@ python3 scripts/brief.py publish /path/to/new-edition.json
 git add data && git commit -m "Edition 2026-10-29" && git push origin main
 ```
 
-## Check the data
+## Check the data and the page
 
 ```bash
 python3 scripts/brief.py validate
+```
+
+```bash
+node scripts/smoke.js
+```
+
+```bash
+python3 scripts/check_live.py
+```
+
+```bash
+python3 scripts/brief.py calendar --days 30
 ```
 
 ## Preview locally

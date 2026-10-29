@@ -1,0 +1,59 @@
+[
+ {
+  "iso": "2026-11-01",
+  "date": "Sun 1 Nov",
+  "event": "OPEC+ monthly meeting (seven-country group)",
+  "why": "Sets December output; the group kept November quotas unchanged on 4 October. Any change moves Brent and Egypt's fuel bill.",
+  "source": "OPEC press release, 4 Oct 2026",
+  "url": "https://opec.org/pr-detail/1891616-4-october-2026.html"
+ },
+ {
+  "iso": "2026-11-02",
+  "date": "Mon 2 Nov",
+  "event": "Banque du Caire expected to start trading on the EGX",
+  "why": "A test of local liquidity after a 27-times covered retail book; CI Capital can buy back at EGP 5.30 for 30 days.",
+  "source": "EnterpriseAM, 29 Oct 2026; Middle East Observer, 29 Oct 2026",
+  "url": "https://enterpriseam.com/egypt/2026/10/29/banque-du-caires-retail-book-closed-27x-covered-days-before-trading/"
+ },
+ {
+  "iso": "2026-11-03",
+  "date": "Tue 3 Nov",
+  "event": "US midterm elections",
+  "why": "Oil traders fear renewed US-Israeli strikes on Iran after the vote.",
+  "source": "EnterpriseAM, 29 Oct 2026",
+  "url": "https://enterpriseam.com/egypt/2026/10/29/fed-holds-rates-ahead-of-midterms-and-plans-a-new-meeting-schedule/"
+ },
+ {
+  "iso": "",
+  "approx": "2026-11-10",
+  "date": "Around 10 Nov (date not confirmed)",
+  "event": "CAPMAS October inflation release",
+  "why": "The first inflation print after the CBE's 100 bp hike; September urban inflation was 13.9%. CAPMAS usually publishes around the 9th or 10th.",
+  "source": "Release pattern only; confirm the date before relying on it",
+  "url": ""
+ },
+ {
+  "iso": "2026-12-09",
+  "date": "Wed 9 Dec",
+  "event": "FOMC decision (meeting 8-9 Dec) with projections",
+  "why": "Markets largely price a quarter-point hike; a hike would squeeze the carry on Egyptian bills further.",
+  "source": "Federal Reserve, December 2026 calendar",
+  "url": "https://www.federalreserve.gov/newsevents/2026-december.htm"
+ },
+ {
+  "iso": "2026-12-17",
+  "date": "Thu 17 Dec",
+  "event": "CBE Monetary Policy Committee, last meeting of 2026",
+  "why": "The first test of whether the 29 October 100 bp hike is a one-off or the start of a cycle.",
+  "source": "Zawia3, 29 Oct 2026",
+  "url": "https://zawia3.com/en/rate-hike/"
+ },
+ {
+  "iso": "2026-12-31",
+  "date": "End-December",
+  "event": "Fuel price freeze ends",
+  "why": "The freeze runs through December; a rise in fuel prices after that would lift costs across industry.",
+  "source": "EnterpriseAM AM Edition, 29 Oct 2026",
+  "url": "https://enterpriseam.com/egypt/am-edition/"
+ }
+]

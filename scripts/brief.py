@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """Validate and publish Daily World Brief editions.
 
-  python3 scripts/brief.py validate [file.json]   check an edition (default: data/latest.json)
-  python3 scripts/brief.py publish new.json       roll "previous", validate, write latest + archive
+  python3 scripts/brief.py validate [file.json ...]   check editions (default: data/latest.json)
+  python3 scripts/brief.py publish new.json [--any-date]
+        roll "previous", add calendar events, derive 5-session changes, validate,
+        then write latest + archive. --any-date allows an edition not dated today (Cairo).
+  python3 scripts/brief.py calendar [--from YYYY-MM-DD] [--days N]
+        list verified upcoming events from data/calendar.json (default: next 14 days)
 
 The site reads data/latest.json; data/archive/<iso>.json keeps every edition and
 data/archive/index.json lists them for the edition picker.
 """
-import json, re, sys, pathlib
+import datetime, json, re, sys, pathlib
+from zoneinfo import ZoneInfo
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -21,6 +26,11 @@ IMPS = {"Bullish", "Bearish", "Neutral"}
 CONF = {"High", "Medium", "Low"}
 VIZ = {"line", "hbar", "diverge", "split", "bullet"}
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+QUOTE = re.compile(r'"([^"]+)"')
+STORY_TEXT = ("what", "why", "aff", "eg", "egx")
+MOVE_TOL = 0.06      # max gap, in points, between a reported 1-day % and the one implied by the closes
+BIG_MOVE = 10.0      # 1-day moves above this are flagged for a second look
+WINDOW_DAYS = 14     # calendar events this close to the edition are added to "week"
 
 
 def strings(o):
@@ -152,7 +162,59 @@ def validate(d):
             err.append(f"stock {q.get('t')}: hist must have {nh} numbers to match histLabels")
         if h and num(q.get("px")) and abs(h[-1] - q["px"]) > 1e-9:
             err.append(f"stock {q.get('t')}: last hist value must equal px")
+        # egx-data: the reported 1-day change must agree with the last two closes
+        if len(h) >= 2 and all(num(v) for v in h) and h[-2] and num(q.get("d")):
+            implied = (h[-1] / h[-2] - 1) * 100
+            if abs(implied - q["d"]) > MOVE_TOL:
+                err.append(f"stock {q.get('t')}: reported 1-day {q['d']}% disagrees with closes "
+                           f"({h[-2]} to {h[-1]} implies {implied:.2f}%); recheck the page")
+        if num(q.get("px")) and q["px"] <= 0:
+            err.append(f"stock {q.get('t')}: px must be positive")
+    if ISO.match(sk.get("iso", "")) and ISO.match(e.get("iso", "")) and sk["iso"] > e["iso"]:
+        err.append("stocks.iso is after the edition date")
+
+    # fact-check
+    src_urls = {s[1] for s in d["sources"] if isinstance(s, list) and len(s) == 3}
+    for s in d["sources"]:
+        if isinstance(s, list) and len(s) == 3 and not (s[0].strip() and s[1].startswith("http") and s[2].strip()):
+            err.append(f"source needs a title, an http(s) url and a date: {s}")
+    for st in d["stories"]:
+        if st.get("url") not in src_urls:
+            err.append(f"story {st.get('id')}: its url is not in sources")
+    for k in d["kpis"]:
+        if k.get("hero") and " · " not in k.get("m", ""):
+            err.append(f"hero kpi {k.get('k')}: m must be 'date · source'")
+    for c in d["charts"]:
+        has_derived = any(p.get("derived") for v in c.get("viz", [])
+                          for p in v.get("points", []) + v.get("items", []) + v.get("parts", []))
+        if has_derived and not c.get("derivedNote"):
+            err.append(f"chart {c.get('id')}: has derived values but derivedNote is not true")
+        if c.get("derivedNote") and "derived" not in c.get("cap", "").lower():
+            err.append(f"chart {c.get('id')}: derivedNote is true but cap does not explain what is derived")
+        if c.get("status") != "unverified" and c.get("viz") and not c.get("source"):
+            err.append(f"chart {c.get('id')}: missing source")
+
+    # house-style: at most one quote per story, each under 15 words
+    for st in d["stories"]:
+        quotes = [q for f in STORY_TEXT for q in QUOTE.findall(st.get(f, ""))]
+        if len(quotes) > 1:
+            err.append(f"story {st.get('id')}: {len(quotes)} quotes; use at most one per source")
+        for q in quotes:
+            if len(q.split()) >= 15:
+                err.append(f"story {st.get('id')}: quote has {len(q.split())} words; keep it under 15")
     return err
+
+
+def warnings(d):
+    """Things that are allowed but deserve a second look before publishing."""
+    w = []
+    for q in d.get("stocks", {}).get("equities", []):
+        if num(q.get("d")) and abs(q["d"]) >= BIG_MOVE:
+            w.append(f"stock {q['t']}: 1-day move of {q['d']}%; confirm it in a second source")
+    unv = [c["id"] for c in d.get("charts", []) if c.get("status") == "unverified"]
+    if unv:
+        w.append("unverified charts: " + ", ".join(unv))
+    return w
 
 
 def load(p):
@@ -163,8 +225,47 @@ def dump(d, p):
     pathlib.Path(p).write_text(json.dumps(d, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
-def publish(newp):
+def cairo_today():
+    return datetime.datetime.now(ZoneInfo("Africa/Cairo")).date().isoformat()
+
+
+def calendar_events(start, days):
+    cal = DATA / "calendar.json"
+    if not cal.exists():
+        return []
+    end = (datetime.date.fromisoformat(start) + datetime.timedelta(days=days)).isoformat()
+    out = []
+    for ev in load(cal):
+        when = ev.get("iso") or ev.get("approx", "")
+        if when and start <= when <= end:
+            out.append(ev)
+    return sorted(out, key=lambda ev: ev.get("iso") or ev.get("approx", ""))
+
+
+def merge_calendar(new):
+    """Drop past events from "week" and add verified calendar events due within WINDOW_DAYS."""
+    iso = new["edition"]["iso"]
+    before = len(new["week"])
+    new["week"] = [w for w in new["week"] if not w.get("iso") or w["iso"] >= iso]
+    dropped = before - len(new["week"])
+    have = {(w.get("iso", ""), w.get("event", "").lower()[:24]) for w in new["week"]}
+    added = []
+    for ev in calendar_events(iso, WINDOW_DAYS):
+        key = (ev.get("iso", ""), ev["event"].lower()[:24])
+        if key not in have:
+            new["week"].append({"date": ev["date"], "iso": ev.get("iso", ""), "event": ev["event"], "why": ev["why"]})
+            added.append(ev["event"])
+    new["week"].sort(key=lambda w: w.get("iso") or "9999")
+    return dropped, added
+
+
+def publish(newp, any_date=False):
     new = load(newp)
+    today = cairo_today()
+    if not any_date and new.get("edition", {}).get("iso") != today:
+        print(f'Edition NOT published: edition.iso is {new.get("edition", {}).get("iso")} '
+              f"but today in Cairo is {today}. Fix the date, or pass --any-date for a deliberate back-fill.")
+        sys.exit(1)
     latest = DATA / "latest.json"
     if latest.exists():
         old = load(latest)
@@ -173,6 +274,7 @@ def publish(newp):
                      "items": [f'{t["what"]} → {t["why"]}' for t in old.get("top", [])]}
             prev = [p for p in new.get("previous", []) if p.get("date") != entry["date"]]
             new["previous"] = ([entry] + prev)[:5]
+    dropped, added = merge_calendar(new)
     # The 5-session change is always derived from the closes, never typed by hand.
     for q in new.get("stocks", {}).get("equities", []):
         h = q.get("hist") or []
@@ -193,6 +295,10 @@ def publish(newp):
     dump(lst, idx)
     print(f'Published {new["edition"]["date"]} ({len(new["stories"])} stories, '
           f'{len(new["stocks"]["equities"])} stocks).')
+    if dropped or added:
+        print(f"Week ahead: dropped {dropped} past event(s); added from calendar: {added or 'none'}")
+    for w in warnings(new):
+        print("Check: " + w)
 
 
 if __name__ == "__main__":
@@ -200,12 +306,21 @@ if __name__ == "__main__":
         files = sys.argv[2:] or [str(DATA / "latest.json")]
         bad = 0
         for f in files:
-            errs = validate(load(f))
+            d = load(f)
+            errs = validate(d)
             print(f"{f}: " + ("OK" if not errs else "\n  " + "\n  ".join(errs)))
+            for w in warnings(d):
+                print("  check: " + w)
             bad += bool(errs)
         sys.exit(1 if bad else 0)
-    elif len(sys.argv) == 3 and sys.argv[1] == "publish":
-        publish(sys.argv[2])
+    elif len(sys.argv) >= 3 and sys.argv[1] == "publish":
+        publish(sys.argv[2], any_date="--any-date" in sys.argv[3:])
+    elif len(sys.argv) >= 2 and sys.argv[1] == "calendar":
+        args = sys.argv[2:]
+        start = args[args.index("--from") + 1] if "--from" in args else cairo_today()
+        days = int(args[args.index("--days") + 1]) if "--days" in args else WINDOW_DAYS
+        for ev in calendar_events(start, days):
+            print(f'{ev.get("iso") or "approx " + ev.get("approx", "")}  {ev["event"]}  [{ev["source"]}]')
     else:
         print(__doc__)
         sys.exit(2)

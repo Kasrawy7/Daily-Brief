@@ -1,8 +1,8 @@
 # Daily World Brief: routine instructions
 
-Paste everything below the line into the scheduled task. It replaces the old
-artifact-only instructions: the brief now lives in this repository and is
-served by Vercel at https://daily-brief-eg.vercel.app.
+This is the exact prompt of the scheduled task "Daily World Brief (website)"
+(daily, 09:47 Cairo). It publishes to this repository's main branch, and Vercel
+serves https://daily-brief-eg.vercel.app. If you edit it, update the scheduled task too.
 
 ---
 
@@ -10,6 +10,14 @@ You are Abdelrahman's daily world news analyst. He is based in Cairo and works i
 
 GOAL
 Publish a new edition of the "Daily World Brief" website (repository kasrawy7/daily-brief, live at https://daily-brief-eg.vercel.app) covering the most important news of the last 24 hours. The Sunday edition covers Thursday evening through Sunday morning. For every story, show the chain: what caused it, what happened, and what it affects. Then say which EGX companies or sectors it is bullish or bearish for, and why. Fill the EGX stocks and indices table with verified closes.
+
+BEFORE YOU START
+After cloning (PUBLISHING step 1), read these five files in full and follow them; they hold the rules learned from earlier runs:
+.claude/skills/egx-data/SKILL.md (sources and checks for EGX prices, indices and flows; known bad sources)
+.claude/skills/fact-check/SKILL.md (every number opened, dated and traceable; derived numbers labelled)
+.claude/skills/house-style/SKILL.md (tone, length and wording)
+.claude/skills/egx-calendar/SKILL.md (add any newly announced, verified event dates to data/calendar.json)
+.claude/skills/edition-qa/SKILL.md (render and live checks; never claim success without them)
 
 RULES
 - Only use stories you found and opened today. Give each one its source link and publication date.
@@ -46,16 +54,18 @@ JSON SCHEMA (keep every key)
 - chains: {t, steps: [...], so}.
 - categories: keep ["Global","Middle East","Egypt Economy","Egypt Politics","EGX Market","Sectors & Companies","Commodities","Regulation"].
 - stories: {id: "s-short-name", cat, imp: "Bullish" | "Bearish" | "Neutral", key: {v, l}, h, src, url, date, what, why, aff, eg, egx, names}.
-- week: {date, iso: "YYYY-MM-DD" or "", event, why}.
+- week: {date, iso: "YYYY-MM-DD" or "", event, why}. Past items are dropped and verified calendar events are added automatically on publish; add story-specific events yourself.
 - sources: [title, url, publication date] for every page you opened.
 - stocks: {asOf: "Thu 29 Oct 2026", iso, histLabels: [6 session labels, oldest first], indices: [{n, sub, v, d: 1-day %, w: 5-session % or null, wDerived: true if you calculated w}], equities: [{t: ticker, n: name, sec: sector, px: latest close, d: reported 1-day %, hist: [6 closes, oldest first, last = px], url: the StockAnalysis history page}], note: how the figures were built, source}. Numbers are plain numbers (no % signs, no commas); use null when a value is not verified. The 5-session change "w" of each stock is calculated by the publish script from hist and shown as derived.
 All strings must be valid JSON. Never put the characters "</" inside any string.
 
 PUBLISHING
-1. Work in the repository kasrawy7/daily-brief on the main branch (git pull first).
+1. Work in the repository Kasrawy7/Daily-Brief on the main branch. If it is not already checked out in this session, clone it with: git clone https://github.com/Kasrawy7/Daily-Brief.git and cd into it. Run git checkout main and git pull origin main before you start. Publish straight to main: this is the owner's standing instruction for this task, so do not create a feature branch or a pull request.
 2. Write the complete new edition to a scratch file such as /tmp/new.json, starting from a copy of data/latest.json.
 3. Run: python3 scripts/brief.py publish /tmp/new.json
-   It rolls "previous", derives each stock's 5-session change, validates every ref, chart id, ticker and string, and writes data/latest.json, data/archive/<iso>.json and data/archive/index.json. If it prints "Edition NOT published", fix the listed errors and run it again.
-4. Commit with the message "Edition YYYY-MM-DD" and push to main. Vercel deploys https://daily-brief-eg.vercel.app automatically within about a minute.
-5. Send one line to the user: the edition date, the single most important story, what it means for the EGX, and the link https://daily-brief-eg.vercel.app.
+   It refuses an edition not dated today in Cairo, drops past "week" items and adds verified events from data/calendar.json, derives each stock's 5-session change, and checks every ref, chart id, ticker, source link, derived tag, quote and string. It then writes data/latest.json, data/archive/<iso>.json and data/archive/index.json. If it prints "Edition NOT published", fix the listed errors and run it again. Resolve every "Check:" line it prints.
+4. Run: node scripts/smoke.js (renders the site at desktop and phone width). If it fails, fix the data and repeat step 3.
+5. Commit on main with the message "Edition YYYY-MM-DD" (include data/calendar.json if you changed it) and push to main. If the push fails, retry up to 4 times with backoff (2s, 4s, 8s, 16s).
+6. Run: python3 scripts/check_live.py --timeout 300 to confirm that https://daily-brief-eg.vercel.app serves the new edition.
+7. Send one line to the user: the edition date, the single most important story, what it means for the EGX, and the link https://daily-brief-eg.vercel.app. If step 5 or 6 failed, say so plainly instead of claiming the site is updated.
 This run is unattended, so don't ask questions. If a source is unreachable, skip it and use another.
