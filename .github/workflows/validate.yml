@@ -1,0 +1,14 @@
+name: Validate edition
+on:
+  push:
+    paths: ["data/**", "scripts/**", "index.html"]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/brief.py validate data/latest.json data/archive/2*.json
