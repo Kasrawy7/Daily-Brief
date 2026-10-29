@@ -41,12 +41,28 @@
   "url": "https://www.federalreserve.gov/newsevents/2026-december.htm"
  },
  {
+  "iso": "2026-12-15",
+  "date": "Tue 15 Dec",
+  "event": "Egypt's IMF programmes end",
+  "why": "The IMF aims to take a staff-level deal on the final review to its board before this date; completion supports the pound.",
+  "source": "Reuters via Investing.com, 29 Oct 2026",
+  "url": "https://www.investing.com/news/economy-news/imf-aims-for-egypts-last-program-review-to-be-cleared-by-mid-december-4984638"
+ },
+ {
   "iso": "2026-12-17",
   "date": "Thu 17 Dec",
   "event": "CBE Monetary Policy Committee, last meeting of 2026",
   "why": "The first test of whether the 29 October 100 bp hike is a one-off or the start of a cycle.",
   "source": "Zawia3, 29 Oct 2026",
   "url": "https://zawia3.com/en/rate-hike/"
+ },
+ {
+  "iso": "2026-12-17",
+  "date": "Thu 17 Dec",
+  "event": "ECB decision",
+  "why": "Reuters sources call a hike all but certain, which would add to pressure on emerging-market carry.",
+  "source": "Reuters via Yahoo Finance, 29 Oct 2026",
+  "url": "https://finance.yahoo.com/economy/policy/articles/ecb-keeps-rates-unchanged-points-132927008.html"
  },
  {
   "iso": "2026-12-31",
