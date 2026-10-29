@@ -1,7 +1,7 @@
 # Daily World Brief: routine instructions
 
-This is the exact prompt of the scheduled task "Daily World Brief (website)"
-(daily, 09:47 Cairo). It publishes to this repository's main branch, and Vercel
+This is the exact prompt of the scheduled task "Daily Brief - Task"
+(daily, 09:47 Cairo; created in claude.ai). It publishes to this repository's main branch, and Vercel
 serves https://daily-brief-eg.vercel.app. If you edit it, update the scheduled task too.
 
 ---
@@ -60,12 +60,12 @@ JSON SCHEMA (keep every key)
 All strings must be valid JSON. Never put the characters "</" inside any string.
 
 PUBLISHING
-1. Work in the repository Kasrawy7/Daily-Brief on the main branch. First call the add_repo tool (claude-code-remote server; load it with ToolSearch if needed) with owner "Kasrawy7", repo "Daily-Brief" and access "push": a scheduled session does not have push access to the repository until it is attached this way. Then, if it is not already checked out in this session, clone it with: git clone https://github.com/Kasrawy7/Daily-Brief.git and cd into it. Run git checkout main and git pull origin main before you start. Publish straight to main: this is the owner's standing instruction for this task, so do not create a feature branch or a pull request.
+1. Work in the repository Kasrawy7/Daily-Brief on the main branch. If it is not already checked out in this session, clone it with: git clone https://github.com/Kasrawy7/Daily-Brief.git and cd into it. Run git checkout main and git pull origin main. Then run git push --dry-run origin main to confirm this session can push. If that is refused (for example a 403 saying the repository is not in the session's authorized set), stop before doing any research and send one line: the edition was not published because the repository is not attached to this routine. Publish straight to main: this is the owner's standing instruction for this task, so do not create a feature branch or a pull request.
 2. Write the complete new edition to a scratch file such as /tmp/new.json, starting from a copy of data/latest.json.
 3. Run: python3 scripts/brief.py publish /tmp/new.json
    It refuses an edition not dated today in Cairo, drops past "week" items and adds verified events from data/calendar.json, derives each stock's 5-session change, and checks every ref, chart id, ticker, source link, derived tag, quote and string. It then writes data/latest.json, data/archive/<iso>.json and data/archive/index.json. If it prints "Edition NOT published", fix the listed errors and run it again. Resolve every "Check:" line it prints.
 4. Run: node scripts/smoke.js (renders the site at desktop and phone width). If it fails, fix the data and repeat step 3.
-5. Commit on main with the message "Edition YYYY-MM-DD" (include data/calendar.json if you changed it) and push to main. If the push fails with a network error, retry up to 4 times with backoff (2s, 4s, 8s, 16s). If it fails with a 403, call add_repo as in step 1 and push once more.
+5. Commit on main with the message "Edition YYYY-MM-DD" (include data/calendar.json if you changed it) and push to main. If the push fails with a network error, retry up to 4 times with backoff (2s, 4s, 8s, 16s). If it fails with a 403, do not retry; report it in step 7.
 6. Run: python3 scripts/check_live.py --timeout 300 to confirm that https://daily-brief-eg.vercel.app serves the new edition.
 7. Send one line to the user: the edition date, the single most important story, what it means for the EGX, and the link https://daily-brief-eg.vercel.app. If step 5 or 6 failed, say so plainly instead of claiming the site is updated.
 This run is unattended, so don't ask questions. If a source is unreachable, skip it and use another.
