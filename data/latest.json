@@ -1,18 +1,28 @@
 {
  "edition": {
-  "date": "Friday, 30 October 2026",
-  "iso": "2026-10-30",
+  "date": "Saturday, 31 October 2026",
+  "iso": "2026-10-31",
   "place": "Cairo",
   "preparedFor": "Prepared for Abdelrahman · EGP base",
-  "cutoffBadge": "Latest EGX close: Thu 29 Oct · morning update"
+  "cutoffBadge": "Latest EGX close: Thu 29 Oct"
  },
  "notes": {
-  "cutoff": "Data cut-off: Friday has no EGX session, so the latest close is Thursday 29 October (EGX30 49,596.14). The CBE's 100 bp hike comes after Thursday's close, so Sunday 1 November is the first session to price it. Brent is Thursday's settlement plus the early-Friday level reported by Invezz. Bullish and bearish tags are directional reads of the news, not trade recommendations.",
-  "unverified": "Not verified and therefore left out: Thursday's debt flows (bills and bonds), the budget's oil-price assumption, Egypt's October inflation figure (AFP puts it at about 14% while CAPMAS has not yet published October data), a gold price for Friday (quotes from different feeds disagree), the number of tankers Iran says hit mines (reports say three and four), and any 364-day T-bill auction after the hike. Amwal Al Ghad's Thursday flow figures (foreign net buying of EGP 42.259 bn and Arab EGP 9.820 bn) disagree with Youm7 and Cairo Mubasher (EGP 29.2 bn and EGP 2.24 bn), so the chart uses the two sources that agree.",
-  "sourcesFoot": "Not used: Amwal Al Ghad's Thursday flow figures (they conflict with two other sources), AFP's October inflation figure, and a Whalesbook gold quote that other feeds do not match. Pages that failed to open: CNBC (403) and GuruFocus (403); the BoJ decision is taken from the BoJ's own statement instead. The reserves figures (7 October) and the 364-day T-bill auction (27 October) are the latest available and are labelled with their dates. All 21 StockAnalysis pages were re-opened on Friday morning and match across the same six sessions.",
+  "cutoff": "Data cut-off: the EGX is closed on Friday and Saturday, so the latest close is Thursday 29 October (EGX30 49,596.14). Sunday 1 November is the first session after the CBE's 100 bp hike. Oil, US stocks and gold are Friday's closing levels. Bullish and bearish tags are directional reads of the news, not trade recommendations.",
+  "unverified": "Not verified and therefore left out or flagged: the Saudi deposit renewal comes only from unnamed banking sources, with no statement from the CBE or Saudi Arabia; the date of the post-hike T-bill auction is not stated by either report; Thursday's and Friday's debt flows; the budget's oil-price assumption; Egypt's October inflation figure; local gold prices (Egyptian sites give different 21-karat prices). Amwal Al Ghad's Thursday flow figures (foreign net buying of EGP 42.259 bn) disagree with Youm7 and Cairo Mubasher (EGP 29.2 bn), so the chart uses the two that agree. Cairo Mubasher puts gold at about $3,914 on Saturday morning against Kitco's late-Friday $3,879.90; the edition uses Kitco's dated closing quote.",
+  "sourcesFoot": "Not used: Amwal Al Ghad's Thursday flow figures (they conflict with two other sources); reports of the US ordering staff out of Saudi Arabia, which date from 21 to 23 October; and undated Egypt-Gaza-Sudan items. The BoJ and ECB decisions (29 and 30 October) appear only as rate references. The reserves figures (7 October) are the latest available. All 21 StockAnalysis pages were re-opened on Saturday and match across the same six sessions.",
   "previous": "Nothing new today."
  },
  "previous": [
+  {
+   "date": "Friday, 30 October 2026",
+   "items": [
+    "The CBE raises rates by 100 bp to a 20% deposit rate after Thursday's close, its first hike since March 2024, against a Reuters poll that expected a hold → the pound near record lows at EGP 56.12 and heavy foreign selling of local debt push the CBE to defend the carry trade; Sunday is the EGX's first session to price it.",
+    "EGX30 rises 0.64% to 49,596.14 on Thursday as Banque du Caire's EGP 36.37 bn offering executes and lifts turnover to EGP 43.9 bn → foreign institutions net buy EGP 29.2 bn, mostly through the bank's offering, while 180 stocks rise and 31 fall before trading in BQDC starts on 2 November.",
+    "The IMF targets a staff-level deal on Egypt's final review before mid-December, worth about $2.3 bn in final disbursements → Kozack says talks focus on tight monetary policy, which the CBE's hike now delivers.",
+    "Brent rises 1.04% to $116.08 in early Friday trade after settling at $114.88 on Thursday, as a tanker is hit in Hormuz and US strike talk returns → oil near $116 widens Egypt's fuel import bill while pump prices stay frozen.",
+    "The ECB and the Bank of Japan both hold, the BoJ at 1.25% by 8-1, while Reuters sources call a 17 December ECB hike all but certain → global policy stays tight after US growth beats forecasts at 3.4%, limiting appetite for emerging-market debt."
+   ]
+  },
   {
    "date": "Thursday, 29 October 2026",
    "items": [
@@ -46,29 +56,29 @@
  ],
  "top": [
   {
-   "what": "The CBE raises rates by 100 bp to a 20% deposit rate after Thursday's close, its first hike since March 2024, against a Reuters poll that expected a hold",
-   "why": "the pound near record lows at EGP 56.12 and heavy foreign selling of local debt push the CBE to defend the carry trade; Sunday is the EGX's first session to price it.",
-   "ref": "s-cbe"
-  },
-  {
-   "what": "EGX30 rises 0.64% to 49,596.14 on Thursday as Banque du Caire's EGP 36.37 bn offering executes and lifts turnover to EGP 43.9 bn",
-   "why": "foreign institutions net buy EGP 29.2 bn, mostly through the bank's offering, while 180 stocks rise and 31 fall before trading in BQDC starts on 2 November.",
-   "ref": "s-egx"
-  },
-  {
-   "what": "The IMF targets a staff-level deal on Egypt's final review before mid-December, worth about $2.3 bn in final disbursements",
-   "why": "Kozack says talks focus on tight monetary policy, which the CBE's hike now delivers.",
-   "ref": "s-imf"
-  },
-  {
-   "what": "Brent rises 1.04% to $116.08 in early Friday trade after settling at $114.88 on Thursday, as a tanker is hit in Hormuz and US strike talk returns",
-   "why": "oil near $116 widens Egypt's fuel import bill while pump prices stay frozen.",
+   "what": "Brent's expiring December contract settles 2.4% higher at $117.64 on Friday, a six-month high, after the first limpet-mine strike on a tanker in Hormuz since February",
+   "why": "traders brace for a US strike on Iran after Tuesday's midterms, and Brent ends October up 13.6%, widening Egypt's fuel bill.",
    "ref": "s-oil"
   },
   {
-   "what": "The ECB and the Bank of Japan both hold, the BoJ at 1.25% by 8-1, while Reuters sources call a 17 December ECB hike all but certain",
-   "why": "global policy stays tight after US growth beats forecasts at 3.4%, limiting appetite for emerging-market debt.",
-   "ref": "s-ecb"
+   "what": "Saudi Arabia agrees to keep a $5.3 bn deposit at the CBE for another year instead of taking it back at end-October, banking sources say",
+   "why": "the renewal removes a large maturity just as foreign money leaves Egyptian debt; no official statement confirms it yet.",
+   "ref": "s-saudi"
+  },
+  {
+   "what": "The first T-bill auction after the hike sets the 364-day yield at 26.076%, up from 25.912% on 27 October, and the state takes EGP 78.84 bn of a EGP 110 bn target",
+   "why": "the CBE's 100 bp move is passing into bill yields, which supports bank income and the carry trade but raises the state's borrowing cost.",
+   "ref": "s-tbill"
+  },
+  {
+   "what": "The S&P 500 falls 1.8% and the Nasdaq 2.9% on Friday after Intel's outlook, while gold drops 3.52% to $3,879.90",
+   "why": "a risk-off week end and forced selling of metals weigh on sentiment toward emerging markets before the EGX reopens.",
+   "ref": "s-wallst"
+  },
+  {
+   "what": "Qatari mediators in Tehran deliver a Vance letter proposing a new diplomatic process, with a meeting possible within a week in Doha or Istanbul",
+   "why": "talks offer a path away from escalation, but reports say Trump has told Gulf allies to prepare for a short, intense campaign after the midterms.",
+   "ref": "s-iran"
   }
  ],
  "kpis": [
@@ -80,7 +90,7 @@
    "c": "up",
    "m": "Thu 29 Oct · Amwal Al Ghad; Youm7, 29 Oct",
    "flag": {
-    "t": "Week ends higher on the day",
+    "t": "Reopens Sunday",
     "tone": "neu"
    },
    "mini": {
@@ -90,25 +100,13 @@
   },
   {
    "hero": true,
-   "k": "EGP/USD (CBE, sell)",
-   "v": "56.12",
-   "d": "buy 55.99 after the hike",
-   "c": "",
-   "m": "Thu 29 Oct · El Balad, 29 Oct",
+   "k": "Brent (December, expired)",
+   "v": "$117.64",
+   "d": "+2.4% on Friday; January $113.43; +13.6% in October",
+   "c": "up",
+   "m": "Fri 30 Oct · CNBC; Reuters via Yahoo Finance",
    "flag": {
-    "t": "Stable after the hike",
-    "tone": "neu"
-   }
-  },
-  {
-   "hero": true,
-   "k": "Brent",
-   "v": "$114.88",
-   "d": "Thursday settle -0.38%; $116.08 early Friday (+1.04%)",
-   "c": "dn",
-   "m": "Thu 29 Oct · Reuters via The Globe and Mail; Invezz, 30 Oct",
-   "flag": {
-    "t": "Back above $116",
+    "t": "Six-month high",
     "tone": "bear"
    },
    "mini": {
@@ -118,43 +116,76 @@
   },
   {
    "hero": true,
-   "k": "CBE overnight deposit rate",
-   "v": "20%",
-   "d": "+100 bp; lending 21%, main operation 20.5%",
-   "c": "up",
-   "m": "Thu 29 Oct · AFP via FMT; Reuters via Investing.com; EnterpriseAM, 30 Oct",
-   "flag": {
-    "t": "Surprise hike",
-    "tone": "bear"
-   }
-  },
-  {
-   "hero": true,
-   "k": "EGX turnover (Thursday)",
-   "v": "EGP 43.9 bn",
-   "d": "includes EGP 36.37 bn of Banque du Caire offering",
-   "c": "up",
-   "m": "Thu 29 Oct · Youm7; Cairo Mubasher, 29 Oct",
-   "flag": {
-    "t": "IPO execution",
-    "tone": "bull"
-   }
-  },
-  {
-   "hero": true,
    "k": "364-day T-bill yield",
-   "v": "25.912%",
-   "d": "27 Oct auction, before the hike; 25.705% a week earlier",
+   "v": "26.076%",
+   "d": "first auction after the hike; 25.912% on 27 Oct",
    "c": "up",
-   "m": "Tue 27 Oct · Afronomics (CBE data)",
+   "m": "30 Oct · El Balad; Cairo Mubasher",
    "flag": {
-    "t": "Pre-hike level",
+    "t": "Hike passes through",
     "tone": "neu"
    },
    "mini": {
     "chart": "c-tbill",
     "block": 0
    }
+  },
+  {
+   "hero": true,
+   "k": "CBE overnight deposit rate",
+   "v": "20%",
+   "d": "+100 bp on Thursday; lending 21%",
+   "c": "up",
+   "m": "Thu 29 Oct · El Balad; Al Ain, 30 Oct",
+   "flag": {
+    "t": "First hike since March 2024",
+    "tone": "bear"
+   }
+  },
+  {
+   "hero": true,
+   "k": "EGP/USD (CBE, sell)",
+   "v": "56.12",
+   "d": "buy 55.99 after the hike on Thursday",
+   "c": "",
+   "m": "Thu 29 Oct · El Balad, 29 Oct",
+   "flag": {
+    "t": "Near record lows",
+    "tone": "bear"
+   }
+  },
+  {
+   "hero": true,
+   "k": "Gold (spot)",
+   "v": "$3,879.90",
+   "d": "-3.52% in late Friday trade; silver -6.06%",
+   "c": "dn",
+   "m": "Fri 30 Oct · Kitco",
+   "flag": {
+    "t": "Forced selling",
+    "tone": "neu"
+   }
+  },
+  {
+   "k": "Saudi deposit at the CBE",
+   "v": "$5.3 bn",
+   "d": "renewed for a year, per banking sources; Saudi total about $10.3 bn",
+   "c": "",
+   "m": "30 Oct · Banker News; Khalf El Hadath"
+  },
+  {
+   "k": "S&P 500 / Nasdaq",
+   "v": "-1.8% / -2.9%",
+   "d": "S&P 500 at 7,580.07, biggest fall since June",
+   "c": "dn",
+   "m": "Fri 30 Oct · Kitco"
+  },
+  {
+   "k": "WTI",
+   "v": "$104.12",
+   "d": "+2.08% on Friday; +15.2% in October",
+   "c": "up",
+   "m": "Fri 30 Oct · Reuters via Yahoo Finance"
   },
   {
    "k": "EGX70 / EGX100",
@@ -171,46 +202,32 @@
    "m": "Thu 29 Oct · Amwal Al Ghad; Youm7, 29 Oct"
   },
   {
-   "k": "Market capitalisation",
-   "v": "EGP 3.892 tn",
-   "d": "up about EGP 33 bn on the day",
+   "k": "EGX turnover (Thursday)",
+   "v": "EGP 43.9 bn",
+   "d": "includes EGP 36.37 bn of Banque du Caire offering",
    "c": "up",
-   "m": "Thu 29 Oct · Youm7; Amwal Al Ghad, 29 Oct"
+   "m": "Thu 29 Oct · Youm7; Cairo Mubasher"
   },
   {
    "k": "Advancing / declining stocks",
    "v": "180 / 31",
    "d": "12 unchanged, 223 traded",
    "c": "up",
-   "m": "Thu 29 Oct · Youm7; Cairo Mubasher, 29 Oct"
+   "m": "Thu 29 Oct · Youm7; Cairo Mubasher"
   },
   {
-   "k": "Foreign institutions, net equity flows",
-   "v": "+EGP 29.2 bn",
-   "d": "mostly the Banque du Caire offering; Egyptian institutions -EGP 34.3 bn",
+   "k": "Market capitalisation",
+   "v": "EGP 3.892 tn",
+   "d": "up about EGP 33 bn on Thursday",
    "c": "up",
-   "m": "Thu 29 Oct · Youm7; Cairo Mubasher, 29 Oct"
+   "m": "Thu 29 Oct · Youm7; Amwal Al Ghad"
   },
   {
-   "k": "Fed funds target",
-   "v": "3.75–4.00%",
-   "d": "held 10-2 on Wednesday; Cook and Hammack voted to hike",
+   "k": "Fed funds / ECB deposit / BoJ",
+   "v": "3.75–4.00% / 2.50% / 1.25%",
+   "d": "all held this week",
    "c": "",
-   "m": "Wed 28 Oct · Federal Reserve"
-  },
-  {
-   "k": "ECB deposit / BoJ policy rate",
-   "v": "2.50% / 1.25%",
-   "d": "both held; BoJ vote 8-1",
-   "c": "",
-   "m": "29–30 Oct · ECB; Bank of Japan"
-  },
-  {
-   "k": "US real GDP, 3Q",
-   "v": "3.4%",
-   "d": "annual rate; 2.2% in 2Q; 3Q PCE prices 2.1%",
-   "c": "up",
-   "m": "Thu 29 Oct · BEA"
+   "m": "28–30 Oct · Federal Reserve; ECB; Bank of Japan"
   },
   {
    "k": "Net international reserves",
@@ -272,7 +289,7 @@
      ]
     }
    ],
-   "cap": "All three are reported closes. The EGX30 rises 3.49% on Tuesday, falls 1.64% on Wednesday and gains 0.64% on Thursday; earlier closes were not re-verified this morning.",
+   "cap": "All three are reported closes: the EGX30 rises 3.49% on Tuesday, falls 1.64% on Wednesday and gains 0.64% on Thursday. Earlier closes were not re-verified today.",
    "source": "Amwal Al Ghad, 27–29 Oct; Youm7, 29 Oct"
   },
   {
@@ -361,18 +378,18 @@
    "id": "c-rates",
    "group": "macro",
    "title": "Egypt's policy rate against bills, inflation and peers",
-   "sub": "Per cent, after Thursday's decisions",
-   "ref": "s-cbe",
+   "sub": "Per cent, latest",
+   "ref": "s-tbill",
    "viz": [
     {
      "type": "hbar",
      "max": 30,
      "items": [
       {
-       "l": "364-day T-bill (27 Oct, pre-hike)",
-       "v": 25.912,
-       "display": "25.91%",
-       "kind": "ref"
+       "l": "364-day T-bill, first auction after hike",
+       "v": 26.076,
+       "display": "26.08%",
+       "kind": "hl"
       },
       {
        "l": "CBE overnight lending",
@@ -384,7 +401,7 @@
        "l": "CBE overnight deposit",
        "v": 20,
        "display": "20% (from 19%)",
-       "kind": "hl"
+       "kind": "ref"
       },
       {
        "l": "Inflation, September",
@@ -414,16 +431,16 @@
      ]
     }
    ],
-   "cap": "The deposit rate now sits about 6.1 points above September's 13.9% inflation (derived). The 364-day yield is from the last auction before the hike.",
+   "cap": "The deposit rate sits about 6.1 points above September's 13.9% inflation (derived), and the new 364-day yield about 12.2 points above it (derived).",
    "derivedNote": true,
-   "source": "AFP via FMT, 30 Oct; Reuters via Investing.com, 29 Oct; Finimize; El Balad, 29 Oct; Afronomics, 27 Oct; Federal Reserve, 28 Oct; ECB, 29 Oct; Bank of Japan, 30 Oct"
+   "source": "El Balad, 29–30 Oct; Cairo Mubasher, 30 Oct; Finimize (Reuters); Federal Reserve, 28 Oct; ECB, 29 Oct; Bank of Japan, 30 Oct"
   },
   {
    "id": "c-tbill",
    "group": "macro",
-   "title": "364-day T-bill yield, last five auctions",
+   "title": "364-day T-bill yield, last six auctions",
    "sub": "Weighted average yield, per cent",
-   "ref": "s-cbe",
+   "ref": "s-tbill",
    "viz": [
     {
      "type": "line",
@@ -462,39 +479,47 @@
        "display": "25.912%",
        "d": "",
        "derived": false
+      },
+      {
+       "l": "Post-hike",
+       "v": 26.076,
+       "display": "26.076%",
+       "d": "",
+       "derived": false
       }
      ]
     }
    ],
-   "cap": "Yields rise by about 21 bp in the last auction before the hike (derived). On 27 October the 364-day bill draws EGP 123.1 bn of bids and EGP 68.1 bn is accepted.",
+   "cap": "The first auction after the hike (results published 30 October; the auction date is not stated) prices about 16 bp above 27 October (derived) and about 41 bp above early October (derived).",
    "derivedNote": true,
-   "source": "Afronomics (Central Bank of Egypt data), 27 Oct"
+   "source": "Afronomics (CBE data), 27 Oct; El Balad and Cairo Mubasher, 30 Oct"
   },
   {
    "id": "c-brent",
    "group": "macro",
-   "title": "Brent early Friday against Thursday's settlement",
-   "sub": "US dollars per barrel",
+   "title": "Brent on Friday against Thursday",
+   "sub": "US dollars per barrel, December contract",
    "ref": "s-oil",
    "viz": [
     {
      "type": "bullet",
-     "v": 116.08,
-     "display": "$116.08",
+     "v": 117.64,
+     "display": "$117.64",
      "ref": 114.88,
-     "refLabel": "Thu 29 Oct settle $114.88",
+     "refLabel": "Thu settle $114.88 (derived)",
      "tone": "bear"
     }
    ],
-   "cap": "Early Friday is the expiring December contract at 03:23 GMT; the more active January contract trades near $112.19. The budget's oil assumption is not re-verified today.",
-   "source": "Invezz, 30 Oct; Reuters via The Globe and Mail, 29 Oct"
+   "cap": "Thursday's level is derived from Friday's settlement less the reported $2.76 gain. The more active January contract settles at $113.43. The budget's oil assumption is not re-verified today.",
+   "derivedNote": true,
+   "source": "CNBC, 30 Oct; Reuters via Yahoo Finance, 30 Oct"
   },
   {
    "id": "c-res",
    "group": "macro",
    "title": "Net international reserves, end-September",
    "sub": "US dollars, bn",
-   "ref": "s-imf",
+   "ref": "s-saudi",
    "viz": [
     {
      "type": "hbar",
@@ -523,7 +548,7 @@
      ]
     }
    ],
-   "cap": "The latest CBE figure, published on 7 October; August was $57.22 bn. October's figure is due in early November.",
+   "cap": "The latest CBE figure, published on 7 October; August was $57.22 bn. A renewed $5.3 bn Saudi deposit would stay inside these reserves rather than leave.",
    "source": "Arab News, 7 Oct (CBE data)"
   },
   {
@@ -561,172 +586,197 @@
    "source": "Cairo Mubasher, 29 Oct; Arab Finance"
   },
   {
-   "id": "c-us",
+   "id": "c-auction",
    "group": "context",
-   "title": "US growth and prices, 3Q against 2Q",
-   "sub": "Annual rate, per cent",
-   "ref": "s-ecb",
+   "title": "Post-hike T-bill auction: accepted against target",
+   "sub": "EGP bn",
+   "ref": "s-tbill",
    "viz": [
     {
      "type": "hbar",
-     "max": 6,
+     "max": 85,
      "items": [
       {
-       "l": "Real GDP, 3Q",
-       "v": 3.4,
-       "display": "3.4%",
+       "l": "364-day accepted",
+       "v": 56.334,
+       "display": "EGP 56.33 bn",
        "kind": "hl"
       },
       {
-       "l": "Real GDP, 2Q",
-       "v": 2.2,
-       "display": "2.2%"
+       "l": "364-day target",
+       "v": 80,
+       "display": "EGP 80 bn",
+       "kind": "ref"
       },
       {
-       "l": "PCE prices, 3Q",
-       "v": 2.1,
-       "display": "2.1%",
+       "l": "182-day accepted",
+       "v": 22.511,
+       "display": "EGP 22.51 bn",
        "kind": "hl"
       },
       {
-       "l": "PCE prices, 2Q",
-       "v": 5.0,
-       "display": "5.0%"
-      },
-      {
-       "l": "Core PCE, 3Q",
-       "v": 2.5,
-       "display": "2.5%",
-       "kind": "hl"
-      },
-      {
-       "l": "Core PCE, 2Q",
-       "v": 3.3,
-       "display": "3.3%"
+       "l": "182-day target",
+       "v": 30,
+       "display": "EGP 30 bn",
+       "kind": "ref"
       }
      ]
     }
    ],
-   "cap": "Investment, consumer spending and government spending drive growth; lower petroleum exports drag.",
-   "source": "BEA, 29 Oct"
+   "cap": "In total the state accepts EGP 78.84 bn (about $1.41 bn) from 1,830 bids, 71.7% of the EGP 110 bn target. The 182-day bill averages 25.457%.",
+   "source": "El Balad, 30 Oct; Cairo Mubasher, 30 Oct"
+  },
+  {
+   "id": "c-wallst",
+   "group": "context",
+   "title": "Friday's risk-off moves",
+   "sub": "Per cent change on the day",
+   "ref": "s-wallst",
+   "viz": [
+    {
+     "type": "diverge",
+     "negLabel": "Fell",
+     "posLabel": "Rose",
+     "items": [
+      {
+       "l": "Brent (December)",
+       "v": 2.4,
+       "display": "+2.4%"
+      },
+      {
+       "l": "Dow Jones",
+       "v": -1.1,
+       "display": "-1.1%"
+      },
+      {
+       "l": "S&P 500",
+       "v": -1.8,
+       "display": "-1.8%"
+      },
+      {
+       "l": "Nasdaq",
+       "v": -2.9,
+       "display": "-2.9%"
+      },
+      {
+       "l": "Gold",
+       "v": -3.52,
+       "display": "-3.52%"
+      },
+      {
+       "l": "Silver",
+       "v": -6.06,
+       "display": "-6.06%"
+      }
+     ]
+    }
+   ],
+   "cap": "Stocks and metals fall together while oil rises; the 10-year Treasury yield eases toward 4.93%.",
+   "source": "Kitco, 30 Oct; CNBC, 30 Oct"
   }
  ],
  "board": {
   "bull": [
    {
     "n": "Banks: CIB, QNB Egypt, HDBK",
-    "drv": "CBE hikes 100 bp",
-    "r": "Higher policy rates lift yields on large T-bill books and loan repricing; the market prices the decision from Sunday.",
+    "drv": "T-bill yields rise after the hike",
+    "r": "The 364-day bill now yields 26.076%, lifting returns on banks' large bill books.",
     "c": "Medium",
-    "ref": "s-cbe"
-   },
-   {
-    "n": "Brokerages: EFG Holding, Beltone (sector)",
-    "drv": "Banque du Caire execution",
-    "r": "An EGP 36.37 bn execution and EGP 43.9 bn of turnover mean a large one-day fee pool; Beltone rises 5.8% on Thursday.",
-    "c": "Medium",
-    "ref": "s-ipo"
+    "ref": "s-tbill"
    },
    {
     "n": "Alexandria Mineral Oils (AMOC)",
-    "drv": "Oil near $115",
-    "r": "The stock rises 4.87% on Thursday, its third straight gain; no company news is found, so this is a price read.",
+    "drv": "Brent at a six-month high",
+    "r": "Oil-linked names gained this week while Brent rises 13.6% in October; AMOC is up 4.87% on Thursday.",
     "c": "Low",
     "ref": "s-oil"
    },
    {
-    "n": "e-finance (EFIH)",
-    "drv": "Relative strength",
-    "r": "The stock gains 3.54% on Thursday and about 8.6% over five sessions (derived); no company news is found.",
-    "c": "Low",
-    "ref": "s-egx"
+    "n": "Brokerages: EFG Holding, Beltone (sector)",
+    "drv": "BQDC debut on Monday",
+    "r": "Banque du Caire's first session and EGP 36.37 bn of executed stock add trading volume.",
+    "c": "Medium",
+    "ref": "s-ipo"
    },
    {
-    "n": "Exporters and USD earners (sector)",
-    "drv": "EGP near 56",
-    "r": "Dollar revenues still convert at about EGP 56.12 at the CBE after the decision.",
+    "n": "Pound-sensitive blue chips (sector)",
+    "drv": "Saudi deposit renewal",
+    "r": "Keeping $5.3 bn in reserves eases one source of FX pressure, if confirmed.",
     "c": "Low",
-    "ref": "s-cbe"
+    "ref": "s-saudi"
    }
   ],
   "bear": [
    {
     "n": "Developers: TMG, Palm Hills",
-    "drv": "CBE hikes 100 bp",
-    "r": "A higher cost of credit raises financing costs for buyers and projects; TMG is down about 7.6% over five sessions (derived).",
+    "drv": "Higher rates",
+    "r": "Bill yields above 26% raise financing costs for buyers and projects; TMG is down about 7.6% over five sessions (derived).",
     "c": "High",
-    "ref": "s-cbe"
+    "ref": "s-tbill"
    },
    {
     "n": "Consumer finance and NBFIs (sector)",
-    "drv": "CBE hikes 100 bp",
-    "r": "Funding costs rise for lenders that borrow from banks at rates linked to the CBE corridor.",
+    "drv": "Higher rates",
+    "r": "Funding costs rise for lenders that borrow at rates linked to the CBE corridor.",
     "c": "Medium",
     "ref": "s-cbe"
    },
    {
-    "n": "Fertilizers: Abu Qir, Mopco",
-    "drv": "Thursday sell-off",
-    "r": "Abu Qir falls 3.51% and Mopco 2.50% on a rising market; none of the sources gives a cause.",
-    "c": "Low",
-    "ref": "s-egx"
-   },
-   {
-    "n": "Telecom Egypt",
-    "drv": "Continued selling",
-    "r": "The stock falls 1.65% on Thursday and about 10.3% over five sessions (derived); no company-specific cause is found.",
-    "c": "Low",
-    "ref": "s-egx"
-   },
-   {
     "n": "Importers, food and consumer (sectors)",
-    "drv": "Oil and a weak pound",
-    "r": "Brent near $115 and the pound at about EGP 56 keep input and energy costs high.",
+    "drv": "Oil near $118",
+    "r": "Higher fuel and freight costs feed into input prices while the pound sits near 56.",
     "c": "Medium",
     "ref": "s-oil"
+   },
+   {
+    "n": "Fintech: Fawry, e-finance",
+    "drv": "Global tech sell-off",
+    "r": "The Nasdaq's 2.9% fall weighs on growth valuations; this is a sentiment read, not company news.",
+    "c": "Low",
+    "ref": "s-wallst"
    }
   ]
  },
  "chains": [
   {
-   "t": "Debt outflows to a CBE hike to an IMF finish",
+   "t": "CBE hike to bill yields",
    "steps": [
-    "foreign holders sell Egyptian bills as the pound passes 56",
-    "the CBE hikes 100 bp to a 20% deposit rate",
-    "the IMF's final-review talks focus on keeping policy tight",
-    "a staff-level deal is targeted before mid-December"
+    "the CBE raises its deposit rate to 20%",
+    "the first auction after the hike prices the 364-day bill at 26.076%",
+    "the state accepts EGP 78.84 bn of a EGP 110 bn target",
+    "carry for foreign holders improves"
    ],
-   "so": "Banks gain on margins; developers, NBFIs and leveraged names lose; a completed review would support the pound."
+   "so": "Banks earn more on bills; developers and leveraged names pay more; the budget's interest bill rises."
   },
   {
-   "t": "Banque du Caire execution to the EGX tape",
+   "t": "Hormuz attack to Egypt's fuel bill",
    "steps": [
-    "the offering executes at EGP 5.30 for EGP 36.37 bn",
-    "foreign institutions net buy EGP 29.2 bn and Egyptian institutions net sell EGP 34.3 bn",
-    "turnover jumps to EGP 43.9 bn",
-    "BQDC starts trading on 2 November"
+    "a limpet mine hits a tanker in Hormuz",
+    "Houthis claim strikes on Saudi refineries",
+    "Brent settles at $117.64, up 13.6% in October",
+    "Egypt's fuel imports cost more"
    ],
-   "so": "Brokers earn fees; Sunday's debut tests whether demand holds above EGP 5.30."
+   "so": "Bearish for energy-intensive industry and importers; oil-linked names hold up better."
   },
   {
-   "t": "Gulf war risk to Egypt's fuel bill",
+   "t": "Gulf support to the pound",
    "steps": [
-    "Houthi missiles and drones target Saudi Arabia",
-    "a tanker is attacked in Hormuz on Friday",
-    "Brent rises to $116.08 in early Friday trade",
-    "Egypt's fuel imports cost more while pump prices stay frozen"
+    "a $5.3 bn Saudi deposit falls due at end-October",
+    "Riyadh agrees to keep it for a year, banking sources say",
+    "reserves avoid a large drawdown",
+    "less pressure on the pound"
    ],
-   "so": "Bearish for energy-intensive industry and importers; oil-linked names such as AMOC hold up better."
+   "so": "Supportive for the pound and foreign sentiment, pending official confirmation."
   },
   {
-   "t": "Global tightening to EM carry",
+   "t": "Wall Street sell-off to EM sentiment",
    "steps": [
-    "the Fed holds with two votes for a hike",
-    "the ECB flags a December hike and the BoJ holds at 1.25%",
-    "US 3Q growth beats forecasts at 3.4%",
-    "global yields stay high"
+    "Intel's outlook triggers a tech sell-off",
+    "the S&P 500 has its worst day since June",
+    "gold and silver are sold to raise cash",
+    "risk appetite for emerging markets cools"
    ],
-   "so": "Narrows the carry on Egyptian bills; the CBE's hike restores some of it."
+   "so": "A cautious backdrop for Sunday's EGX open alongside the rate hike."
   }
  ],
  "categories": [
@@ -741,23 +791,61 @@
  ],
  "stories": [
   {
-   "id": "s-cbe",
-   "cat": "Egypt Economy",
+   "id": "s-oil",
+   "cat": "Commodities",
    "imp": "Bearish",
    "key": {
-    "v": "+100 bp",
-    "l": "CBE hike; deposit rate now 20%"
+    "v": "$117.64",
+    "l": "Brent December settlement, Fri 30 Oct"
    },
-   "h": "CBE surprises with a 100 bp hike, its first since March 2024",
-   "src": "AFP via Free Malaysia Today; Reuters via Investing.com; Finimize; El Balad; EnterpriseAM",
-   "url": "https://www.freemalaysiatoday.com/category/business/2026/10/30/egypt-hikes-interest-rates-for-first-time-since-2024",
-   "date": "29–30 Oct 2026",
-   "what": "The Monetary Policy Committee raises the overnight deposit rate to 20%, the lending rate to 21% and the main operation rate to 20.5%. A Reuters poll of 13 analysts expected a hold. After the decision the CBE rate is 55.99 buy and 56.12 sell, and El Balad describes the dollar as stable at banks after the decision.",
-   "why": "The CBE cites \"challenging external conditions and elevated uncertainty\" and wants to anchor inflation expectations. The pound hit a record low near 56 per dollar this week as foreign investors sold Egyptian debt.",
-   "aff": "T-bill yields, the carry trade, the pound, bank margins, borrowing costs for developers and leveraged companies, and the appeal of deposits against equities.",
-   "eg": "The deposit rate now sits about 6.1 points above September's 13.9% inflation (derived), a wider cushion to win back foreign holders of local debt.",
-   "egx": "Announced after Thursday's close, so Sunday is the first session to price it. Bullish for bank margins; bearish for developers, NBFIs and leveraged industrials.",
-   "names": "Banks (CIB, QNB Egypt, HDBK) bullish; developers (TMG, Palm Hills) and NBFIs bearish."
+   "h": "Brent hits a six-month high after a limpet-mine strike on a Hormuz tanker",
+   "src": "CNBC; Reuters via Yahoo Finance",
+   "url": "https://cnbc.com/2026/10/30/oil-rises-on-supply-concerns-as-houthis-attack-saudi-arabia.html",
+   "date": "30 Oct 2026",
+   "what": "Brent's expiring December contract settles $2.76 higher at $117.64 after touching $118, and the more active January contract gains $2.63 to $113.43. WTI rises 2.08% to $104.12. Over October Brent gains 13.6% and WTI 15.2%, and both settle at their highest since late April. Explosives attached by a small boat hit a tanker in Hormuz, the first known successful limpet-mine strike since the war began in February.",
+   "why": "Traders expect escalation after the US midterms on 3 November. The Houthis claim strikes on Saudi sites including the Ras Tanura refinery, and an armed group shuts a Libyan pipeline valve, halting about 15,000 barrels a day.",
+   "aff": "Egypt's fuel import bill, the subsidy gap, freight costs and global inflation.",
+   "eg": "Higher crude raises the dollar cost of Egypt's fuel imports at a time when the pound sits near 56 per dollar.",
+   "egx": "Bearish for importers and energy-intensive industry; supportive for oil-linked names such as AMOC.",
+   "names": "Importers, construction materials, food (bearish); AMOC (bullish)."
+  },
+  {
+   "id": "s-saudi",
+   "cat": "Egypt Economy",
+   "imp": "Bullish",
+   "key": {
+    "v": "$5.3 bn",
+    "l": "Saudi deposit renewed for a year, per banking sources"
+   },
+   "h": "Saudi Arabia renews a $5.3 bn deposit at the CBE for another year, sources say",
+   "src": "Banker News; Khalf El Hadath",
+   "url": "https://www.banker.news/158140",
+   "date": "30 Oct 2026",
+   "what": "Riyadh agrees to keep a $5.3 bn deposit at the Central Bank of Egypt for one more year instead of taking it back when it falls due at the end of October, according to banking sources cited by Banker News and Khalf El Hadath. Saudi deposits at the CBE total about $10.3 bn, including $5 bn of short-term deposits renewed each year. Neither report cites a statement from the CBE or Saudi authorities.",
+   "why": "Gulf deposits are part of the support Egypt relies on while the Iran war hits Suez income and drives foreign money out of local debt.",
+   "aff": "Net international reserves ($57.35 bn at end-September), the pound and Egypt's external financing gap.",
+   "eg": "Banker News puts combined Saudi, Kuwaiti and Qatari deposits at about $18.3 bn.",
+   "egx": "Mildly bullish for the pound and foreign sentiment toward EGX blue chips, pending confirmation.",
+   "names": "Banks; foreign-held blue chips."
+  },
+  {
+   "id": "s-tbill",
+   "cat": "Egypt Economy",
+   "imp": "Neutral",
+   "key": {
+    "v": "26.076%",
+    "l": "364-day T-bill, first auction after the hike"
+   },
+   "h": "First T-bill auction after the hike lifts the 364-day yield to 26.08%",
+   "src": "El Balad; Cairo Mubasher; Afronomics",
+   "url": "https://www.elbalad.news/7161716",
+   "date": "30 Oct 2026",
+   "what": "The CBE accepts EGP 56.33 bn of 364-day bills at an average 26.076% (high 26.15%, low 25%) against a EGP 80 bn target, and EGP 22.51 bn of 182-day bills at 25.457% against EGP 30 bn. In total it takes EGP 78.84 bn, about $1.41 bn, or 71.7% of the EGP 110 bn target, from 1,830 bids. The 364-day yield was 25.912% at the 27 October auction.",
+   "why": "Thursday's 100 bp hike lifts the floor for bill yields as the state refinances.",
+   "aff": "Bank income, the state's interest bill and the carry trade for foreign investors.",
+   "eg": "Neither report gives the auction date or the share bought by foreign investors.",
+   "egx": "Bullish for banks' bill income; bearish for leveraged developers and NBFIs as funding costs rise.",
+   "names": "CIB, QNB Egypt, HDBK (bullish); TMG, Palm Hills (bearish)."
   },
   {
    "id": "s-egx",
@@ -786,11 +874,11 @@
     "v": "EGP 36.37 bn",
     "l": "Banque du Caire offering executed on the EGX"
    },
-   "h": "Banque du Caire's EGP 36.37 bn offering executes ahead of Monday's debut",
+   "h": "Banque du Caire starts trading on Monday after its EGP 36.37 bn offering executes",
    "src": "Cairo Mubasher; Arab Finance",
    "url": "https://www.cairomubasher.com/247546",
-   "date": "29 Oct 2026",
-   "what": "The public and private offering executes on the EGX for 6.862 bn shares, 45% of the bank's issued capital, at EGP 5.30 a share, worth EGP 36.371 bn. The private placement of about 6.519 bn shares is worth about EGP 34.55 bn and was six times covered. The shares start trading on Monday 2 November under the ticker BQDC, valuing the bank at about EGP 80.83 bn.",
+   "date": "29 Oct 2026 (latest available)",
+   "what": "The public and private offering executes on Thursday for 6.862 bn shares, 45% of the bank's issued capital, at EGP 5.30, worth EGP 36.37 bn. The private placement of about 6.519 bn shares is worth about EGP 34.55 bn and was six times covered. Shares start trading on Monday 2 November as BQDC, valuing the bank at about EGP 80.83 bn.",
    "why": "The sale was raised to 45% from 30% with the Financial Regulatory Authority's approval, and the retail tranche was heavily oversubscribed.",
    "aff": "Brokerages, sentiment toward state-bank listings, the privatisation programme and local liquidity.",
    "eg": "A completed sale of this size counts toward Egypt's asset-sale goals as the IMF programme nears its end.",
@@ -798,80 +886,61 @@
    "names": "Banque du Caire (BQDC); brokerages."
   },
   {
-   "id": "s-imf",
+   "id": "s-cbe",
    "cat": "Egypt Economy",
-   "imp": "Neutral",
-   "key": {
-    "v": "$2.3 bn",
-    "l": "final IMF disbursements at stake"
-   },
-   "h": "IMF aims for a staff-level deal on Egypt's final review before mid-December",
-   "src": "The National; Reuters via Investing.com; EnterpriseAM",
-   "url": "https://www.thenationalnews.com/news/us/2026/10/29/imf-sets-december-target-to-clear-egypts-last-programme-review/",
-   "date": "29–30 Oct 2026",
-   "what": "The IMF says its mission in Cairo aims for a staff-level agreement and a board vote before mid-December, before the Extended Fund Facility expires on 15 December after an extension from October. Clearing the final reviews would release about $2.3 bn, roughly $1.5 bn under the EFF and $800 mn under the Resilience and Sustainability Facility, EnterpriseAM says. Communications director Julie Kozack says talks focus on tight monetary policy and fiscal consolidation.",
-   "why": "The IMF also wants faster divestment, the state ownership policy put into practice and a level field for private firms.",
-   "aff": "The last disbursements, Egypt's financing outlook, the pound and the state's divestment pace.",
-   "eg": "The IMF's October outlook sees Egypt's growth at 5.1% in 2026 and inflation easing to 9.4%.",
-   "egx": "Neutral to mildly bullish: a completed review would support the pound and foreign appetite for Egyptian assets.",
-   "names": "Banks; foreign-held blue chips."
-  },
-  {
-   "id": "s-oil",
-   "cat": "Commodities",
    "imp": "Bearish",
    "key": {
-    "v": "$116.08",
-    "l": "Brent, early Friday 30 Oct"
+    "v": "+100 bp",
+    "l": "CBE hike; deposit rate now 20%"
    },
-   "h": "Brent climbs back above $116 as a Hormuz tanker attack revives supply fears",
-   "src": "Invezz; Reuters via The Globe and Mail; Al Jazeera",
-   "url": "https://invezz.com/news/2026/10/30/oil-prices-today-trump-iran-strikes-brent-crude/",
+   "h": "Analysts split on whether the CBE's hike will steady the pound",
+   "src": "Al Ain; El Balad; Finimize (Reuters)",
+   "url": "https://al-ain.com/article/egypt-interest-rate-hike-pound-dollar-hot-money",
    "date": "29–30 Oct 2026",
-   "what": "Brent's expiring December contract rises 1.04% to $116.08 by 03:23 GMT on Friday and WTI 1.34% to $103.37, while the more active January Brent contract trades near $112.19. On Thursday Brent settles 44 cents lower at $114.88 after US Vice President JD Vance reportedly writes to Iran's security chief to revive talks. Iran's Revolutionary Guards say tankers hit mines south of Hormuz, and UKMTO reports a tanker attacked with explosive devices in the strait on Friday.",
-   "why": "Renewed talk of US strikes on Iran after the 3 November midterms and attacks near shipping routes outweigh the diplomacy that pulled prices down on Thursday.",
-   "aff": "Egypt's fuel bill, the subsidy gap, global inflation, shipping costs and the pound.",
-   "eg": "Egypt depends on imports for most of its energy, so a higher oil price adds to the state's fuel bill.",
-   "egx": "Bearish for importers and energy-intensive industry; oil-linked names such as AMOC hold up better.",
-   "names": "Construction materials; consumer and food (bearish). AMOC (relative strength)."
+   "what": "The CBE raises its deposit rate to 20% and lending rate to 21% on Thursday, its first hike since March 2024, when a Reuters poll of 13 analysts expected a hold. Al Ain says foreign net sales of local debt topped $1 bn on 26 and 27 October. Madhat Nafeh says he expected the hike, citing outflows and energy prices, while Hany Genena of Al Ahly Pharos warns it carries a high cost for borrowers and public finances.",
+   "why": "The CBE cites challenging external conditions and wants to anchor inflation expectations as the pound trades near 56 per dollar.",
+   "aff": "The pound, T-bill yields, bank margins and borrowing costs across the economy.",
+   "eg": "Genena says a hike does not directly guarantee a weaker dollar, so the pound's path still depends on flows.",
+   "egx": "Sunday is the first session to price it: bullish for bank margins, bearish for developers, NBFIs and leveraged industrials.",
+   "names": "Banks (bullish); developers and NBFIs (bearish)."
   },
   {
-   "id": "s-gulf",
-   "cat": "Middle East",
-   "imp": "Bearish",
-   "key": {
-    "v": "1",
-    "l": "Houthi drone downed near Mecca, per the coalition"
-   },
-   "h": "Saudi coalition downs a Houthi drone near Mecca as tanker attacks continue in Hormuz",
-   "src": "Al Jazeera; Khaleej Times",
-   "url": "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz",
-   "date": "29–30 Oct 2026",
-   "what": "The Saudi-led coalition says it intercepts a Houthi drone launched toward the Mecca region on Friday; the Houthis deny it and say they target only oil facilities and military bases. UKMTO reports a tanker attacked with explosive devices in Hormuz, with the crew safe. On Thursday Saudi Arabia says it destroys two Houthi missiles fired at Riyadh, and Iran says Hormuz stays shut until its conditions are fully met.",
-   "why": "The US-Iran war continues, with the Houthis extending attacks to Saudi Arabia.",
-   "aff": "Gulf energy infrastructure, shipping insurance, Red Sea traffic and regional risk premiums.",
-   "eg": "AFP notes the war has pushed some shipping lines away from the Suez Canal, a key source of foreign currency for Egypt.",
-   "egx": "Bearish for sentiment and tourism-linked names; no single EGX company is named.",
-   "names": "Tourism and logistics (sector)."
-  },
-  {
-   "id": "s-ecb",
+   "id": "s-wallst",
    "cat": "Global",
    "imp": "Bearish",
    "key": {
-    "v": "2.50% / 1.25%",
-    "l": "ECB and BoJ policy rates, both held"
+    "v": "-1.8%",
+    "l": "S&P 500 on Friday, worst day since June"
    },
-   "h": "ECB and Bank of Japan hold as the ECB signals a December hike and US growth beats forecasts",
-   "src": "ECB; Bank of Japan; Reuters via Yahoo Finance; BEA",
-   "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
-   "date": "29 Oct 2026",
-   "what": "The ECB keeps its deposit rate at 2.50%, and Reuters sources call a 17 December hike all but certain. On Friday the Bank of Japan holds its overnight call rate target at about 1.25% by an 8-1 vote and doubles the pace of its ETF sales to about 860 bn yen a year from January 2027. US real GDP grows at a 3.4% annual rate in 3Q against 2.2% in 2Q, while PCE prices rise 2.1% and core PCE 2.5%.",
-   "why": "Rising energy costs push up inflation risks in Europe; Japan is weighing further hikes; US growth is led by investment and consumer spending.",
-   "aff": "Global bond yields, the dollar and the euro, and emerging-market carry trades.",
-   "eg": "Tighter policy in the US and Europe narrows the yield gap that draws foreign money to Egyptian bills.",
-   "egx": "Bearish for foreign-held blue chips through the carry channel.",
-   "names": "Foreign-held EGX30 blue chips."
+   "h": "Wall Street's worst day since June drags gold and silver lower",
+   "src": "Kitco",
+   "url": "http://www.kitco.com/news/article/2026-10-30/gold-falls-below-3900-silver-tumbles-wall-street-selloff-triggers",
+   "date": "30 Oct 2026",
+   "what": "The S&P 500 falls 1.8% to 7,580.07, the Dow 1.1% to 51,770.31 and the Nasdaq 2.9%. Intel drops nearly 29% after weak guidance and Amazon's spending plans weigh on tech. Gold falls 3.52% to about $3,879.90 and silver 6.06% to $49.015 in late trade, and the 10-year Treasury yield eases toward 4.93%.",
+   "why": "Worries about returns on AI spending trigger a tech sell-off, and investors sell metals to cover losses.",
+   "aff": "Global risk appetite, emerging-market flows and gold-linked savings.",
+   "eg": "Lower gold prices cut the value of Egyptians' gold savings and the gold share of CBE reserves.",
+   "egx": "Bearish for sentiment ahead of Sunday's open, especially growth and fintech names.",
+   "names": "Fawry, e-finance (sentiment)."
+  },
+  {
+   "id": "s-iran",
+   "cat": "Middle East",
+   "imp": "Neutral",
+   "key": {
+    "v": "1 week",
+    "l": "window for a possible US-Iran meeting in Doha or Istanbul"
+   },
+   "h": "Qatari mediators carry a Vance letter to Tehran as strike fears build",
+   "src": "Al Jazeera",
+   "url": "https://www.aljazeera.com/news/2026/10/30/qatari-officials-in-iran-in-bid-to-revive-ceasefire-deal-with-us",
+   "date": "30 Oct 2026",
+   "what": "Qatari mediators arrive in Tehran on Friday with a letter from US Vice President JD Vance to Iran's security chief Mohsen Rezaei. The letter reportedly proposes a \"framework for negotiations\" rather than peace terms, and a meeting could follow within a week in Doha or Istanbul. Iran has not formally replied.",
+   "why": "The Wall Street Journal reports Trump has told Gulf allies to prepare for a brief, high-intensity campaign after the midterms, which raises the stakes of the talks.",
+   "aff": "Oil, Gulf shipping, regional risk premiums and Suez traffic.",
+   "eg": "A deal would ease oil and shipping pressure on Egypt; escalation would do the opposite.",
+   "egx": "Neutral for now: the outcome swings oil, the pound and tourism sentiment.",
+   "names": "Tourism and logistics (sector)."
   }
  ],
  "week": [
@@ -879,7 +948,7 @@
    "date": "Sun 1 Nov",
    "iso": "2026-11-01",
    "event": "First EGX session after the CBE's 100 bp hike",
-   "why": "The market prices the surprise hike; banks and developers are the names to watch."
+   "why": "The market prices the hike, the new 26% bill yields and Friday's global sell-off."
   },
   {
    "date": "Sun 1 Nov",
@@ -891,19 +960,19 @@
    "date": "Mon 2 Nov",
    "iso": "2026-11-02",
    "event": "Banque du Caire expected to start trading on the EGX",
-   "why": "A test of demand above the EGP 5.30 offer price after an EGP 36.37 bn execution."
+   "why": "Ticker BQDC; a test of demand above the EGP 5.30 offer price."
   },
   {
    "date": "Tue 3 Nov",
    "iso": "2026-11-03",
    "event": "US midterm elections",
-   "why": "Oil traders fear a US strike on Iran after the vote; Brent is near $115."
+   "why": "Reports say the US may strike Iran after the vote; Brent is at a six-month high."
   },
   {
-   "date": "Thu 17 Dec",
-   "iso": "2026-12-17",
-   "event": "ECB decision",
-   "why": "Reuters sources call a hike all but certain, which would add to pressure on emerging-market carry."
+   "date": "Within a week (date not confirmed)",
+   "iso": "",
+   "event": "Possible US-Iran meeting in Doha or Istanbul",
+   "why": "Would test whether the Vance letter opens talks."
   },
   {
    "date": "Around 10 Nov (date not confirmed)",
@@ -914,14 +983,44 @@
  ],
  "sources": [
   [
-   "Free Malaysia Today (AFP), Egypt hikes interest rates for first time since 2024",
-   "https://www.freemalaysiatoday.com/category/business/2026/10/30/egypt-hikes-interest-rates-for-first-time-since-2024",
+   "CNBC, Oil jumps 2%, settles at 6-month highs on fears of escalation in Iran",
+   "https://cnbc.com/2026/10/30/oil-rises-on-supply-concerns-as-houthis-attack-saudi-arabia.html",
    "30 Oct 2026"
   ],
   [
-   "Finimize, Egypt's central bank surprised markets with a rate hike",
-   "https://finimize.com/content/egypts-central-bank-surprised-everyone-with-a-rate-hike",
-   "29 Oct 2026"
+   "Yahoo Finance (Reuters), Oil prices set for fourth straight monthly gains as tanker attack highlights supply risks",
+   "https://finance.yahoo.com/news/oil-rises-supply-concerns-houthis-022725347.html",
+   "30 Oct 2026"
+  ],
+  [
+   "Banker News, Saudi Arabia renews $5.3 bn deposit at the CBE for a year",
+   "https://www.banker.news/158140",
+   "30 Oct 2026"
+  ],
+  [
+   "Khalf El Hadath, Saudi Arabia renews $5.3 bn deposit at the Central Bank of Egypt",
+   "https://khalfelhadth.com/150391",
+   "30 Oct 2026"
+  ],
+  [
+   "El Balad, CBE announces details of accepted T-bill bids worth $1.41 bn",
+   "https://www.elbalad.news/7161716",
+   "30 Oct 2026"
+  ],
+  [
+   "Cairo Mubasher, CBE accepts T-bill bids worth $1.41 bn",
+   "https://www.cairomubasher.com/247837",
+   "30 Oct 2026"
+  ],
+  [
+   "Afronomics, Egypt Treasury bill auction results (CBE data)",
+   "https://www.afronomicsfeed.com/markets/tbills/egypt",
+   "27 Oct 2026"
+  ],
+  [
+   "Al Ain, The pound and hot money: the CBE's bet after the rate hike",
+   "https://al-ain.com/article/egypt-interest-rate-hike-pound-dollar-hot-money",
+   "30 Oct 2026"
   ],
   [
    "El Balad, Where the dollar stands after the CBE's rate hike",
@@ -929,14 +1028,24 @@
    "29 Oct 2026"
   ],
   [
-   "Cairo Mubasher, EGX closes with broad gains (session data and Banque du Caire execution)",
-   "https://www.cairomubasher.com/247546",
+   "Finimize, Egypt's central bank surprised markets with a rate hike",
+   "https://finimize.com/content/egypts-central-bank-surprised-everyone-with-a-rate-hike",
    "29 Oct 2026"
   ],
   [
-   "Youm7, EGX news for Thursday 29 October 2026",
-   "https://www.youm7.com/story/2026/10/29/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B3-29-10-2026/7598546",
-   "29 Oct 2026"
+   "Kitco, Gold falls below $3,900, silver tumbles as Wall Street selloff triggers liquidation",
+   "http://www.kitco.com/news/article/2026-10-30/gold-falls-below-3900-silver-tumbles-wall-street-selloff-triggers",
+   "30 Oct 2026"
+  ],
+  [
+   "Al Jazeera, Qatari officials in Iran in bid to revive ceasefire deal with US",
+   "https://www.aljazeera.com/news/2026/10/30/qatari-officials-in-iran-in-bid-to-revive-ceasefire-deal-with-us",
+   "30 Oct 2026"
+  ],
+  [
+   "Cairo Mubasher, Gold nears its lowest level in a year",
+   "https://www.cairomubasher.com/247871",
+   "31 Oct 2026"
   ],
   [
    "Amwal Al Ghad, Egypt's stocks end week in green",
@@ -954,13 +1063,23 @@
    "27 Oct 2026"
   ],
   [
+   "Youm7, EGX news for Thursday 29 October 2026",
+   "https://www.youm7.com/story/2026/10/29/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AE%D9%85%D9%8A%D8%B3-29-10-2026/7598546",
+   "29 Oct 2026"
+  ],
+  [
+   "Cairo Mubasher, EGX closes with broad gains (session data and Banque du Caire execution)",
+   "https://www.cairomubasher.com/247546",
+   "29 Oct 2026"
+  ],
+  [
    "EnterpriseAM, What the markets are doing on 29 October",
    "https://enterpriseam.com/egypt/2026/10/29/what-the-markets-are-doing-on-29-october/",
    "29 Oct 2026"
   ],
   [
    "Arab Finance, Banque du Caire to begin trading on EGX on November 2",
-   "http://arabfinance.com/en/news/newdetails/49047",
+   "https://www.arabfinance.com/en/news/newdetails/banque-du-caire-to-begin-trading-on-egx-on-november-2",
    "27 Oct 2026 (updated)"
   ],
   [
@@ -969,14 +1088,9 @@
    "29 Oct 2026"
   ],
   [
-   "Reuters via Investing.com, IMF aims for Egypt's last program review to be cleared by mid December",
-   "https://www.investing.com/news/economy-news/imf-aims-for-egypts-last-program-review-to-be-cleared-by-mid-december-4984638",
+   "The National, IMF sets December target to clear Egypt's last programme review",
+   "https://www.thenationalnews.com/news/us/2026/10/29/imf-sets-december-target-to-clear-egypts-last-programme-review/",
    "29 Oct 2026"
-  ],
-  [
-   "Afronomics, Egypt Treasury bill auction results (CBE data)",
-   "https://www.afronomicsfeed.com/markets/tbills/egypt",
-   "27 Oct 2026"
   ],
   [
    "Arab News, Egypt's net international reserves rise to record $57.35b in September",
@@ -984,14 +1098,9 @@
    "7 Oct 2026"
   ],
   [
-   "The Globe and Mail (Reuters), Oil prices settle lower as diplomacy hopes offset some Mideast supply concerns",
-   "https://www.theglobeandmail.com/investing/article-oil-prices-fall-as-peace-hopes-offset-fears-of-growing-middle-east/",
-   "29 Oct 2026"
-  ],
-  [
-   "Khaleej Times, US-Israel-Iran war live updates, 29 October",
-   "https://www.khaleejtimes.com/world/mena/us-israel-iran-lebanon-war-live-updates-october-29-2026",
-   "29 Oct 2026"
+   "Federal Reserve, Federal Reserve issues FOMC statement",
+   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+   "28 Oct 2026"
   ],
   [
    "ECB, Monetary policy decisions",
@@ -999,49 +1108,9 @@
    "29 Oct 2026"
   ],
   [
-   "Yahoo Finance (Reuters), ECB flags December hike but sees yield rise hitting growth",
-   "https://finance.yahoo.com/economy/policy/articles/ecb-keeps-rates-unchanged-points-132927008.html",
-   "29 Oct 2026"
-  ],
-  [
-   "BEA, GDP (Advance Estimate), 3rd Quarter 2026",
-   "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
-   "29 Oct 2026"
-  ],
-  [
-   "Federal Reserve, Federal Reserve issues FOMC statement",
-   "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-   "28 Oct 2026"
-  ],
-  [
-   "Invezz, Oil prices surge towards $120 as Trump weighs fresh Iran strikes",
-   "https://invezz.com/news/2026/10/30/oil-prices-today-trump-iran-strikes-brent-crude/",
-   "30 Oct 2026"
-  ],
-  [
-   "Al Jazeera, Iran war live, 30 October",
-   "https://www.aljazeera.com/news/liveblog/2026/10/30/iran-war-live-irgc-says-four-tankers-struck-mines-in-strait-of-hormuz",
-   "30 Oct 2026"
-  ],
-  [
    "Bank of Japan, Statement on Monetary Policy",
    "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
    "30 Oct 2026"
-  ],
-  [
-   "The National, IMF sets December target to clear Egypt's last programme review",
-   "https://www.thenationalnews.com/news/us/2026/10/29/imf-sets-december-target-to-clear-egypts-last-programme-review/",
-   "29 Oct 2026"
-  ],
-  [
-   "EnterpriseAM, CBE raises key rates by 100 bps (The Week in Review)",
-   "https://enterpriseam.com/egypt/2026/10/30/cbe-raises-key-rates-by-100-bps/",
-   "30 Oct 2026"
-  ],
-  [
-   "Reuters via Investing.com, Egypt's central bank raises key interest rates by 100 basis points",
-   "https://www.investing.com/news/economy-news/egypts-central-bank-raises-key-interest-rates-by-100-basis-points-93CH-4984847",
-   "29 Oct 2026"
   ]
  ],
  "stocks": {
@@ -1451,7 +1520,7 @@
     "url": "https://stockanalysis.com/quote/egx/EFID/history/"
    }
   ],
-  "note": "Closes and one-day changes are as reported by StockAnalysis.com (delayed EGX data), re-opened on Friday 30 October. The 5-session change compares Thursday 29 October with Thursday 22 October and is derived. Index closes are from Amwal Al Ghad and match Youm7; 5-session index changes are not shown because the 22 October closes were not re-verified today.",
-  "source": "StockAnalysis.com price history pages, opened 30 Oct; Amwal Al Ghad, 29 Oct; Youm7, 29 Oct"
+  "note": "Closes and one-day changes are as reported by StockAnalysis.com (delayed EGX data), re-opened on Saturday 31 October. The 5-session change compares Thursday 29 October with Thursday 22 October and is derived. Index closes are from Amwal Al Ghad and match Youm7; 5-session index changes are not shown because the 22 October closes were not re-verified today.",
+  "source": "StockAnalysis.com price history pages, opened 31 Oct; Amwal Al Ghad, 29 Oct; Youm7, 29 Oct"
  }
 }
