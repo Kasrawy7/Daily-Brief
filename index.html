@@ -244,6 +244,11 @@ details.fold summary{cursor:pointer;font-weight:600}
 @media (prefers-reduced-motion:no-preference){ .card.flash{transition:outline-color .4s} html{scroll-behavior:smooth} }
 /* Mast tools: edition picker and theme toggle */
 .mtools{display:flex;gap:8px;align-items:center;justify-content:flex-end;flex-wrap:wrap;margin-top:6px}
+.upbar{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:10px 0 0;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);font-size:13px}
+.upbar[hidden]{display:none}
+.upbar button{font:inherit;font-size:12.5px;padding:4px 10px;border:1px solid var(--accent);border-radius:6px;background:var(--accent);color:var(--bg);cursor:pointer}
+.mtools button[hidden]{display:none}
+.mtools button:disabled{opacity:.6;cursor:default}
 .mtools select,.mtools button{font:inherit;font-size:12.5px;padding:4px 8px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--fg);cursor:pointer}
 .loading{padding:40px 0;text-align:center;color:var(--muted)}
 
@@ -293,9 +298,10 @@ table.stk .sec{font-size:12.5px;color:var(--muted)}
 <div class="wrap">
   <header class="mast">
     <h1 id="title">Daily World Brief</h1>
-    <div class="ed"><div id="edline"></div><div class="mtools"><label class="note" for="edSel">Edition</label><select id="edSel" aria-label="Choose edition"><option value="">Latest</option></select><button type="button" id="themeBtn" aria-label="Switch colour theme">Theme</button></div></div>
+    <div class="ed"><div id="edline"></div><div class="mtools"><label class="note" for="edSel">Edition</label><select id="edSel" aria-label="Choose edition"><option value="">Latest</option></select><button type="button" id="chkBtn" aria-label="Check for a newer update">Check for updates</button><button type="button" id="reqBtn" hidden aria-label="Ask for a fresh update of the brief">Request update</button><button type="button" id="themeBtn" aria-label="Switch colour theme">Theme</button></div></div>
   </header>
   <div class="status" id="status"></div>
+  <div class="upbar" id="upbar" role="status" aria-live="polite" hidden></div>
 
   <nav class="nav" aria-label="Sections"><ul>
     <li><a href="#overview">Overview</a></li>
@@ -419,9 +425,66 @@ fetch("data/archive/index.json",{cache:"no-cache"}).then(function(r){return r.ok
   (list||[]).forEach(function(e){var o=document.createElement("option");o.value=e.iso;o.textContent=e.date;if(e.iso===want)o.selected=true;sel.appendChild(o);});
   sel.addEventListener("change",function(){location.search=sel.value?"?d="+sel.value:"";});
 }).catch(function(){});
-fetch(dataUrl,{cache:"no-cache"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(boot).catch(function(){
+fetch(dataUrl,{cache:"no-cache"}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(D){boot(D);watch(D);}).catch(function(){
   document.querySelector(".wrap").insertAdjacentHTML("afterbegin",'<p class="empty">This edition could not be loaded. Try the latest edition or refresh the page.</p>');
 });
+
+/* Updates through the day: the brief is republished at pre-open, intraday and after the close.
+   On the latest edition, check for a newer version every 5 minutes (every minute after a request)
+   and offer to load it; never reload by itself while someone is reading. */
+function watch(D){
+  var chk=document.getElementById("chkBtn"), req=document.getElementById("reqBtn"), bar=document.getElementById("upbar");
+  if(want){ chk.hidden=true; return; }
+  function stamp(d){ var e=d&&d.edition||{}; return e.iso+"|"+((e.update||{}).ts||""); }
+  var mine=stamp(D), fastUntil=0, timer=null;
+  function say(html){ bar.innerHTML=html; bar.hidden=!html; }
+  function check(manual){
+    if(manual){ chk.disabled=true; chk.textContent="Checking..."; }
+    return fetch("data/latest.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(L){
+      if(stamp(L)!==mine){
+        var u=(L.edition||{}).update||{};
+        say('<span><b>A newer update is live:</b> '+escH(L.edition.date)+(u.at?' · '+escH(u.stage||"Update")+' '+escH(u.at)+' Cairo':'')+'</span><button type="button" id="loadNew">Load it</button>');
+        document.getElementById("loadNew").addEventListener("click",function(){location.reload();});
+        fastUntil=0;
+      }else if(manual){
+        say('<span>You have the latest version.</span>'); setTimeout(function(){ if(bar.textContent==="You have the latest version.") say(""); },4000);
+      }
+    }).catch(function(){ if(manual) say('<span>Could not check for updates. Try again in a moment.</span>'); })
+    .then(function(){ chk.disabled=false; chk.textContent="Check for updates"; schedule(); });
+  }
+  function schedule(){ clearTimeout(timer); timer=setTimeout(function(){ if(!document.hidden) check(false); else schedule(); }, Date.now()<fastUntil?60000:300000); }
+  chk.addEventListener("click",function(){check(true);});
+  document.addEventListener("visibilitychange",function(){ if(!document.hidden) check(false); });
+  schedule();
+
+  /* "Request update" appears only when the site's trigger is configured (api/refresh.js). */
+  fetch("api/refresh",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(cfg){
+    if(!cfg||!cfg.enabled) return;
+    req.hidden=false;
+    req.addEventListener("click",function(){
+      var key="";
+      if(cfg.needsKey){
+        try{ key=localStorage.getItem("brief-key")||""; }catch(e){}
+        if(!key){ key=window.prompt("Passcode for requesting an update")||""; if(!key) return; }
+      }
+      req.disabled=true; req.textContent="Requesting...";
+      fetch("api/refresh",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({key:key})})
+      .then(function(r){ return r.json().then(function(b){ return {ok:r.ok,status:r.status,b:b}; }); })
+      .then(function(x){
+        if(x.ok){
+          if(key){ try{ localStorage.setItem("brief-key",key); }catch(e){} }
+          say('<span>'+escH(x.b.message||"Update requested.")+'</span>');
+          fastUntil=Date.now()+60*60000; schedule();
+        }else{
+          if(x.status===401){ try{ localStorage.removeItem("brief-key"); }catch(e){} }
+          say('<span>'+escH((x.b&&x.b.error)||"The request failed.")+'</span>');
+        }
+      }).catch(function(){ say('<span>The request failed. Try again in a moment.</span>'); })
+      .then(function(){ req.disabled=false; req.textContent="Request update"; });
+    });
+  }).catch(function(){});
+}
+function escH(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
 })();
 
 function boot(D){
@@ -446,7 +509,10 @@ document.getElementById("srcFoot").textContent=(D.notes||{}).sourcesFoot||"";
 var cnt={Bullish:0,Bearish:0,Neutral:0}; STORIES.forEach(function(s){if(cnt[s.imp]!=null)cnt[s.imp]++;});
 var lean=cnt.Bearish>cnt.Bullish?"bear":cnt.Bullish>cnt.Bearish?"bull":"neu";
 var leanTxt=lean==="bear"?"Bearish tilt":lean==="bull"?"Bullish tilt":"Balanced";
+var U=E.update||null;
 document.getElementById("status").innerHTML=
+  (U&&U.at?'<span class="pill neu" title="Update '+esc(U.n)+' of the day">'+esc(U.stage||"Update")+' update · '+esc(U.at)+' Cairo'+(U.n>1?' · #'+esc(U.n):'')+'</span>':'')+
+  (U&&U.note?'<span class="pill plain">'+esc(U.note)+'</span>':'')+
   (E.cutoffBadge?'<span class="pill warn">'+esc(E.cutoffBadge)+'</span>':'')+
   '<span class="pill '+lean+'">'+leanTxt+': '+cnt.Bearish+' bearish, '+cnt.Bullish+' bullish, '+cnt.Neutral+' neutral of '+STORIES.length+' stories</span>'+
   '<span class="pill plain">Directional reads, not trade recommendations</span>';

@@ -3,8 +3,15 @@
 
   python3 scripts/brief.py validate [file.json ...]   check editions (default: data/latest.json)
   python3 scripts/brief.py publish new.json [--any-date]
-        roll "previous", add calendar events, derive 5-session changes, validate,
-        then write latest + archive. --any-date allows an edition not dated today (Cairo).
+        roll "previous", add calendar events, derive 5-session changes, stamp the
+        update time and number, validate, then write latest + archive.
+        --any-date allows an edition not dated today (Cairo).
+
+The same day's edition can be published several times (pre-open, intraday, close).
+Each publish stamps edition.update with the Cairo time ("at", "ts"), a running number
+"n" (1 for the first publish of the day) and the stage from the clock: Pre-open before
+10:00, Intraday until 14:30, Close after it, Weekend on Friday and Saturday. Only
+edition.update.note ("what changed in this update", one line) is written by hand.
   python3 scripts/brief.py calendar [--from YYYY-MM-DD] [--days N]
         list verified upcoming events from data/calendar.json (default: next 14 days)
 
@@ -31,6 +38,7 @@ STORY_TEXT = ("what", "why", "aff", "eg", "egx")
 MOVE_TOL = 0.06      # max gap, in points, between a reported 1-day % and the one implied by the closes
 BIG_MOVE = 10.0      # 1-day moves above this are flagged for a second look
 WINDOW_DAYS = 14     # calendar events this close to the edition are added to "week"
+STAGES = {"Pre-open", "Intraday", "Close", "Weekend"}
 
 
 def strings(o):
@@ -66,6 +74,18 @@ def validate(d):
             err.append(f"edition.{k} missing")
     if not ISO.match(e.get("iso", "")):
         err.append("edition.iso must be YYYY-MM-DD")
+    u = e.get("update")
+    if u is not None:  # optional, so editions archived before 1 Nov 2026 still validate
+        if not isinstance(u, dict):
+            err.append("edition.update must be an object")
+        else:
+            if u.get("stage") not in STAGES:
+                err.append(f"edition.update.stage must be one of {sorted(STAGES)}")
+            if not isinstance(u.get("n"), int) or u["n"] < 1:
+                err.append("edition.update.n must be a whole number from 1")
+            for k in ("at", "ts"):
+                if not isinstance(u.get(k), str) or not u[k]:
+                    err.append(f"edition.update.{k} missing")
     for k in ["cutoff", "unverified", "sourcesFoot", "previous"]:
         if k not in d["notes"]:
             err.append(f"notes.{k} missing")
@@ -267,9 +287,23 @@ def publish(newp, any_date=False):
               f"but today in Cairo is {today}. Fix the date, or pass --any-date for a deliberate back-fill.")
         sys.exit(1)
     latest = DATA / "latest.json"
-    if latest.exists():
-        old = load(latest)
-        if old["edition"]["iso"] != new["edition"]["iso"]:
+    old = load(latest) if latest.exists() else None
+    # Stamp the update: the time is always the real publish time, never typed by hand.
+    now = datetime.datetime.now(ZoneInfo("Africa/Cairo")).replace(microsecond=0)
+    same_day = bool(old) and old["edition"]["iso"] == new["edition"]["iso"]
+    prev_n = ((old or {}).get("edition", {}).get("update") or {}).get("n", 1) if same_day else 0
+    upd = new["edition"].get("update")
+    if not isinstance(upd, dict):
+        upd = {}
+    if now.weekday() in (4, 5):  # Friday and Saturday: no EGX session
+        stage = "Weekend"
+    else:  # the EGX trades 10:00 to 14:30 Cairo
+        stage = "Close" if (now.hour, now.minute) >= (14, 30) else "Intraday" if now.hour >= 10 else "Pre-open"
+    upd["stage"] = stage
+    upd.update({"n": prev_n + 1, "at": now.strftime("%H:%M"), "ts": now.isoformat()})
+    new["edition"]["update"] = upd
+    if old:
+        if not same_day:
             entry = {"date": old["edition"]["date"],
                      "items": [f'{t["what"]} → {t["why"]}' for t in old.get("top", [])]}
             prev = [p for p in new.get("previous", []) if p.get("date") != entry["date"]]

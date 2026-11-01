@@ -11,6 +11,8 @@ function serve() {
   return new Promise(res => {
     const srv = http.createServer((req, rsp) => {
       let p = decodeURIComponent(req.url.split("?")[0]);
+      // api/refresh.js runs only on Vercel; answer like an unconfigured deployment.
+      if (p === "/api/refresh") { rsp.writeHead(200, { "Content-Type": "application/json" }); return rsp.end('{"enabled":false}'); }
       if (p.endsWith("/")) p += "index.html";
       const f = path.join(ROOT, path.normalize(p));
       if (!f.startsWith(ROOT) || !fs.existsSync(f)) { rsp.writeHead(404); return rsp.end(); }

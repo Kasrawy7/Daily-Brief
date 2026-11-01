@@ -44,7 +44,7 @@ git add data && git commit -m "Edition YYYY-MM-DD" && git push origin main
 python3 scripts/check_live.py --timeout 300
 ```
 
-This polls `https://daily-brief-eg.vercel.app/data/latest.json` until the live edition date, story count and stock date match the local file.
+This polls `https://daily-brief-eg.vercel.app/data/latest.json` until the live edition date, story count, stock date and update stamp (`edition.update.ts`) match the local file, so a same-day update pass is only confirmed once Vercel serves it.
 
 - `LIVE OK`: say the site is updated.
 - `LIVE NOT UPDATED`: say so plainly in the one-line message, for example "pushed but Vercel has not deployed yet". Do not claim the site is updated.
