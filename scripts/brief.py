@@ -32,6 +32,7 @@ CATEGORIES = ["Global", "Middle East", "Egypt Economy", "Egypt Politics", "EGX M
 IMPS = {"Bullish", "Bearish", "Neutral"}
 CONF = {"High", "Medium", "Low"}
 VIZ = {"line", "hbar", "diverge", "split", "bullet"}
+MINI_TYPES = {"line", "bullet", "split"}  # the only chart types that fit a hero tile's 36px strip
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 QUOTE = re.compile(r'"([^"]+)"')
 STORY_TEXT = ("what", "why", "aff", "eg", "egx")
@@ -139,6 +140,9 @@ def validate(d):
                 ch = next(c for c in d["charts"] if c["id"] == mini["chart"])
                 if mini.get("block", 0) >= len(ch.get("viz", [])):
                     err.append(f"kpi {k.get('k')}: mini block out of range")
+                elif ch["viz"][mini.get("block", 0)].get("type") not in MINI_TYPES:
+                    err.append(f"kpi {k.get('k')}: mini chart must be one of {sorted(MINI_TYPES)}; "
+                               f"{ch['viz'][mini.get('block', 0)].get('type')} does not fit a headline tile")
     heroes = sum(1 for k in d["kpis"] if k.get("hero"))
     if heroes != 6:
         err.append(f"expected 6 hero KPIs, found {heroes}")

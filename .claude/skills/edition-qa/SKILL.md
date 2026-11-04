@@ -29,6 +29,9 @@ This serves the repository locally and opens it in headless Chromium at desktop 
 - a story-card count or stock-row count that differs from the data;
 - a chart that draws nothing;
 - a masthead date that does not match `edition.date`.
+- text cut off or overflowing in a headline tile, a tile mini chart taller than its strip, or a chart label running past the chart edge.
+
+A hero KPI's `mini` may point only at a `line`, `bullet` or `split` chart; `brief.py` rejects any other type because it does not fit the tile.
 
 If it fails, fix the data in `/tmp/new.json` and publish again. Never change `index.html` to make a check pass.
 

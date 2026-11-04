@@ -46,7 +46,21 @@ function serve() {
       emptyViz: [...document.querySelectorAll(".chart .viz")].filter(v => !v.innerHTML.trim()).length,
       idx: document.querySelectorAll("#idx .ix").length,
       rows: document.querySelectorAll("#stkBody tr").length,
-      sources: document.querySelectorAll("#src li").length
+      sources: document.querySelectorAll("#src li").length,
+      // anything a reader would see cut off: text wider than its box in the headline tiles,
+      // a tile's mini chart taller than its strip, or chart labels running past the chart edge
+      clipped: [
+        ...[...document.querySelectorAll("#kpis .tile > *, #strip .cell > *")]
+          .filter(e => e.clientWidth > 0 && e.scrollWidth > e.clientWidth + 1)
+          .map(e => "tile text: " + e.textContent.trim().slice(0, 40)),
+        ...[...document.querySelectorAll("#kpis .mini")]
+          .filter(e => e.scrollHeight > e.clientHeight + 1)
+          .map(e => "tile chart too tall: " + (e.closest(".tile").querySelector(".k") || {}).textContent),
+        ...[...document.querySelectorAll("svg text")].filter(t => {
+          const s = t.ownerSVGElement.getBoundingClientRect(), b = t.getBoundingClientRect();
+          return b.width && (b.left < s.left - 1 || b.right > s.right + 1);
+        }).map(t => "chart label cut off: " + t.textContent.slice(0, 40))
+      ]
     }));
     const tag = s => problems.push(`${name}: ${s}`);
     errs.forEach(e => tag("script error: " + e));
@@ -57,6 +71,7 @@ function serve() {
     if (r.cards !== expected.stories.length) tag(`${r.cards} story cards, data has ${expected.stories.length}`);
     if (r.emptyViz) tag(`${r.emptyViz} chart(s) drew nothing`);
     if (r.idx < 1) tag("no index cards in the EGX section");
+    r.clipped.forEach(c => tag(c));
     if (r.rows !== expected.stocks.equities.length) tag(`${r.rows} stock rows, data has ${expected.stocks.equities.length}`);
     if (!r.edition.includes(expected.edition.date)) tag(`shows "${r.edition.split("\n")[0]}", expected ${expected.edition.date}`);
     console.log(`${name}: ${r.cards} stories, ${r.charts} charts, ${r.rows} stocks, ${r.sources} sources, sideways scroll ${r.overflow}px`);

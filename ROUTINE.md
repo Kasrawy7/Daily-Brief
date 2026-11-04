@@ -72,7 +72,7 @@ JSON SCHEMA (keep every key)
 - notes: {cutoff, unverified, sourcesFoot, previous}
 - previous: leave as it is in latest.json. The publish script moves the outgoing edition's top stories into it and keeps 5 editions.
 - top: 3-5 objects {what, why, ref}; "ref" is the id of the matching story.
-- kpis: {k, v, d, c: "dn" | "up" | "", m: "date · source", hero: true for exactly 6 headline tiles, flag: optional {t, tone: "bull" | "bear" | "neu"}, mini: optional {chart: chart id, block: 0}}.
+- kpis: {k, v, d, c: "dn" | "up" | "", m: "date · source", hero: true for exactly 6 headline tiles, flag: optional {t, tone: "bull" | "bear" | "neu"}, mini: optional {chart: chart id, block: 0}, only for a line, bullet or split chart (other chart types do not fit the tile)}.
 - chartGroups: keep [{id:"pulse",...},{id:"macro",...},{id:"context",...}].
 - charts: {id, group, title, sub, ref: story id, viz: [blocks], cap, derivedNote, source, status}. Block types: line, hbar, diverge, split, bullet (see latest.json). Always try to fill c-egx30, c-flows, c-breadth, c-rates, c-brent and c-res. Add story-specific "context" charts only when a story gives two or more comparable verified numbers.
 - board: {bull: [...], bear: [...]}, each {n, drv, r, c: "High" | "Medium" | "Low", ref: story id}.

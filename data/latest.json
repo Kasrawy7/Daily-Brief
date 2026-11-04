@@ -152,10 +152,6 @@
    "flag": {
     "t": "Foreign buyers return",
     "tone": "bull"
-   },
-   "mini": {
-    "chart": "c-flows",
-    "block": 0
    }
   },
   {
@@ -168,10 +164,6 @@
    "flag": {
     "t": "Gas cut 20%",
     "tone": "neu"
-   },
-   "mini": {
-    "chart": "c-urea",
-    "block": 0
    }
   },
   {
