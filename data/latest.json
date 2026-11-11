@@ -6,15 +6,15 @@
   "preparedFor": "Prepared for Abdelrahman · EGP base",
   "cutoffBadge": "Latest EGX close: Tue 10 Nov",
   "update": {
-   "stage": "Pre-open",
-   "n": 1,
-   "at": "09:21",
-   "ts": "2026-11-11T09:21:39+02:00"
+   "stage": "Close",
+   "n": 2,
+   "at": "15:16",
+   "ts": "2026-11-11T15:16:46+02:00"
   }
  },
  "notes": {
   "cutoff": "Data cut-off: the latest EGX close is Tuesday 10 November (EGX30 52,483.46); Wednesday's session has not opened. Investor flows, breadth and the CBE rate are Monday's, the latest found. Brent is the Asian-trading price at 04:20 GMT on Wednesday. Bullish and bearish tags are directional reads of the news, not trade recommendations.",
-  "unverified": "Not verified and therefore left out: Tuesday's investor flows, which Amwal Al Ghad gives in billions of pounds (about EGP 53 bn of Egyptian net buying), far out of line with normal sessions, so they are not used; Tuesday's breadth and turnover; a second source for Tuesday's index closes (only Amwal Al Ghad was found, though the StockAnalysis closes rise in line); Brent's Tuesday settlement, which Reuters does not state (the chart derives it); US October CPI on a year-on-year basis, not published; the reserves split between foreign currency and gold; Brent against the budget's oil assumption.",
+  "unverified": "Not verified and therefore left out: Tuesday's investor flows, which Amwal Al Ghad gives in billions of pounds (about EGP 53 bn of Egyptian net buying), far out of line with normal sessions, so they are not used; Tuesday's breadth and turnover; a second source for Tuesday's index closes (only Amwal Al Ghad was found, though the StockAnalysis closes rise in line); Brent's Tuesday settlement, which Reuters does not state (the chart derives it); US October CPI on a year-on-year basis, not published; the reserves split between foreign currency and gold; Brent against the budget's oil assumption. Banky's gold page shows 9 November in its header but 11 November in its body; its prices fall about 2% on the day, in line with Tuesday's global drop.",
   "sourcesFoot": "All 21 StockAnalysis pages opened on Wednesday and show Tuesday 10 November as the latest session. Tuesday's index closes come from one source.",
   "previous": "Nothing new today."
  },
@@ -880,6 +880,11 @@
    "StockAnalysis.com, EGX price history pages for the 21 stocks in the EGX table",
    "https://stockanalysis.com/quote/egx/COMI/history/",
    "10 Nov 2026"
+  ],
+  [
+   "Banky, Gold prices today in Egypt",
+   "https://www.bankygate.com/en/gold",
+   "11 Nov 2026"
   ]
  ],
  "stocks": {
@@ -1291,5 +1296,39 @@
   ],
   "note": "Closes and one-day changes are as reported by StockAnalysis.com (delayed EGX data), opened on Wednesday 11 November. The 5-session change compares Tuesday 10 November with Tuesday 3 November and is derived. Tuesday's index closes are from Amwal Al Ghad only; no second source was found. 5-session index changes are not shown because the 3 November closes of the smaller indices were not re-verified today.",
   "source": "StockAnalysis.com price history pages, opened 11 Nov; Amwal Al Ghad, 10 Nov"
+ },
+ "gold": {
+  "asOf": "Wed 11 Nov 2026",
+  "iso": "2026-11-11",
+  "source": "Banky",
+  "url": "https://www.bankygate.com/en/gold",
+  "ounceUsd": 4055.64,
+  "note": "jewellers' indicative sell prices, before workmanship",
+  "items": [
+   {
+    "k": "24K",
+    "unit": "per gram",
+    "v": 7030,
+    "d": -2.02
+   },
+   {
+    "k": "21K",
+    "unit": "per gram (buy 6,110)",
+    "v": 6150,
+    "d": -2.07
+   },
+   {
+    "k": "18K",
+    "unit": "per gram",
+    "v": 5270,
+    "d": -2.14
+   },
+   {
+    "k": "Gold pound",
+    "unit": "8 grams of 21K",
+    "v": 49200,
+    "d": -2.07
+   }
+  ]
  }
 }

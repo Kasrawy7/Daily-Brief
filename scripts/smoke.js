@@ -41,6 +41,7 @@ function serve() {
       loadError: !!document.querySelector(".wrap > p.empty"),
       tops: document.querySelectorAll("#tops li").length,
       kpis: document.querySelectorAll("#kpis .tile").length,
+      gold: document.querySelectorAll("#gold:not([hidden]) .cell").length,
       cards: document.querySelectorAll("#cards .card").length,
       charts: document.querySelectorAll(".chart").length,
       emptyViz: [...document.querySelectorAll(".chart .viz")].filter(v => !v.innerHTML.trim()).length,
@@ -50,7 +51,7 @@ function serve() {
       // anything a reader would see cut off: text wider than its box in the headline tiles,
       // a tile's mini chart taller than its strip, or chart labels running past the chart edge
       clipped: [
-        ...[...document.querySelectorAll("#kpis .tile > *, #strip .cell > *")]
+        ...[...document.querySelectorAll("#kpis .tile > *, #strip .cell > *, #gold .cell > *, #gold .gh > *")]
           .filter(e => e.clientWidth > 0 && e.scrollWidth > e.clientWidth + 1)
           .map(e => "tile text: " + e.textContent.trim().slice(0, 40)),
         ...[...document.querySelectorAll("#kpis .mini")]
@@ -68,6 +69,8 @@ function serve() {
     if (r.overflow > 1) tag(`page scrolls sideways by ${r.overflow}px`);
     if (r.tops < 3) tag(`only ${r.tops} top stories`);
     if (r.kpis !== 6) tag(`${r.kpis} headline tiles, expected 6`);
+    const goldN = ((expected.gold || {}).items || []).length;
+    if (r.gold !== goldN) tag(`${r.gold} gold price cells, data has ${goldN}`);
     if (r.cards !== expected.stories.length) tag(`${r.cards} story cards, data has ${expected.stories.length}`);
     if (r.emptyViz) tag(`${r.emptyViz} chart(s) drew nothing`);
     if (r.idx < 1) tag("no index cards in the EGX section");

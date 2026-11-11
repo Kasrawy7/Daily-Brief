@@ -33,8 +33,16 @@ The EGX trades **Sunday to Thursday**. Sessions close at 14:30 Cairo time. There
 3. If a ticker's page fails or its dates do not line up, drop that ticker for the day and name it in `notes.sourcesFoot`. Never fill gaps from memory.
 4. Index `w` (5-session change) is only allowed when you have a verified close from 5 sessions earlier. Set `wDerived: true` and explain it in `stocks.note`. Otherwise set it to `null`.
 
+## Building the `gold` block (gold prices in EGP)
+
+1. Open https://www.bankygate.com/en/gold every run. Take the sell price per gram for 24K, 21K and 18K, the gold pound and the reported daily % change. Put the 21K buy price in its `unit` text, e.g. "per gram (buy 6,110)".
+2. Backups: Amwal Al Ghad's "Gold prices in Egypt today" article or Arab Finance's gold report. Never mix sources inside one block.
+3. `iso` is the date of the prices. Banky's header date has disagreed with its body; when it does, say so in `notes.unverified`.
+4. A move of more than about 3% in a day should match a move in the global ounce or the pound; check it before publishing.
+
 ## What `scripts/brief.py` enforces
 
 - Each stock's reported 1-day % must match its last two closes within 0.06 points. A mismatch usually means the page was read wrongly, or the dates are misaligned. Re-open the page; do not edit the number to fit.
 - `hist` must have exactly as many values as `histLabels`, and the last value must equal `px`.
 - 1-day moves of 10% or more are printed as "Check:" lines. Confirm each one in a news source before publishing. HDBK's +10.26% on 25 Oct was real.
+- `gold` must be present and dated the edition day or the day before, with positive prices and its url in `sources`; otherwise the edition is not published.

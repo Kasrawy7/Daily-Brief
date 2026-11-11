@@ -218,6 +218,24 @@ def validate(d):
         if c.get("status") != "unverified" and c.get("viz") and not c.get("source"):
             err.append(f"chart {c.get('id')}: missing source")
 
+    # gold prices in EGP (shown under the headline tiles); optional so older archives still validate
+    g = d.get("gold")
+    if g is not None:
+        for f in ("asOf", "iso", "source", "url", "items"):
+            if not g.get(f):
+                err.append(f"gold.{f} missing")
+        if g.get("iso") and not ISO.match(g["iso"]):
+            err.append("gold.iso must be YYYY-MM-DD")
+        if g.get("url") and g["url"] not in src_urls:
+            err.append("gold.url is not in sources")
+        for it in g.get("items", []):
+            if not it.get("k") or not num(it.get("v")) or it["v"] <= 0:
+                err.append(f"gold item {it.get('k')}: needs k and a positive number v")
+            if it.get("d") is not None and not num(it["d"]):
+                err.append(f"gold item {it.get('k')}: d must be a number or null")
+        if g.get("ounceUsd") is not None and not num(g["ounceUsd"]):
+            err.append("gold.ounceUsd must be a number or null")
+
     # house-style: at most one quote per story, each under 15 words
     for st in d["stories"]:
         quotes = [q for f in STORY_TEXT for q in QUOTE.findall(st.get(f, ""))]
@@ -318,6 +336,16 @@ def publish(newp, any_date=False):
         h = q.get("hist") or []
         if len(h) >= 2 and all(num(v) for v in h) and h[0]:
             q["w"] = round((h[-1] / h[0] - 1) * 100, 2)
+    # Gold prices must be refreshed every day: present, and dated today or yesterday (Cairo).
+    g = new.get("gold") or {}
+    gi = g.get("iso", "")
+    if not ISO.match(gi):
+        print("Edition NOT published: gold prices in EGP are missing (gold.iso). See ROUTINE.md, gold block.")
+        sys.exit(1)
+    age = (datetime.date.fromisoformat(new["edition"]["iso"]) - datetime.date.fromisoformat(gi)).days
+    if age < 0 or age > 1:
+        print(f"Edition NOT published: gold prices are dated {gi}; refresh them (today or yesterday only).")
+        sys.exit(1)
     errs = validate(new)
     if errs:
         print("Edition NOT published:\n  " + "\n  ".join(errs))

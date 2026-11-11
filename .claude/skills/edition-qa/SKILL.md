@@ -31,6 +31,8 @@ This serves the repository locally and opens it in headless Chromium at desktop 
 - a masthead date that does not match `edition.date`.
 - text cut off or overflowing in a headline tile, a tile mini chart taller than its strip, or a chart label running past the chart edge.
 
+The smoke test also requires one gold cell per `gold.items` entry and checks the gold row for cut-off text.
+
 A hero KPI's `mini` may point only at a `line`, `bullet` or `split` chart; `brief.py` rejects any other type because it does not fit the tile.
 
 If it fails, fix the data in `/tmp/new.json` and publish again. Never change `index.html` to make a check pass.
