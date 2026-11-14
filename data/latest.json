@@ -1,24 +1,33 @@
 {
  "edition": {
-  "date": "Friday, 13 November 2026",
-  "iso": "2026-11-13",
+  "date": "Saturday, 14 November 2026",
+  "iso": "2026-11-14",
   "place": "Cairo",
   "preparedFor": "Prepared for Abdelrahman · EGP base",
   "cutoffBadge": "Latest EGX close: Thu 12 Nov",
   "update": {
    "stage": "Weekend",
    "n": 1,
-   "at": "09:22",
-   "ts": "2026-11-13T09:22:07+02:00"
+   "at": "09:20",
+   "ts": "2026-11-14T09:20:50+02:00"
   }
  },
  "notes": {
-  "cutoff": "Data cut-off: Friday has no EGX session, so the latest close is Thursday 12 November (EGX30 52,023.37). Brent is Thursday's settlement and Friday's 02:42 GMT price. The pound is the banks' 1:36 pm quote on Thursday, as no CBE closing rate was found. Gold prices in EGP are Amwal Al Ghad's Thursday afternoon prices. Bullish and bearish tags are directional reads of the news, not trade recommendations.",
-  "unverified": "Not verified and therefore left out: Thursday's investor flows, which Amwal Al Ghad gives in billions of pounds (about EGP 18.5 bn of foreign net buying), far out of line with normal sessions, so the flows chart is dropped; Thursday's breadth and turnover; a second source for Thursday's index closes (only Amwal Al Ghad was found, though the StockAnalysis closes move in line); the CBE's Thursday rate; Brent against the budget's oil assumption; the reserves split between foreign currency and gold. Gold in EGP: Amwal Al Ghad's Thursday article stamps its prices '16:14 on Monday', which conflicts with its headline; its prices (21K at EGP 5,975) are below Banky's Thursday morning prices (21K at EGP 6,115), in line with world gold's fall that day, so the brief uses Amwal's later prices and shows no daily change.",
-  "sourcesFoot": "All 21 StockAnalysis pages opened on Friday and show Thursday 12 November as the latest session; Palm Hills shows no change and is entered as 0. Thursday's index closes come from one source.",
+  "cutoff": "Data cut-off: Saturday has no EGX session, so the latest close is Thursday 12 November (EGX30 52,023.37). Brent, WTI and gold are Friday's settlements. Gold prices in EGP are Banky's Friday prices. Bullish and bearish tags are directional reads of the news, not trade recommendations.",
+  "unverified": "Not verified and therefore left out: Thursday's investor flows, which Amwal Al Ghad gives in billions of pounds, so the flows chart is dropped; Thursday's breadth and turnover; a second source for Thursday's index closes (only Amwal Al Ghad was found; the StockAnalysis closes move in line); the CBE's closing rate; Brent against the budget's oil assumption; the reserves split between foreign currency and gold. Banky's gold page shows 12 November in its header but 13 November in its body, and lists the ounce in pounds although its metadata says dollars, so the gold row shows no ounce price. Investing.com says spot gold had its worst week since March but futures their worst since early June.",
+  "sourcesFoot": "EnterpriseAM's 14 November page returned 404 (no Saturday edition). All 21 StockAnalysis pages opened on Saturday and still show Thursday 12 November as the latest session; Palm Hills shows no change on Thursday and is entered as 0.",
   "previous": "Nothing new today."
  },
  "previous": [
+  {
+   "date": "Friday, 13 November 2026",
+   "items": [
+    "Brent jumps 3.3% to $95.82 on Thursday after Houthi strikes on Saudi oil sites and Iran's attack on a US radar in Bahrain → renewed attacks on Gulf energy put oil back near $96, a cost for Egypt's import bill.",
+    "Gold falls to a 13-month low and is down 3.5% this week; 21K gold in Egypt drops to about EGP 5,975 a gram → markets fully price a December Fed hike, which lifts the dollar.",
+    "EGX30 falls 0.91% to 52,023 on Thursday, while Housing and Development Bank jumps 5.79% → blue chips take profits after a strong week; banks with earnings news still rise.",
+    "Suez Canal Bank's nine-month profit rises 12.9% to EGP 5.7 bn as interest income grows about 43% → high rates keep lifting bank income."
+   ]
+  },
   {
    "date": "Thursday, 12 November 2026",
    "items": [
@@ -54,50 +63,41 @@
     "Evergreen's Ever Eon crosses the Suez Canal on Sunday, the line's first transit in nearly three years → the return of another major carrier supports canal revenue and dollar inflows.",
     "Brent falls 1.5% to $96.91 in Asia on Monday as Trump says new strikes on Iran are very unlikely while talks progress → a US land blockade is now in effect, but de-escalation hopes outweigh new shipping attacks."
    ]
-  },
-  {
-   "date": "Sunday, 8 November 2026",
-   "items": [
-    "Egypt's annual headline inflation eases to 12% in October from 12.8% in September, with monthly inflation at 0.6% → slower inflation after the CBE's 100 bp hike widens the real rate and supports the case for holding rates.",
-    "Goldman Sachs says the pound is more than 30% undervalued and sees it at 50 per dollar in 12 months → a top bank's buy call can draw carry-trade money back into Egyptian debt.",
-    "The cabinet raises export rebates by an average of 35% and covers up to half of freight costs to new markets → the EGP 48 bn programme aims to lift exports and bring in more dollars.",
-    "The US sets up a task force to cut Iran's land supply routes as more blasts hit Qeshm and two tankers strike mines near Hormuz → the war widens even as Qatar-mediated talks continue, keeping oil and shipping risk high."
-   ]
   }
  ],
  "top": [
   {
-   "what": "Brent jumps 3.3% to $95.82 on Thursday after Houthi strikes on Saudi oil sites and Iran's attack on a US radar in Bahrain",
-   "why": "renewed attacks on Gulf energy put oil back near $96, a cost for Egypt's import bill.",
+   "what": "Trump says the US no longer needs a deal with Iran and tells Vance to drop the talks, while the blockade stays",
+   "why": "the end of diplomacy keeps Gulf energy at risk; oil ends the week at $96.13 and European gas jumps 12%.",
    "ref": "s-iran"
   },
   {
-   "what": "Gold falls to a 13-month low and is down 3.5% this week; 21K gold in Egypt drops to about EGP 5,975 a gram",
-   "why": "markets fully price a December Fed hike, which lifts the dollar.",
+   "what": "European gas surges 12% in a week to €96.18/MWh, and Goldman sees €150 in early 2027 if Gulf LNG stays disrupted",
+   "why": "costlier LNG raises Egypt's energy import bill and costs for gas-heavy industry.",
+   "ref": "s-gas"
+  },
+  {
+   "what": "Gold has its worst week since March, down 4.7%, and 21K gold in Egypt falls 2.7% to EGP 5,950 a gram",
+   "why": "markets see a December Fed hike as certain, which lifts the dollar.",
    "ref": "s-gold"
   },
   {
-   "what": "EGX30 falls 0.91% to 52,023 on Thursday, while Housing and Development Bank jumps 5.79%",
-   "why": "blue chips take profits after a strong week; banks with earnings news still rise.",
+   "what": "EGX30 ends the week at 52,023, up about 1.7% (derived), led by banks",
+   "why": "QNB Egypt rises four sessions in a row and Housing and Development Bank jumps 5.79% on Thursday.",
    "ref": "s-egx"
-  },
-  {
-   "what": "Suez Canal Bank's nine-month profit rises 12.9% to EGP 5.7 bn as interest income grows about 43%",
-   "why": "high rates keep lifting bank income.",
-   "ref": "s-scb"
   }
  ],
  "kpis": [
   {
    "hero": true,
-   "k": "EGX30 close",
+   "k": "EGX30, week's close",
    "v": "52,023.37",
-   "d": "-0.91% on Thursday",
-   "c": "dn",
+   "d": "-0.91% Thursday; about +1.7% on the week (derived)",
+   "c": "up",
    "m": "Thu 12 Nov · Amwal Al Ghad",
    "flag": {
-    "t": "Profit-taking",
-    "tone": "bear"
+    "t": "Weekly gain",
+    "tone": "bull"
    },
    "mini": {
     "chart": "c-egx30",
@@ -106,13 +106,13 @@
   },
   {
    "hero": true,
-   "k": "Brent, Thursday settle",
-   "v": "$95.82",
-   "d": "+3.3%; Friday $95.41, week -2.4%",
+   "k": "Brent, Friday settle",
+   "v": "$96.13",
+   "d": "+0.3%; -2.2% on the week",
    "c": "up",
-   "m": "12–13 Nov · Reuters via Investing.com",
+   "m": "Fri 13 Nov · Reuters via Investing.com",
    "flag": {
-    "t": "Gulf attacks",
+    "t": "Talks collapse",
     "tone": "bear"
    },
    "mini": {
@@ -122,54 +122,50 @@
   },
   {
    "hero": true,
-   "k": "Spot gold",
-   "v": "$3,915",
-   "d": "+1% on Friday; -3.5% this week",
+   "k": "European gas (TTF)",
+   "v": "€96.18/MWh",
+   "d": "+4.2% Friday; +12% on the week",
+   "c": "up",
+   "m": "13 Nov · Investing.com",
+   "flag": {
+    "t": "LNG risk",
+    "tone": "bear"
+   }
+  },
+  {
+   "hero": true,
+   "k": "Spot gold, Friday settle",
+   "v": "$3,884.77",
+   "d": "+0.2%; -4.7% on the week",
    "c": "dn",
    "m": "Fri 13 Nov · Investing.com",
    "flag": {
-    "t": "13-month low",
+    "t": "Worst week since March",
     "tone": "neu"
    }
   },
   {
    "hero": true,
-   "k": "Suez Canal Bank net profit",
-   "v": "EGP 5.70 bn",
-   "d": "9M 2026, +12.9% y/y",
+   "k": "Fed hike odds, 9 December",
+   "v": "Certain",
+   "d": "about 90% for 25 bp, 10% for 50 bp",
    "c": "up",
-   "m": "12 Nov · Arab Finance",
+   "m": "13 Nov · Investing.com (CME FedWatch)",
    "flag": {
-    "t": "Earnings",
-    "tone": "bull"
-   },
-   "mini": {
-    "chart": "c-scb",
-    "block": 0
+    "t": "Dollar up 1.1% on week",
+    "tone": "bear"
    }
   },
   {
    "hero": true,
-   "k": "USD/EGP, NBE (sell)",
-   "v": "53.46",
-   "d": "buy 53.36; Thursday 1:36 pm",
-   "c": "up",
-   "m": "Thu 12 Nov · Arab Finance",
-   "flag": {
-    "t": "Pound firm",
-    "tone": "bull"
-   }
-  },
-  {
-   "hero": true,
-   "k": "Civil aviation revenue",
-   "v": "$4.8 bn",
-   "d": "FY2025/26, minister to President Sisi",
+   "k": "Oil wells planned with Halliburton",
+   "v": "50",
+   "d": "18-month EGPC programme, fracking",
    "c": "",
    "m": "12 Nov · Amwal Al Ghad",
    "flag": {
-    "t": "Tourism link",
-    "tone": "neu"
+    "t": "Output push",
+    "tone": "bull"
    }
   },
   {
@@ -190,20 +186,20 @@
    "k": "Market capitalisation",
    "v": "EGP 4.17 tn",
    "d": "at Thursday's close",
-   "c": "dn",
+   "c": "",
    "m": "Thu 12 Nov · Amwal Al Ghad"
   },
   {
-   "k": "WTI, Thursday settle",
-   "v": "$88.74",
-   "d": "+2.6%; week -2.5%",
+   "k": "WTI, Friday settle",
+   "v": "$88.92",
+   "d": "+0.2%; -2.1% on the week",
    "c": "up",
-   "m": "12–13 Nov · Reuters via Investing.com"
+   "m": "Fri 13 Nov · Reuters via Investing.com"
   },
   {
    "k": "Urban inflation, October",
    "v": "12.7%",
-   "d": "from 13.9%; lowest since January",
+   "d": "from 13.9%; core 13.1%",
    "c": "dn",
    "m": "13 Nov · EnterpriseAM"
   },
@@ -231,9 +227,9 @@
   {
    "k": "Fed funds target",
    "v": "3.75–4.00%",
-   "d": "last raised 16 Sept; December hike fully priced",
+   "d": "last raised 16 Sept",
    "c": "",
-   "m": "11–13 Nov · EnterpriseAM; Investing.com"
+   "m": "11 Nov · EnterpriseAM"
   }
  ],
  "chartGroups": [
@@ -257,79 +253,79 @@
   {
    "id": "c-egx30",
    "group": "pulse",
-   "title": "EGX30: Thursday against Wednesday",
-   "sub": "Index points at close",
+   "title": "EGX30: this week's close against last week's",
+   "sub": "Index points at Thursday's close",
    "ref": "s-egx",
    "viz": [
     {
      "type": "bullet",
      "v": 52023.37,
      "display": "52,023.37",
-     "ref": 52500.47,
-     "refLabel": "Wed 11 Nov 52,500.47",
-     "tone": "bear"
+     "ref": 51152.73,
+     "refLabel": "Thu 5 Nov 51,152.73",
+     "tone": "bull"
     }
    ],
-   "cap": "Reported closes this week: 50,812.07 (Sun, -0.67%), 51,414.93 (Mon, +1.19%), 52,483.46 (Tue, +2.08%), 52,500.47 (Wed, +0.03%) and 52,023.37 (Thu, -0.91%).",
-   "source": "Amwal Al Ghad, 8–12 Nov"
+   "cap": "The index gains about 1.7% on the week (derived). Daily closes: 50,812.07 (Sun), 51,414.93 (Mon), 52,483.46 (Tue), 52,500.47 (Wed), 52,023.37 (Thu).",
+   "derivedNote": true,
+   "source": "Amwal Al Ghad, 5–12 Nov"
   },
   {
-   "id": "c-week",
+   "id": "c-energy",
    "group": "pulse",
-   "title": "Oil's weekly change: this week against last",
-   "sub": "Per cent",
-   "ref": "s-iran",
+   "title": "Energy and gold: this week's change",
+   "sub": "Per cent, week to Friday 13 Nov",
+   "ref": "s-gas",
    "viz": [
     {
      "type": "diverge",
-     "negLabel": "Fall",
-     "posLabel": "Rise",
+     "negLabel": "Fell",
+     "posLabel": "Rose",
      "items": [
       {
-       "l": "Brent, previous week",
-       "v": -16,
-       "display": "-16%"
+       "l": "Spot gold",
+       "v": -4.7,
+       "display": "-4.7%"
       },
       {
-       "l": "WTI, previous week",
-       "v": -13,
-       "display": "-13%"
+       "l": "Brent",
+       "v": -2.2,
+       "display": "-2.2%"
       },
       {
-       "l": "Brent, this week so far",
-       "v": -2.4,
-       "display": "-2.4%"
+       "l": "WTI",
+       "v": -2.1,
+       "display": "-2.1%"
       },
       {
-       "l": "WTI, this week so far",
-       "v": -2.5,
-       "display": "-2.5%"
+       "l": "European gas (TTF)",
+       "v": 12,
+       "display": "+12%"
       }
      ]
     }
    ],
-   "cap": "Weekly moves as reported by Reuters on Friday morning; the slide slows as Gulf attacks resume.",
-   "source": "Reuters via Investing.com, 13 Nov"
+   "cap": "Gas jumps as US-Iran diplomacy collapses, while gold falls on Fed hike bets.",
+   "source": "Investing.com and Reuters via Investing.com, 13 Nov"
   },
   {
-   "id": "c-scb",
-   "group": "pulse",
-   "title": "Suez Canal Bank, first nine months: 2026 against 2025",
-   "sub": "EGP bn",
-   "ref": "s-scb",
+   "id": "c-ttf",
+   "group": "macro",
+   "title": "European gas: today against Goldman's stress case",
+   "sub": "Euros per megawatt-hour",
+   "ref": "s-gas",
    "viz": [
     {
      "type": "bullet",
-     "v": 5.7,
-     "display": "EGP 5.70 bn",
-     "ref": 5.05,
-     "refLabel": "9M 2025 EGP 5.05 bn",
-     "tone": "bull"
+     "v": 96.18,
+     "display": "€96.18",
+     "ref": 150,
+     "refLabel": "Goldman Q1 2027 case €150",
+     "tone": "bear"
     }
    ],
-   "cap": "Net profit rises 12.86%. Net interest income rises to EGP 8.793 bn from EGP 6.152 bn, about 43% (derived).",
-   "derivedNote": true,
-   "source": "Arab Finance, 12 Nov"
+   "cap": "Goldman's €150 case assumes Gulf LNG exports at 25-30% of pre-war levels and a colder winter; with exports at 35% through 2027 it sees an average of €104.",
+   "source": "Investing.com, 13 Nov"
   },
   {
    "id": "c-rates",
@@ -376,29 +372,29 @@
      ]
     }
    ],
-   "cap": "The deposit rate sits about 7.3 points above urban inflation (derived). Markets fully price a Fed hike in December.",
+   "cap": "The deposit rate sits about 7.3 points above urban inflation (derived). Traders see a Fed hike on 9 December as certain.",
    "derivedNote": true,
    "source": "El Balad, 30 Oct; Finimize; EnterpriseAM, 11–13 Nov; Investing.com, 13 Nov"
   },
   {
    "id": "c-brent",
    "group": "macro",
-   "title": "Brent: Thursday's settlement against Wednesday's",
+   "title": "Brent: Friday's settlement against Thursday's",
    "sub": "US dollars per barrel",
    "ref": "s-iran",
    "viz": [
     {
      "type": "bullet",
-     "v": 95.82,
-     "display": "$95.82",
-     "ref": 92.76,
-     "refLabel": "Wed about $92.76 (derived)",
+     "v": 96.13,
+     "display": "$96.13",
+     "ref": 95.84,
+     "refLabel": "Thu about $95.84 (derived)",
      "tone": "bear"
     }
    ],
-   "cap": "Wednesday's level is derived from Thursday's settlement less the reported $3.06 gain. The budget's oil assumption is not re-verified today.",
+   "cap": "Thursday's level is derived from Friday's settlement and its 0.3% gain. The budget's oil assumption is not re-verified today.",
    "derivedNote": true,
-   "source": "Reuters via Investing.com, 12 Nov",
+   "source": "Reuters via Investing.com, 13 Nov",
    "status": "unverified"
   },
   {
@@ -426,51 +422,44 @@
    {
     "n": "Housing and Development Bank",
     "drv": "Price strength",
-    "r": "The stock jumps 5.79% to EGP 108.99 on Thursday; no company news is found.",
+    "r": "The stock rises 5.79% on Thursday and about 9% on the week (derived); no company news is found.",
     "c": "Low",
     "ref": "s-egx"
-   },
-   {
-    "n": "Suez Canal Bank",
-    "drv": "Profit +12.9%",
-    "r": "Nine-month profit reaches EGP 5.7 bn as net interest income rises about 43% (derived).",
-    "c": "Medium",
-    "ref": "s-scb"
    },
    {
     "n": "QNB Egypt",
     "drv": "Momentum",
-    "r": "The stock rises 1.34%, its fourth straight gain; no company news is found.",
+    "r": "Four straight gains take the stock to EGP 58.25; no company news is found.",
     "c": "Low",
     "ref": "s-egx"
    },
    {
-    "n": "Tourism and airports (sectors)",
-    "drv": "Aviation revenue",
-    "r": "Civil aviation earns $4.8 bn and new terminals add capacity.",
+    "n": "Oilfield services and energy (sectors)",
+    "drv": "50-well programme",
+    "r": "EGPC and Halliburton plan 50 wells over 18 months to lift local output.",
     "c": "Low",
-    "ref": "s-aviation"
+    "ref": "s-wells"
    }
   ],
   "bear": [
    {
+    "n": "Abu Qir Fertilizers and MOPCO",
+    "drv": "Costlier LNG",
+    "r": "A 12% weekly jump in gas prices points to higher costs for gas-based fertiliser makers.",
+    "c": "Medium",
+    "ref": "s-gas"
+   },
+   {
     "n": "Importers and energy users (sectors)",
-    "drv": "Brent back near $96",
-    "r": "Attacks on Saudi oil sites push oil up 3.3% in a day.",
+    "drv": "Oil near $96",
+    "r": "The end of US-Iran talks keeps oil high and the Gulf at risk.",
     "c": "Medium",
     "ref": "s-iran"
    },
    {
-    "n": "Talaat Moustafa Group",
-    "drv": "Profit-taking",
-    "r": "The stock falls 2.04% on Thursday; no company news is found.",
-    "c": "Low",
-    "ref": "s-egx"
-   },
-   {
     "n": "Juhayna Food Industries",
     "drv": "Profit-taking",
-    "r": "The stock falls 2.31%, its second straight loss; no company news is found.",
+    "r": "The stock falls 2.31% on Thursday, its second straight loss; no company news is found.",
     "c": "Low",
     "ref": "s-egx"
    }
@@ -478,34 +467,34 @@
  },
  "chains": [
   {
-   "t": "Gulf attacks to Egypt's fuel bill",
+   "t": "End of US-Iran talks to Egypt's energy bill",
    "steps": [
-    "Houthis strike Saudi pipeline and Yanbu sites",
-    "Iran hits a US radar in Bahrain",
-    "Brent jumps 3.3% to $95.82",
-    "Egypt pays more for fuel imports"
+    "Trump says no deal is needed",
+    "the blockade and attacks on Gulf energy continue",
+    "European gas jumps 12% and oil holds near $96",
+    "Egypt pays more for LNG and fuel"
    ],
-   "so": "Bearish for importers and energy users while attacks continue."
+   "so": "Bearish for fertiliser makers and energy users; keeps pressure on the pound."
   },
   {
-   "t": "Fed hike bets to gold in Egypt",
+   "t": "Fed hike to gold in Egypt",
    "steps": [
-    "US inflation runs hot",
-    "markets fully price a December Fed hike",
-    "the dollar strengthens and gold hits a 13-month low",
-    "21K gold in Egypt falls to about EGP 5,975 a gram"
+    "US data run hot",
+    "a December Fed hike is seen as certain",
+    "the dollar rises 1.1% on the week",
+    "21K gold in Egypt falls 2.7% to EGP 5,950"
    ],
-   "so": "Cheaper gold for local buyers; a stronger dollar is a risk for the pound."
+   "so": "Cheaper gold for local buyers; a firmer dollar is a risk for EM currencies."
   },
   {
-   "t": "High rates to bank profits",
+   "t": "Fracking to lower imports",
    "steps": [
-    "CBE rates stay at 20% to 21%",
-    "banks earn more on loans and bills",
-    "Suez Canal Bank's interest income rises about 43% (derived)",
-    "bank profits keep growing"
+    "EGPC and Halliburton plan 50 wells",
+    "fracking unlocks unconventional reserves",
+    "local oil and gas output rises",
+    "Egypt imports less fuel"
    ],
-   "so": "Bullish for banks while rates stay high."
+   "so": "A slow-burn positive for the trade balance and the pound."
   }
  ],
  "categories": [
@@ -524,95 +513,95 @@
    "cat": "Middle East",
    "imp": "Bearish",
    "key": {
-    "v": "$95.82",
-    "l": "Brent settlement, Thu 12 Nov, +3.3%"
+    "v": "$96.13",
+    "l": "Brent settlement, Fri 13 Nov"
    },
-   "h": "Oil jumps 3.3% as Houthis hit Saudi sites and Iran strikes a US radar in Bahrain",
+   "h": "Trump drops the push for an Iran deal and keeps the blockade",
    "src": "Reuters via Investing.com; Al Jazeera",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets-5020171",
-   "date": "12–13 Nov 2026",
-   "what": "Brent settles $3.06 higher at $95.82 and WTI $2.21 higher at $88.74 on Thursday. Yemen's Houthis claim strikes on an East-West pipeline pumping station, a Yanbu oil facility and an Aramco building in Riyadh, and Iran's military says four tankers are hit in Hormuz. The IRGC says it targets a US early-warning radar in Bahrain. On Friday Brent is at $95.41, set for a 2.4% weekly fall, after Trump says a deal with Iran is not needed to end the war and the blockade stays.",
-   "why": "\"Investors are growing weary from hearing the same song on peace prospects,\" says Matador Economics' Timothy Snyder.",
-   "aff": "Oil, Gulf shipping, the Red Sea and regional risk premiums.",
-   "eg": "Oil near $96 raises Egypt's fuel import bill and pressure on the pound.",
-   "egx": "Bearish for importers and energy users; mildly bullish for oil-linked names.",
-   "names": "Importers (bearish); AMOC (watch)."
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-hold-gains-as-trump-sidelines-vance-from-iran-diplomacy-5023781",
+   "date": "13 Nov 2026",
+   "what": "Trump says Washington no longer needs a deal with Iran and tells Vice President Vance to focus on domestic issues instead of the talks. Iran's top security official rules out removing its enriched nuclear material, and attacks on Saudi energy sites and tankers continue. Qatar and Turkiye sign a defence agreement. Brent settles 0.3% higher at $96.13 on Friday and WTI at $88.92, but both fall about 2% on the week.",
+   "why": "Analysts read the move as the US relying on the blockade and sanctions rather than new strikes. \"We remain cautious on this prospect given the countless head-fakes,\" says Macquarie's Walt Chancellor.",
+   "aff": "Oil, Gulf LNG, shipping and regional risk premiums.",
+   "eg": "Without a deal, Egypt faces higher energy import costs and a slower Suez recovery.",
+   "egx": "Bearish for importers, tourism and logistics.",
+   "names": "Importers, tourism and logistics (sectors)."
+  },
+  {
+   "id": "s-gas",
+   "cat": "Commodities",
+   "imp": "Bearish",
+   "key": {
+    "v": "+12%",
+    "l": "European gas (TTF), weekly rise"
+   },
+   "h": "European gas jumps 12% in a week; Goldman sees €150 if Gulf LNG stays cut",
+   "src": "Investing.com",
+   "url": "https://www.investing.com/news/commodities-news/european-gas-logs-12-weekly-surge-as-usiran-diplomatic-hopes-collapse-5024311",
+   "date": "13 Nov 2026",
+   "what": "The Dutch TTF benchmark rises 4.2% on Friday to €96.18/MWh, up 12% on the week, as US-Iran diplomacy collapses; EU storage is 71% full. Goldman Sachs sees TTF near €150 in the first quarter of 2027 if Persian Gulf LNG exports average 25-30% of pre-war levels and the winter is colder than normal.",
+   "why": "Traders fear a wider war could shut LNG routes through Hormuz.",
+   "aff": "Global LNG prices and import-dependent buyers such as Egypt.",
+   "eg": "Higher LNG prices raise the cost of any gas Egypt imports and of gas-heavy industry.",
+   "egx": "Bearish for fertiliser, steel and other gas-heavy industry.",
+   "names": "Abu Qir Fertilizers, MOPCO (bearish)."
   },
   {
    "id": "s-gold",
    "cat": "Commodities",
    "imp": "Neutral",
    "key": {
-    "v": "-3.5%",
-    "l": "spot gold's fall so far this week"
+    "v": "-4.7%",
+    "l": "spot gold, week to Friday 13 Nov"
    },
-   "h": "Gold hits a 13-month low as markets price a December Fed hike",
-   "src": "Investing.com; Amwal Al Ghad",
+   "h": "Gold has its worst week since March; 21K falls to EGP 5,950 in Egypt",
+   "src": "Investing.com; Banky",
    "url": "https://www.investing.com/news/commodities-news/gold-languishes-near-13month-low-as-96-oil-fuels-bets-on-bigger-fed-hikes-5023860",
-   "date": "12–13 Nov 2026",
-   "what": "Spot gold rebounds 1% to $3,915 on Friday morning after a 13-month low on Thursday, and is down 3.5% this week. Markets fully price a quarter-point Fed hike in December and some weigh a half-point move; the dollar index is at 103.21. In Egypt, Amwal Al Ghad puts 21K gold at EGP 5,975 a gram and the gold pound at EGP 47,800 on Thursday afternoon, with the ounce at $3,890.",
-   "why": "Hot US inflation and higher oil push up rate expectations and the dollar.",
-   "aff": "Local gold prices, jewellers and household savings.",
-   "eg": "Lower gold prices cut the cost of a common savings asset for Egyptians.",
+   "date": "13 Nov 2026",
+   "what": "Spot gold settles at $3,884.77 on Friday, down 4.7% on the week, as traders see a December Fed hike as certain: about 90% odds for a quarter point and 10% for a half point. The dollar index rises 1.1% on the week. In Egypt, Banky puts 21K gold at EGP 5,950 a gram and the gold pound at EGP 47,600, both down 2.7% on the day.",
+   "why": "Strong US jobs data, hot inflation and a hawkish Waller push up rate expectations.",
+   "aff": "Local gold prices and household savings.",
+   "eg": "Cheaper gold lowers the cost of a popular savings asset in Egypt.",
    "egx": "Neutral for the EGX; a stronger dollar is a risk for the pound.",
-   "names": "Gold traders and jewellers (sector)."
+   "names": "Jewellers and gold traders (sector)."
   },
   {
    "id": "s-egx",
    "cat": "EGX Market",
-   "imp": "Neutral",
+   "imp": "Bullish",
    "key": {
-    "v": "52,023",
-    "l": "EGX30 close, Thu 12 Nov, -0.91%"
+    "v": "+1.7%",
+    "l": "EGX30 weekly gain to Thu 12 Nov (derived)"
    },
-   "h": "EGX30 slips 0.91% to 52,023 as blue chips take profits",
-   "src": "Amwal Al Ghad; StockAnalysis.com; Arab Finance",
+   "h": "EGX30 ends the week up about 1.7% as banks lead",
+   "src": "Amwal Al Ghad; StockAnalysis.com",
    "url": "https://en.amwalalghad.com/egyptian-stocks-close-week-mixed-12-nov-2026/",
-   "date": "12 Nov 2026",
-   "what": "The EGX30 falls 0.91% to 52,023.37 on Thursday while the EGX70 rises 0.43% and the EGX100 0.14%; market cap is about EGP 4.17 tn. Housing and Development Bank (+5.79%) and QNB Egypt (+1.34%) gain, while Juhayna (-2.31%), Talaat Moustafa (-2.04%) and Telecom Egypt (-1.49%) fall. The dollar eases to EGP 53.46 at NBE.",
-   "why": "Investors lock in gains after the index rose about 3.3% from Sunday's close to Wednesday (derived).",
-   "aff": "Blue chips, banks and small caps.",
-   "eg": "A firm pound and steady local buying keep the market near its highs.",
-   "egx": "Neutral; banks stay in demand.",
-   "names": "Housing and Development Bank, QNB Egypt (up); Juhayna, Talaat Moustafa, Telecom Egypt (down)."
+   "date": "5–12 Nov 2026",
+   "what": "The EGX30 closes the week at 52,023.37 on Thursday, down 0.91% on the day but about 1.7% above the previous Thursday (derived). The EGX70 ends at 18,527.43 and market cap at about EGP 4.17 tn. In the brief's table, Housing and Development Bank gains about 9.0% and QNB Egypt about 9.4% over five sessions (derived), while Abu Qir Fertilizers loses about 4.3%.",
+   "why": "Banks lead the gains; the sources give no single cause.",
+   "aff": "Banks, fertilisers and blue chips.",
+   "eg": "The rally rests on local buying and a firmer pound.",
+   "egx": "Bullish for banks; bearish for gas-heavy industry.",
+   "names": "Housing and Development Bank, QNB Egypt (up); Abu Qir Fertilizers (down)."
   },
   {
-   "id": "s-scb",
+   "id": "s-wells",
    "cat": "Sectors & Companies",
    "imp": "Bullish",
    "key": {
-    "v": "+12.9%",
-    "l": "Suez Canal Bank's 9M 2026 net profit growth"
+    "v": "50",
+    "l": "oil wells in the EGPC-Halliburton programme"
    },
-   "h": "Suez Canal Bank's nine-month profit rises 12.9% to EGP 5.7 bn",
-   "src": "Arab Finance",
-   "url": "https://www.arabfinance.com/en/news/newdetails/suez-canal-bank-net-profit-rises-in-9-months-2026",
+   "h": "EGPC and Halliburton plan a 50-well fracking programme over 18 months",
+   "src": "Amwal Al Ghad; Arab Finance",
+   "url": "https://en.amwalalghad.com/egypt-halliburton-agree-to-prepare-50-well-drilling-programme/",
    "date": "12 Nov 2026",
-   "what": "Suez Canal Bank's net profit rises 12.86% to EGP 5.7 bn in January to September 2026 from EGP 5.05 bn. Net interest income rises to EGP 8.793 bn from EGP 6.152 bn.",
-   "why": "Arab Finance gives no breakdown; interest income grows much faster than profit.",
-   "aff": "Bank valuations and dividends.",
-   "eg": "Banks keep benefiting from the CBE's high-rate stance.",
-   "egx": "Bullish for Suez Canal Bank and mid-sized banks.",
-   "names": "Suez Canal Bank (bullish)."
-  },
-  {
-   "id": "s-aviation",
-   "cat": "Egypt Economy",
-   "imp": "Bullish",
-   "key": {
-    "v": "$4.8 bn",
-    "l": "civil aviation revenue, FY2025/26"
-   },
-   "h": "Civil aviation earns $4.8 bn in FY2025/26 as airports expand",
-   "src": "Amwal Al Ghad",
-   "url": "https://en.amwalalghad.com/egypts-civil-aviation-sector-generates-4-8-bln-in-2025-26-minister/",
-   "date": "12 Nov 2026",
-   "what": "Civil Aviation Minister Sameh Elhefny tells President Sisi the sector generates $4.8 bn in FY2025/26. New airports at Alamein, Sphinx and the New Capital are expected to add about 12 mn passengers a year, and the first phase of Cairo Airport's Terminal 4 lifts capacity to 70 mn.",
-   "why": "The minister briefs the president on revenue and new airport capacity.",
-   "aff": "Airlines, airports, hotels and FX income.",
-   "eg": "More airport capacity supports the government's tourism targets.",
-   "egx": "Mildly bullish for tourism and hospitality names.",
-   "names": "Tourism and hospitality (sector)."
+   "what": "EGPC and Halliburton sign an agreement to prepare an 18-month programme of 50 oil wells using horizontal drilling and multi-stage fracking, witnessed by Petroleum Minister Karim Badawi. Separately, Abu Qir Fertilizers signs an EGP 76.17 mn deal with the Arab Organization for Industrialization for about 3 MW of solar plants, due within 12 months.",
+   "why": "The state wants more local output to cut costly fuel imports.",
+   "aff": "Oil output, energy imports and industrial energy costs.",
+   "eg": "More local production would ease the import bill over time.",
+   "egx": "Mildly bullish for energy-linked names; small positive for Abu Qir's energy costs.",
+   "names": "Abu Qir Fertilizers; energy services (sector)."
   }
  ],
  "week": [
@@ -625,64 +614,39 @@
  ],
  "sources": [
   [
-   "Investing.com (Reuters), Oil settles $3 higher on attacks on Saudi energy sites, Strait of Hormuz disruptions",
-   "https://www.investing.com/news/commodities-news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets-5020171",
-   "12 Nov 2026"
-  ],
-  [
-   "Investing.com (Reuters), Oil prices set for second weekly decline as Trump to stay with Iran blockade",
-   "https://www.investing.com/news/commodities-news/oil-prices-set-for-second-weekly-decline-as-trump-to-stay-with-iran-blockade-5024008",
+   "Investing.com (Reuters), Oil prices fall over 2% for the week amid easing fears of fresh U.S.-Iran fighting",
+   "https://www.investing.com/news/commodities-news/oil-prices-hold-gains-as-trump-sidelines-vance-from-iran-diplomacy-5023781",
    "13 Nov 2026"
   ],
   [
-   "Al Jazeera, Iran says it targeted US radar site in Bahrain",
-   "https://www.aljazeera.com/news/2026/11/13/iran-says-it-struck-us-radar-site-in-bahrain",
+   "Al Jazeera, Iran war updates: Qatar, Turkiye ink defence deal",
+   "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks",
    "13 Nov 2026"
   ],
   [
-   "Investing.com, Gold rebounds above $3,900 after 13-month low, but weekly losses persist",
+   "Investing.com, European gas logs 12% weekly surge as U.S.-Iran diplomatic hopes collapse",
+   "https://www.investing.com/news/commodities-news/european-gas-logs-12-weekly-surge-as-usiran-diplomatic-hopes-collapse-5024311",
+   "13 Nov 2026"
+  ],
+  [
+   "Investing.com, Goldman sees Gulf LNG disruption pushing TTF gas prices higher",
+   "https://www.investing.com/news/commodities-news/goldman-sees-gulf-lng-disruption-pushing-ttf-gas-prices-higher-93CH-5024622",
+   "13 Nov 2026"
+  ],
+  [
+   "Investing.com, Spot gold posts worst week since March amid jump in Fed rate hike expectations",
    "https://www.investing.com/news/commodities-news/gold-languishes-near-13month-low-as-96-oil-fuels-bets-on-bigger-fed-hikes-5023860",
    "13 Nov 2026"
   ],
   [
-   "Amwal Al Ghad, Gold prices in Egypt today, Thursday, 12 Nov 2026",
-   "https://en.amwalalghad.com/gold-prices-in-egypt-today-thursday-12-nov-2026/",
-   "12 Nov 2026"
-  ],
-  [
    "Banky, Gold prices today in Egypt",
    "https://www.bankygate.com/en/gold",
-   "12 Nov 2026"
+   "13 Nov 2026"
   ],
   [
    "Amwal Al Ghad, Egyptian stocks close week mixed, 12 Nov 2026",
    "https://en.amwalalghad.com/egyptian-stocks-close-week-mixed-12-nov-2026/",
    "12 Nov 2026"
-  ],
-  [
-   "Arab Finance, USD/EGP exchange rates hold steady at Egyptian banks on November 12",
-   "https://www.arabfinance.com/en/news/newdetails/usd-egp-exchange-rates-hold-steady-at-egyptian-banks-on-november-12",
-   "12 Nov 2026"
-  ],
-  [
-   "Arab Finance, Suez Canal Bank's net profit rises in 9 months",
-   "https://www.arabfinance.com/en/news/newdetails/suez-canal-bank-net-profit-rises-in-9-months-2026",
-   "12 Nov 2026"
-  ],
-  [
-   "Amwal Al Ghad, Egypt's civil aviation sector generates $4.8 bln in 2025/26",
-   "https://en.amwalalghad.com/egypts-civil-aviation-sector-generates-4-8-bln-in-2025-26-minister/",
-   "12 Nov 2026"
-  ],
-  [
-   "EnterpriseAM, Egypt's annual urban headline inflation slows for third consecutive month",
-   "https://enterpriseam.com/egypt/2026/11/13/egypts-annual-urban-headline-inflation-slows-for-third-consecutive-month/",
-   "13 Nov 2026"
-  ],
-  [
-   "EnterpriseAM, What the Fed's first hike in three years means for Egypt's debt",
-   "https://enterpriseam.com/egypt/2026/11/11/what-the-feds-first-hike-in-three-years-means-for-egypts-debt/",
-   "11 Nov 2026"
   ],
   [
    "Amwal Al Ghad, EGX closes mostly red on 11 November",
@@ -703,6 +667,31 @@
    "Amwal Al Ghad, EGX closes mostly green on 8 November",
    "https://en.amwalalghad.com/egx-closes-mostly-green-on-8-november/",
    "8 Nov 2026"
+  ],
+  [
+   "Amwal Al Ghad, EGX closes in green area on November 5",
+   "https://en.amwalalghad.com/egx-closes-in-green-area-on-november-5/",
+   "5 Nov 2026"
+  ],
+  [
+   "Amwal Al Ghad, Egypt, Halliburton agree to prepare 50-well drilling programme",
+   "https://en.amwalalghad.com/egypt-halliburton-agree-to-prepare-50-well-drilling-programme/",
+   "12 Nov 2026"
+  ],
+  [
+   "Arab Finance, AOI to install solar power plants at Abu Qir Fertilizers",
+   "https://www.arabfinance.com/en/news/newdetails/aoi-to-install-mmw-solar-power-plants-at-abu-qir-fertilizers",
+   "12 Nov 2026"
+  ],
+  [
+   "EnterpriseAM, Egypt's annual urban headline inflation slows for third consecutive month",
+   "https://enterpriseam.com/egypt/2026/11/13/egypts-annual-urban-headline-inflation-slows-for-third-consecutive-month/",
+   "13 Nov 2026"
+  ],
+  [
+   "EnterpriseAM, What the Fed's first hike in three years means for Egypt's debt",
+   "https://enterpriseam.com/egypt/2026/11/11/what-the-feds-first-hike-in-three-years-means-for-egypts-debt/",
+   "11 Nov 2026"
   ],
   [
    "Amwal Al Ghad, Egypt's net FX reserves hit record $57.500 bln at end-October",
@@ -742,7 +731,8 @@
     "sub": "Blue chips",
     "v": 52023.37,
     "d": -0.91,
-    "w": null
+    "w": 1.7,
+    "wDerived": true
    },
    {
     "n": "EGX70 EWI",
@@ -1132,40 +1122,40 @@
     "url": "https://stockanalysis.com/quote/egx/EFID/history/"
    }
   ],
-  "note": "Closes and one-day changes are as reported by StockAnalysis.com (delayed EGX data), opened on Friday 13 November; Palm Hills shows no change on Thursday and is entered as 0. The 5-session change compares Thursday 12 November with Thursday 5 November and is derived. Thursday's index closes are from Amwal Al Ghad only. 5-session index changes are not shown because the 5 November closes were not re-verified today.",
-  "source": "StockAnalysis.com price history pages, opened 13 Nov; Amwal Al Ghad, 12 Nov"
+  "note": "Closes and one-day changes are as reported by StockAnalysis.com (delayed EGX data), opened on Saturday 14 November; Palm Hills shows no change on Thursday and is entered as 0. The 5-session change compares Thursday 12 November with Thursday 5 November and is derived. Thursday's index closes are from Amwal Al Ghad only. The EGX30 5-session change is derived from the 5 and 12 November closes; the smaller indices are not shown.",
+  "source": "StockAnalysis.com price history pages, opened 14 Nov; Amwal Al Ghad, 12 Nov"
  },
  "gold": {
-  "asOf": "Thu 12 Nov 2026, afternoon",
-  "iso": "2026-11-12",
-  "source": "Amwal Al Ghad",
-  "url": "https://en.amwalalghad.com/gold-prices-in-egypt-today-thursday-12-nov-2026/",
-  "ounceUsd": 3890.35,
-  "note": "market prices at USD/EGP 53.49; daily change not reported",
+  "asOf": "Fri 13 Nov 2026",
+  "iso": "2026-11-13",
+  "source": "Banky",
+  "url": "https://www.bankygate.com/en/gold",
+  "ounceUsd": null,
+  "note": "jewellers' indicative sell prices, before workmanship",
   "items": [
    {
     "k": "24K",
-    "unit": "per gram",
-    "v": 6828.5,
-    "d": null
+    "unit": "per gram (buy 6,745)",
+    "v": 6800,
+    "d": -2.72
    },
    {
     "k": "21K",
-    "unit": "per gram",
-    "v": 5975,
-    "d": null
+    "unit": "per gram (buy 5,900)",
+    "v": 5950,
+    "d": -2.7
    },
    {
     "k": "18K",
-    "unit": "per gram",
-    "v": 5121.5,
-    "d": null
+    "unit": "per gram (buy 5,055)",
+    "v": 5100,
+    "d": -2.67
    },
    {
     "k": "Gold pound",
     "unit": "8 grams of 21K",
-    "v": 47800,
-    "d": null
+    "v": 47600,
+    "d": -2.7
    }
   ]
  }
