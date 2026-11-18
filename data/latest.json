@@ -1,24 +1,33 @@
 {
  "edition": {
-  "date": "Tuesday, 17 November 2026",
-  "iso": "2026-11-17",
+  "date": "Wednesday, 18 November 2026",
+  "iso": "2026-11-18",
   "place": "Cairo",
   "preparedFor": "Prepared for Abdelrahman · EGP base",
-  "cutoffBadge": "Latest EGX close: Mon 16 Nov",
+  "cutoffBadge": "Latest EGX close: Tue 17 Nov",
   "update": {
    "stage": "Pre-open",
    "n": 1,
-   "at": "09:21",
-   "ts": "2026-11-17T09:21:26+02:00"
+   "at": "09:20",
+   "ts": "2026-11-18T09:20:47+02:00"
   }
  },
  "notes": {
-  "cutoff": "Data cut-off: the latest EGX close is Monday 16 November (EGX30 52,199.83); Tuesday's session has not opened. Brent is the Asian-trading price at 01:02 GMT on Tuesday. Gold prices in EGP are Banky's Tuesday prices. Bullish and bearish tags are directional reads of the news, not trade recommendations.",
-  "unverified": "Not verified and therefore left out: Monday's investor flows from Amwal Al Ghad, which come in billions of pounds (the chart uses Arab Finance, whose Arab net selling matches EnterpriseAM); Monday's breadth (not found, so the breadth chart is dropped); the names of the seven fertiliser companies in the gas deal; Brent's Monday settlement, which Reuters does not state (the chart derives it); the CBE's Monday closing rate; Brent against the budget's oil assumption; the reserves split between foreign currency and gold. Banky's gold page shows 16 November in its header but 17 November in its body.",
-  "sourcesFoot": "QNB Egypt is back in the table: its StockAnalysis page now shows the 15 and 16 November sessions. All 21 pages opened on Tuesday and show Monday 16 November as the latest session.",
+  "cutoff": "Data cut-off: the latest EGX close is Tuesday 17 November (EGX30 51,681.62); Wednesday's session has not opened. Brent and gold are Asian-trading prices on Wednesday morning. Gold prices in EGP are Banky's Wednesday prices. Bullish and bearish tags are directional reads of the news, not trade recommendations.",
+  "unverified": "Not verified and therefore left out: Egypt Aluminum's Tuesday close, because its StockAnalysis row is internally inconsistent (a reported -0.30% change against closes that imply about -5.2%, and a high below the open), so the stock is dropped for today; Tuesday's flows from Amwal Al Ghad, which come in billions and conflict with Arab Finance (the chart uses Arab Finance, which matches EnterpriseAM's report that locals were the sole net sellers); Tuesday's breadth; Misr Life's valuation, not disclosed; Brent's Tuesday settlement, which Reuters does not state (the chart derives it); Brent against the budget's oil assumption; the reserves split between foreign currency and gold.",
+  "sourcesFoot": "Egypt Aluminum is left out of today's table (see above). The other 20 StockAnalysis pages opened on Wednesday and show Tuesday 17 November as the latest session.",
   "previous": "Nothing new today."
  },
  "previous": [
+  {
+   "date": "Tuesday, 17 November 2026",
+   "items": [
+    "Seven fertiliser makers agree to pay 50% more for gas, $12.75 per mmBtu and $175 mn upfront, in return for exporting their full output until early January → the state recovers some LNG costs while producers keep selling urea at about $535 a tonne; gas cuts of 20-40% stay.",
+    "EGX30 ends flat at 52,200 on Monday but the EGX70 drops 3.76% and the EGX100 2.88% → small caps sell off while Edita (+7.4%) and Telecom Egypt (+5.2%) hold up the blue-chip index.",
+    "Edita posts record quarterly revenue of EGP 7.3 bn, up 32.9%, with profit up 41.5% → volume growth and pricing lift the snack maker, and the stock jumps 7.44%.",
+    "Maersk and Hapag-Lloyd move three more Gemini services back to the Suez Canal from December → more Asia-Europe traffic adds to canal revenue and dollar inflows."
+   ]
+  },
   {
    "date": "Monday, 16 November 2026",
    "items": [
@@ -54,66 +63,57 @@
     "EGX30 falls 0.91% to 52,023 on Thursday, while Housing and Development Bank jumps 5.79% → blue chips take profits after a strong week; banks with earnings news still rise.",
     "Suez Canal Bank's nine-month profit rises 12.9% to EGP 5.7 bn as interest income grows about 43% → high rates keep lifting bank income."
    ]
-  },
-  {
-   "date": "Thursday, 12 November 2026",
-   "items": [
-    "Israel's security cabinet orders the army to step up preparations for a possible attack on Iran, and Tehran threatens bases from West Asia to Europe → a renewed war would hit oil, Gulf shipping and the pound just as markets price a wind-down.",
-    "Eastern Company's nine-month profit rises 39% to about EGP 9 bn, and the stock gains 4.17% → sales rise 11% and margins widen, which supports the stock.",
-    "EGX30 ends flat at 52,500 on Wednesday after two days of gains, with turnover at EGP 11.79 bn → the rally pauses as small caps take profits; fertiliser stocks rebound.",
-    "The government targets public debt of about 69.5% of GDP by 2030 and frees a Red Sea plot to help pay it down → lower debt would ease debt-service costs over time."
-   ]
   }
  ],
  "top": [
   {
-   "what": "Seven fertiliser makers agree to pay 50% more for gas, $12.75 per mmBtu and $175 mn upfront, in return for exporting their full output until early January",
-   "why": "the state recovers some LNG costs while producers keep selling urea at about $535 a tonne; gas cuts of 20-40% stay.",
-   "ref": "s-fert"
+   "what": "Misr Insurance Holding will sell 15% of Misr Life Insurance on the EGX in December, with EFG Hermes as sole bookrunner",
+   "why": "the IMF wants about $1.5 bn of asset sales before the programme ends; Banque du Caire has delivered $658 mn so far.",
+   "ref": "s-misr"
   },
   {
-   "what": "EGX30 ends flat at 52,200 on Monday but the EGX70 drops 3.76% and the EGX100 2.88%",
-   "why": "small caps sell off while Edita (+7.4%) and Telecom Egypt (+5.2%) hold up the blue-chip index.",
+   "what": "EGX30 falls 0.99% to 51,682 on Tuesday and the EGX70 drops another 2.42%",
+   "why": "local investors are the sole net sellers as small caps extend their slide.",
    "ref": "s-egx"
   },
   {
-   "what": "Edita posts record quarterly revenue of EGP 7.3 bn, up 32.9%, with profit up 41.5%",
-   "why": "volume growth and pricing lift the snack maker, and the stock jumps 7.44%.",
-   "ref": "s-edita"
+   "what": "Gold drops below $3,800 as Fed officials signal more rate hikes; 21K gold in Egypt slips to EGP 5,900",
+   "why": "higher US yields and a firm dollar weigh on bullion and on emerging-market carry.",
+   "ref": "s-gold"
   },
   {
-   "what": "Maersk and Hapag-Lloyd move three more Gemini services back to the Suez Canal from December",
-   "why": "more Asia-Europe traffic adds to canal revenue and dollar inflows.",
-   "ref": "s-suez"
+   "what": "The Arab Energy Fund files a $70 mn tender offer for 21.3% of Maridive at $0.70 a share",
+   "why": "Gulf money keeps buying into EGX-listed energy services.",
+   "ref": "s-maridive"
   }
  ],
  "kpis": [
   {
    "hero": true,
-   "k": "Gas price for fertiliser plants",
-   "v": "$12.75",
-   "d": "per mmBtu, +50% from $8.50, for 45 days",
-   "c": "up",
-   "m": "17 Nov · EnterpriseAM",
+   "k": "Misr Life stake for sale",
+   "v": "15%",
+   "d": "750 mn shares; EGX listing in December",
+   "c": "",
+   "m": "18 Nov · EnterpriseAM",
    "flag": {
-    "t": "Export deal",
-    "tone": "neu"
+    "t": "IPO",
+    "tone": "bull"
    },
    "mini": {
-    "chart": "c-gas",
+    "chart": "c-assets",
     "block": 0
    }
   },
   {
    "hero": true,
    "k": "EGX30 close",
-   "v": "52,199.83",
-   "d": "+0.02% on Monday",
-   "c": "up",
-   "m": "Mon 16 Nov · Amwal Al Ghad; Arab Finance",
+   "v": "51,681.62",
+   "d": "-0.99% on Tuesday; +23.6% YTD",
+   "c": "dn",
+   "m": "Tue 17 Nov · Amwal Al Ghad; Arab Finance",
    "flag": {
-    "t": "Flat",
-    "tone": "neu"
+    "t": "Locals sell",
+    "tone": "bear"
    },
    "mini": {
     "chart": "c-egx30",
@@ -123,36 +123,36 @@
   {
    "hero": true,
    "k": "EGX70 small caps",
-   "v": "18,028.42",
-   "d": "-3.76% on Monday",
+   "v": "17,592.75",
+   "d": "-2.42% on Tuesday after -3.76% on Monday",
    "c": "dn",
-   "m": "Mon 16 Nov · Amwal Al Ghad; Arab Finance",
+   "m": "Tue 17 Nov · Amwal Al Ghad; Arab Finance",
    "flag": {
-    "t": "Small-cap sell-off",
+    "t": "Second day down",
     "tone": "bear"
    }
   },
   {
    "hero": true,
-   "k": "Edita Q3 net profit",
-   "v": "EGP 938 mn",
-   "d": "+41.5%; revenue EGP 7.3 bn, a record",
-   "c": "up",
-   "m": "16 Nov · Arab Finance",
+   "k": "Spot gold",
+   "v": "$3,790",
+   "d": "-1.5% at 05:48 GMT on Wednesday",
+   "c": "dn",
+   "m": "Wed 18 Nov · Investing.com",
    "flag": {
-    "t": "Stock +7.44%",
-    "tone": "bull"
+    "t": "Fed hawks",
+    "tone": "neu"
    }
   },
   {
    "hero": true,
-   "k": "Brent, Tuesday in Asia",
-   "v": "$92.00",
-   "d": "-0.5% at 01:02 GMT",
+   "k": "Brent, Wednesday in Asia",
+   "v": "$92.53",
+   "d": "-0.7% at 05:50 GMT",
    "c": "dn",
-   "m": "Tue 17 Nov · Reuters via Investing.com",
+   "m": "Wed 18 Nov · Reuters via Investing.com",
    "flag": {
-    "t": "Surplus outlook",
+    "t": "US stock build",
     "tone": "bull"
    },
    "mini": {
@@ -162,57 +162,57 @@
   },
   {
    "hero": true,
-   "k": "Gemini services back to Suez",
-   "v": "3",
-   "d": "Maersk and Hapag-Lloyd, from December",
+   "k": "Qalaa Q3 net income",
+   "v": "EGP 2.7 bn",
+   "d": "from EGP 81.4 mn; revenue +72%",
    "c": "up",
-   "m": "17 Nov · Arab Finance",
+   "m": "18 Nov · EnterpriseAM",
    "flag": {
-    "t": "Canal recovery",
+    "t": "Earnings",
     "tone": "bull"
    }
   },
   {
    "k": "EGX100 / EGX33 Shariah",
-   "v": "24,023.77 / 6,345.73",
-   "d": "-2.88% / +0.37% on Monday",
+   "v": "23,535.06 / 6,268.27",
+   "d": "-2.03% / -1.22% on Tuesday",
    "c": "dn",
-   "m": "Mon 16 Nov · Amwal Al Ghad; Arab Finance"
+   "m": "Tue 17 Nov · Amwal Al Ghad; Arab Finance"
   },
   {
    "k": "EGX35-LV",
-   "v": "5,998.99",
-   "d": "-2.20% on Monday",
+   "v": "5,903.88",
+   "d": "-1.59% on Tuesday",
    "c": "dn",
-   "m": "Mon 16 Nov · Amwal Al Ghad"
+   "m": "Tue 17 Nov · Amwal Al Ghad"
   },
   {
    "k": "Market capitalisation",
-   "v": "EGP 4.15 tn",
-   "d": "at Monday's close",
+   "v": "EGP 4.09 tn",
+   "d": "at Tuesday's close",
    "c": "dn",
-   "m": "Mon 16 Nov · Amwal Al Ghad; Arab Finance"
+   "m": "Tue 17 Nov · Amwal Al Ghad; Arab Finance"
   },
   {
    "k": "EGX turnover",
-   "v": "EGP 11.15 bn",
-   "d": "2.3 bn shares, 315,264 trades",
-   "c": "up",
-   "m": "Mon 16 Nov · Arab Finance"
+   "v": "EGP 9.42 bn",
+   "d": "2.22 bn shares, 245,645 trades",
+   "c": "dn",
+   "m": "Tue 17 Nov · Arab Finance"
   },
   {
    "k": "Foreign net equity flows",
-   "v": "+EGP 60.5 mn",
-   "d": "Monday; Arabs -EGP 161.7 mn",
+   "v": "+EGP 79.6 mn",
+   "d": "Tuesday; Egyptians -EGP 194.6 mn",
    "c": "up",
-   "m": "Mon 16 Nov · Arab Finance"
+   "m": "Tue 17 Nov · Arab Finance"
   },
   {
-   "k": "WTI, Tuesday in Asia",
-   "v": "$85.28",
-   "d": "-0.5% at 01:02 GMT",
+   "k": "WTI, Wednesday in Asia",
+   "v": "$84.77",
+   "d": "-1.4% at 05:50 GMT",
    "c": "dn",
-   "m": "Tue 17 Nov · Reuters via Investing.com"
+   "m": "Wed 18 Nov · Reuters via Investing.com"
   },
   {
    "k": "Urban inflation, October",
@@ -233,7 +233,7 @@
    "v": "20% / 21%",
    "d": "after the 29 Oct hike",
    "c": "",
-   "m": "17 Nov · EnterpriseAM"
+   "m": "18 Nov · EnterpriseAM"
   },
   {
    "k": "364-day T-bill yield",
@@ -245,9 +245,9 @@
   {
    "k": "Fed funds target",
    "v": "3.75–4.00%",
-   "d": "last raised 16 Sept",
+   "d": "last raised 16 Sept; markets price hikes in Dec and Jan",
    "c": "",
-   "m": "11 Nov · EnterpriseAM"
+   "m": "11–18 Nov · EnterpriseAM; Investing.com"
   }
  ],
  "chartGroups": [
@@ -271,59 +271,27 @@
   {
    "id": "c-egx30",
    "group": "pulse",
-   "title": "EGX30, last five sessions",
+   "title": "EGX30: Tuesday against Monday",
    "sub": "Index points at close",
    "ref": "s-egx",
    "viz": [
     {
-     "type": "line",
-     "points": [
-      {
-       "l": "Tue 10 Nov",
-       "v": 52483.46,
-       "display": "52,483.46",
-       "d": "+2.08%",
-       "derived": false
-      },
-      {
-       "l": "Wed 11 Nov",
-       "v": 52500.47,
-       "display": "52,500.47",
-       "d": "+0.03%",
-       "derived": false
-      },
-      {
-       "l": "Thu 12 Nov",
-       "v": 52023.37,
-       "display": "52,023.37",
-       "d": "-0.91%",
-       "derived": false
-      },
-      {
-       "l": "Sun 15 Nov",
-       "v": 52187.21,
-       "display": "52,187.21",
-       "d": "+0.31%",
-       "derived": false
-      },
-      {
-       "l": "Mon 16 Nov",
-       "v": 52199.83,
-       "display": "52,199.83",
-       "d": "+0.02%",
-       "derived": false
-      }
-     ]
+     "type": "bullet",
+     "v": 51681.62,
+     "display": "51,681.62",
+     "ref": 52199.83,
+     "refLabel": "Mon 16 Nov 52,199.83",
+     "tone": "bear"
     }
    ],
-   "cap": "All five are reported closes. Monday's close matches in Amwal Al Ghad and Arab Finance.",
-   "source": "Amwal Al Ghad, 10–16 Nov; Arab Finance, 16 Nov"
+   "cap": "Reported closes: 52,500.47 (Wed 11, +0.03%), 52,023.37 (Thu 12, -0.91%), 52,187.21 (Sun 15, +0.31%), 52,199.83 (Mon 16, +0.02%), 51,681.62 (Tue 17, -0.99%).",
+   "source": "Amwal Al Ghad, 11–17 Nov; Arab Finance, 17 Nov"
   },
   {
    "id": "c-flows",
    "group": "pulse",
    "title": "Who bought and who sold EGX stocks",
-   "sub": "Net equity flows by nationality, Monday 16 Nov, EGP mn",
+   "sub": "Net equity flows by nationality, Tuesday 17 Nov, EGP mn",
    "ref": "s-egx",
    "viz": [
     {
@@ -332,88 +300,52 @@
      "posLabel": "Net bought",
      "items": [
       {
-       "l": "Arabs",
-       "v": -161.65,
-       "display": "-161.7"
+       "l": "Egyptians",
+       "v": -194.585,
+       "display": "-194.6"
       },
       {
        "l": "Foreigners",
-       "v": 60.511,
-       "display": "+60.5"
+       "v": 79.567,
+       "display": "+79.6"
       },
       {
-       "l": "Egyptians",
-       "v": 101.138,
-       "display": "+101.1"
+       "l": "Arabs",
+       "v": 115.018,
+       "display": "+115.0"
       }
      ]
     }
    ],
-   "cap": "Arab investors are the only net sellers, as EnterpriseAM also reports. Amwal Al Ghad's figures in billions are not used.",
-   "source": "Arab Finance, 16 Nov; EnterpriseAM, 17 Nov"
+   "cap": "Local investors are the sole net sellers, as EnterpriseAM also reports. Amwal Al Ghad's figures in billions are not used.",
+   "source": "Arab Finance, 17 Nov; EnterpriseAM, 18 Nov"
   },
   {
-   "id": "c-gas",
+   "id": "c-assets",
    "group": "pulse",
-   "title": "Gas price for fertiliser plants: new against old",
-   "sub": "US dollars per mmBtu",
-   "ref": "s-fert",
+   "title": "State asset sales against the IMF's target",
+   "sub": "US dollars, bn",
+   "ref": "s-misr",
    "viz": [
     {
      "type": "bullet",
-     "v": 12.75,
-     "display": "$12.75",
-     "ref": 8.5,
-     "refLabel": "Previous $8.50",
-     "tone": "bear"
+     "v": 0.658,
+     "display": "$0.658 bn",
+     "ref": 1.5,
+     "refLabel": "IMF target about $1.5 bn",
+     "tone": "neu"
     }
    ],
-   "cap": "The higher price runs for 45 days from 16 November, with $175 mn paid upfront ($25 mn per company).",
-   "source": "EnterpriseAM, 17 Nov"
-  },
-  {
-   "id": "c-urea",
-   "group": "context",
-   "title": "Urea price against the cost of the gas to make it",
-   "sub": "US dollars per tonne of urea",
-   "ref": "s-fert",
-   "viz": [
-    {
-     "type": "hbar",
-     "max": 900,
-     "items": [
-      {
-       "l": "Gas cost at JKM spot",
-       "v": 884,
-       "from": 816,
-       "display": "$816-884",
-       "kind": "bear"
-      },
-      {
-       "l": "Gas cost at the state's LNG price",
-       "v": 728,
-       "from": 672,
-       "display": "$672-728",
-       "kind": "bear"
-      },
-      {
-       "l": "Granular urea, November (FOB)",
-       "v": 535,
-       "display": "about $535",
-       "kind": "hl"
-      }
-     ]
-    }
-   ],
-   "cap": "Gas costs are EnterpriseAM's estimates, at 24-26 mmBtu per tonne of urea; at import prices, gas costs more than the urea sells for.",
-   "source": "EnterpriseAM, 17 Nov"
+   "cap": "Banque du Caire's IPO has delivered $658 mn; Misr Life's sale in December would add to it. The remaining gap is about $0.84 bn (derived).",
+   "derivedNote": true,
+   "source": "EnterpriseAM, 18 Nov"
   },
   {
    "id": "c-rates",
    "group": "macro",
    "title": "Egypt's policy rate against bills, inflation and the Fed",
    "sub": "Per cent, latest",
-   "ref": "s-egx",
+   "ref": "s-gold",
    "viz": [
     {
      "type": "hbar",
@@ -453,29 +385,29 @@
      ]
     }
    ],
-   "cap": "The deposit rate sits about 7.3 points above urban inflation (derived).",
+   "cap": "The deposit rate sits about 7.3 points above urban inflation (derived). Markets price Fed hikes in December and January.",
    "derivedNote": true,
-   "source": "El Balad, 30 Oct; EnterpriseAM, 11–17 Nov"
+   "source": "El Balad, 30 Oct; EnterpriseAM, 11–18 Nov; Investing.com, 18 Nov"
   },
   {
    "id": "c-brent",
    "group": "macro",
-   "title": "Brent on Tuesday morning against Monday",
+   "title": "Brent on Wednesday morning against Tuesday",
    "sub": "US dollars per barrel",
    "ref": "s-oil",
    "viz": [
     {
      "type": "bullet",
-     "v": 92.0,
-     "display": "$92.00",
-     "ref": 92.44,
-     "refLabel": "Mon about $92.44 (derived)",
+     "v": 92.53,
+     "display": "$92.53",
+     "ref": 93.14,
+     "refLabel": "Tue about $93.14 (derived)",
      "tone": "bull"
     }
    ],
-   "cap": "Monday's level is derived from Tuesday's price plus the reported 44-cent fall. The budget's oil assumption is not re-verified today.",
+   "cap": "Tuesday's level is derived from Wednesday's price plus the reported 61-cent fall. The budget's oil assumption is not re-verified today.",
    "derivedNote": true,
-   "source": "Reuters via Investing.com, 17 Nov",
+   "source": "Reuters via Investing.com, 18 Nov",
    "status": "unverified"
   },
   {
@@ -483,7 +415,7 @@
    "group": "macro",
    "title": "Net international reserves",
    "sub": "US dollars, bn",
-   "ref": "s-suez",
+   "ref": "s-misr",
    "viz": [
     {
      "type": "bullet",
@@ -501,46 +433,46 @@
  "board": {
   "bull": [
    {
-    "n": "Edita Food Industries",
-    "drv": "Record quarter",
-    "r": "Q3 revenue rises 32.9% to EGP 7.3 bn and profit 41.5%; the stock jumps 7.44%.",
-    "c": "High",
-    "ref": "s-edita"
+    "n": "EFG Holding",
+    "drv": "Deal flow",
+    "r": "EFG Hermes leads the Misr Life IPO and advises on the Maridive tender offer.",
+    "c": "Medium",
+    "ref": "s-misr"
    },
    {
-    "n": "Telecom Egypt",
-    "drv": "Momentum",
-    "r": "The stock rises 5.19% to EGP 143.00 on Monday; no new company news is found.",
+    "n": "Qalaa Holdings",
+    "drv": "Profit jump",
+    "r": "Q3 net income reaches EGP 2.7 bn as revenue rises 72% to a record EGP 65.9 bn.",
     "c": "Medium",
     "ref": "s-egx"
    },
    {
-    "n": "Shipping and port services (sector)",
-    "drv": "Gemini back to Suez",
-    "r": "Three more Maersk and Hapag-Lloyd services return to the canal from December.",
+    "n": "Maridive & Oil Services",
+    "drv": "Tender offer",
+    "r": "The Arab Energy Fund offers $0.70 a share for 21.3%.",
     "c": "Medium",
-    "ref": "s-suez"
+    "ref": "s-maridive"
    }
   ],
   "bear": [
    {
-    "n": "MOPCO and Abu Qir Fertilizers",
-    "drv": "Gas costs +50%",
-    "r": "Gas is 50% dearer and cuts of 20-40% remain; Abu Qir is shutting one of three plants. MOPCO falls 4.10% on Monday.",
-    "c": "High",
-    "ref": "s-fert"
-   },
-   {
     "n": "Small and mid caps (sector)",
-    "drv": "EGX70 -3.76%",
-    "r": "The broad sell-off hits Palm Hills (-3.42%) and EFG Holding (-3.21%).",
+    "drv": "EGX70 -2.42%",
+    "r": "A second day of heavy small-cap selling as locals sell.",
     "c": "Medium",
     "ref": "s-egx"
    },
    {
-    "n": "QNB Egypt",
-    "drv": "Profit-taking",
-    "r": "The stock falls 2.59% on Monday after a strong run; no company news is found.",
+    "n": "Palm Hills Developments",
+    "drv": "Selling",
+    "r": "The stock falls 3.46% on Tuesday after 3.42% on Monday; no company news is found.",
+    "c": "Low",
+    "ref": "s-egx"
+   },
+   {
+    "n": "Fawry",
+    "drv": "Selling",
+    "r": "The stock falls 2.81% on Tuesday, its fifth straight loss; no new company news is found.",
     "c": "Low",
     "ref": "s-egx"
    }
@@ -548,34 +480,34 @@
  },
  "chains": [
   {
-   "t": "Dearer gas for export rights",
+   "t": "IMF deadline to IPOs",
    "steps": [
-    "LNG costs the state about $28 per mmBtu",
-    "fertiliser makers agree to pay $12.75, up 50%",
-    "they may export their full output until early January",
-    "the state recovers some costs; producers keep earning dollars"
+    "the IMF programme ends in mid-December",
+    "the Fund wants about $1.5 bn from asset sales",
+    "Misr Life lists 15% in December",
+    "more state assets come to the EGX"
    ],
-   "so": "Squeezes fertiliser margins but protects export volumes; gas cuts of 20-40% stay."
+   "so": "Bullish for EFG Holding and market depth; supply could weigh on prices in the short run."
   },
   {
-   "t": "Small-cap sell-off to market breadth",
+   "t": "Hawkish Fed to Egypt",
    "steps": [
-    "the EGX70 falls 3.76%",
-    "blue chips such as Edita and Telecom Egypt rise",
-    "the EGX30 ends flat",
-    "gains narrow to large caps"
+    "Fed officials signal more hikes",
+    "the 10-year US yield stays near 5%",
+    "gold falls below $3,800",
+    "the carry on Egyptian debt narrows"
    ],
-   "so": "A warning for retail-heavy small caps."
+   "so": "Cheaper gold for local buyers; a risk to foreign inflows into Egyptian bills."
   },
   {
-   "t": "Carriers back in Suez to FX inflows",
+   "t": "Gulf money into EGX energy names",
    "steps": [
-    "Maersk and Hapag-Lloyd reroute three services",
-    "more Asia-Europe ships use the canal",
-    "canal fees in dollars rise",
-    "the pound gets more support"
+    "the Arab Energy Fund bids for 21.3% of Maridive",
+    "it offers $0.70 a share",
+    "the FRA reviews the offer",
+    "more Gulf investment flows to listed companies"
    ],
-   "so": "Bullish for port and logistics names."
+   "so": "Supportive for EGX valuations of energy services companies."
   }
  ],
  "categories": [
@@ -590,99 +522,118 @@
  ],
  "stories": [
   {
-   "id": "s-fert",
-   "cat": "Sectors & Companies",
-   "imp": "Bearish",
+   "id": "s-misr",
+   "cat": "Egypt Economy",
+   "imp": "Bullish",
    "key": {
-    "v": "+50%",
-    "l": "gas price increase for seven fertiliser makers"
+    "v": "15%",
+    "l": "stake in Misr Life Insurance to be sold on the EGX"
    },
-   "h": "Fertiliser makers pay 50% more for gas in exchange for full export rights",
+   "h": "Misr Life Insurance sets a 15% EGX offering for December",
    "src": "EnterpriseAM",
-   "url": "https://enterpriseam.com/egypt/issues/fertilizer-gas-prices-rise-50-as-lng-costs-outrun-urea-prices/",
-   "date": "17 Nov 2026",
-   "what": "Seven fertiliser producers agree to a temporary rise in their gas price to $12.75 per mmBtu from $8.50 for 45 days from 16 November, paying $175 mn upfront. In return they can export all current output until early January and are exempt from supplying subsidised fertiliser to the Agriculture Ministry. Gas cuts of 20-40% stay, and Abu Qir is shutting one of its three plants. The state pays about $28 per mmBtu for LNG and has cut November cargoes from 15 to six.",
-   "why": "Imported gas costs far more than the urea it makes, so the state passes on part of the cost.",
-   "aff": "Fertiliser margins, urea exports and the state's LNG bill.",
-   "eg": "The deal keeps export dollars flowing but raises costs for the sector.",
-   "egx": "Bearish for fertiliser margins; export volumes are protected for now.",
-   "names": "MOPCO, Abu Qir Fertilizers (bearish)."
+   "url": "https://enterpriseam.com/egypt/issues/misr-lifes-long-awaited-egx-offering-is-set-for-december/",
+   "date": "18 Nov 2026",
+   "what": "Misr Insurance Holding, owned by the Sovereign Fund of Egypt, will sell 750 mn existing shares, or 15% of Misr Life Insurance, through a private placement and a local retail offering, with subscription and trading expected in December. EFG Hermes is sole bookrunner, the remaining 85% faces a lock-up, and the company aims to pay out 70% of FY2026 net income. Its CEO calls it \"the first major listing of an ins. company on the EGX.\"",
+   "why": "The IMF wants about $1.5 bn from asset sales before the programme ends; Banque du Caire has delivered $658 mn.",
+   "aff": "The state's privatisation programme, IMF funding and EGX depth.",
+   "eg": "Meeting the asset-sale target helps unlock the final IMF funds.",
+   "egx": "Bullish for EFG Holding and market breadth; new supply may weigh on insurers and financials.",
+   "names": "EFG Holding (bullish)."
   },
   {
    "id": "s-egx",
    "cat": "EGX Market",
    "imp": "Bearish",
    "key": {
-    "v": "-3.76%",
-    "l": "EGX70, Mon 16 Nov"
+    "v": "51,682",
+    "l": "EGX30 close, Tue 17 Nov, -0.99%"
    },
-   "h": "Small caps slide as the EGX30 holds flat at 52,200",
-   "src": "Amwal Al Ghad; Arab Finance; StockAnalysis.com",
-   "url": "https://www.arabfinance.com/en/news/newdetails/egx-shows-varied-performance-on-monday-november-16",
-   "date": "16 Nov 2026",
-   "what": "The EGX30 edges up 0.02% to 52,199.83 on Monday while the EGX70 falls 3.76% and the EGX100 2.88%. Turnover is EGP 11.15 bn and market cap falls to EGP 4.15 tn. Egyptians and foreigners net buy while Arabs net sell EGP 161.7 mn. Edita (+7.44%), Telecom Egypt (+5.19%) and Eastern (+2.90%) gain, while MOPCO (-4.10%), Palm Hills (-3.42%) and EFG Holding (-3.21%) fall.",
-   "why": "The sources give no single cause for the small-cap drop.",
+   "h": "EGX30 falls 0.99% as small caps slide for a second day",
+   "src": "Amwal Al Ghad; Arab Finance; EnterpriseAM",
+   "url": "https://www.arabfinance.com/en/news/newdetails/egx-indices-flag-in-red-on-tuesday-november-17-2026",
+   "date": "17–18 Nov 2026",
+   "what": "The EGX30 falls 0.99% to 51,681.62 on Tuesday, the EGX70 2.42% and the EGX100 2.03%; market cap drops to EGP 4.09 tn on turnover of EGP 9.42 bn. Egyptians net sell EGP 194.6 mn while Arabs and foreigners buy. Palm Hills (-3.46%), Fawry (-2.81%) and Eastern (-2.04%) lead the table's losses. Separately, Qalaa Holdings' Q3 net income rises to EGP 2.7 bn from EGP 81.4 mn on a record EGP 65.9 bn of revenue.",
+   "why": "Local investors sell; the sources give no single trigger.",
    "aff": "Small caps, retail investors and blue chips.",
-   "eg": "Gains concentrate in a few large names.",
-   "egx": "Bearish for small caps; neutral for the blue-chip index.",
-   "names": "Edita, Telecom Egypt, Eastern (up); MOPCO, Palm Hills, EFG Holding (down)."
+   "eg": "The index is still up 23.6% this year, EnterpriseAM says.",
+   "egx": "Bearish in the short term for small and mid caps.",
+   "names": "Palm Hills, Fawry, Eastern (down); EFG Holding (flat)."
   },
   {
-   "id": "s-edita",
+   "id": "s-maridive",
    "cat": "Sectors & Companies",
    "imp": "Bullish",
    "key": {
-    "v": "EGP 7.3 bn",
-    "l": "Edita's record Q3 2026 revenue"
+    "v": "$70 mn",
+    "l": "Arab Energy Fund's tender offer for 21.3% of Maridive"
    },
-   "h": "Edita posts record quarterly revenue and a 41.5% profit rise",
-   "src": "Arab Finance",
-   "url": "https://www.arabfinance.com/en/news/newdetails/edita-posts-record-revenues-in-q3-2026",
-   "date": "16 Nov 2026",
-   "what": "Edita's third-quarter revenue rises 32.9% to EGP 7.3 bn and net profit 41.5% to EGP 938.1 mn. Packs sold rise 18.5% to 1.2 bn and export sales 23.6% to EGP 673.6 mn. Nine-month profit rises 54% to EGP 2.4 bn. The stock rises 7.44% to EGP 20.66 on Monday.",
-   "why": "Higher volumes, pricing and mix, led by cakes and bakery, and a growing Iraq business.",
-   "aff": "Edita's valuation and the snack market.",
-   "eg": "Strong local demand for packaged food despite inflation.",
-   "egx": "Bullish for Edita.",
-   "names": "Edita Food Industries (bullish)."
+   "h": "Arab Energy Fund files a $70 mn tender offer for 21.3% of Maridive",
+   "src": "EnterpriseAM",
+   "url": "https://enterpriseam.com/egypt/2026/11/18/arab-energy-fund-files-usd-70-mn-tender-offer-for-21-3-of-maridive/",
+   "date": "18 Nov 2026",
+   "what": "The Riyadh-based Arab Energy Fund offers $0.70 a share for 100 mn shares of Maridive & Oil Services, a 44% premium to the six-month average before July's announcement but about 1% above Monday's close. The FRA is reviewing the offer. Maridive's first-half net income rises to $48.61 mn from $10.89 mn.",
+   "why": "The fund first flagged its interest in July, and Maridive's first-half profit more than quadrupled.",
+   "aff": "Maridive's shareholders and EGX energy-services valuations.",
+   "eg": "Gulf capital keeps flowing into EGX-listed companies.",
+   "egx": "Bullish for Maridive; little upside left at the current price.",
+   "names": "Maridive & Oil Services (bullish)."
   },
   {
-   "id": "s-suez",
-   "cat": "Egypt Economy",
-   "imp": "Bullish",
+   "id": "s-gold",
+   "cat": "Commodities",
+   "imp": "Neutral",
    "key": {
-    "v": "3",
-    "l": "Gemini services returning to the Suez Canal"
+    "v": "$3,790",
+    "l": "spot gold, Wed 18 Nov at 05:48 GMT, -1.5%"
    },
-   "h": "Maersk and Hapag-Lloyd move three more services back to the Suez Canal",
-   "src": "Arab Finance",
-   "url": "https://www.arabfinance.com/en/news/newdetails/maersk-hapag-lloyd-to-reroute-3-gemini-services-to-suez-canal",
-   "date": "17 Nov 2026",
-   "what": "Maersk and Hapag-Lloyd will route three Gemini services, AE1, AE2 and AE3, through the Suez Canal instead of around the Cape of Good Hope. The first sailings leave Ningbo on 4 December, Shanghai on 20 December and Shanghai on 14 January. Maersk said in October it expects all its services back on the canal by March 2027.",
-   "why": "The shorter route improves transit times between Asia, Europe and the Middle East.",
-   "aff": "Canal revenue, port services and Egypt's dollar income.",
-   "eg": "More transits add dollar revenue and support the pound.",
-   "egx": "Bullish for shipping, port and logistics names.",
-   "names": "Shipping and port services (sector)."
+   "h": "Gold drops below $3,800 as Fed officials signal more hikes",
+   "src": "Investing.com; Banky",
+   "url": "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463",
+   "date": "18 Nov 2026",
+   "what": "Spot gold falls 1.5% to $3,790.18 on Wednesday as St. Louis Fed President Musalem says several more hikes may be needed and New York Fed President Williams says there is more work to do. Markets price quarter-point hikes in December and January. Gold has lost more than a quarter of its value since the war began in February. In Egypt, Banky puts 21K gold at EGP 5,900 a gram.",
+   "why": "War-driven energy costs keep inflation high, so central banks tighten and real yields rise.",
+   "aff": "Local gold prices, the dollar and emerging-market carry.",
+   "eg": "Cheaper gold for Egyptian savers; a firmer dollar is a risk for the pound.",
+   "egx": "Neutral for the EGX.",
+   "names": "Jewellers and gold traders (sector)."
   },
   {
    "id": "s-oil",
    "cat": "Commodities",
    "imp": "Bullish",
    "key": {
-    "v": "$92.00",
-    "l": "Brent, Tue 17 Nov at 01:02 GMT"
+    "v": "$92.53",
+    "l": "Brent, Wed 18 Nov at 05:50 GMT"
    },
-   "h": "Oil slips to $92 as supply catches up with demand",
+   "h": "Oil slips as US crude stocks build despite Gulf attacks",
    "src": "Reuters via Investing.com",
-   "url": "https://www.investing.com/news/commodities-news/oil-slips-on-supply-surplus-outlook-despite-gulf-tensions-5031433",
-   "date": "17 Nov 2026",
-   "what": "Brent falls 44 cents to $92.00 and WTI to $85.28 on Tuesday morning as recovering Middle East exports outweigh attacks on tankers. The IEA sees a return to surplus in the fourth quarter, OPEC+ meets on 29 November to set 2027 output, and US strategic reserves fall to their lowest since 1982. \"Supply has finally caught up with demand,\" says KCM Trade's Tim Waterer.",
-   "why": "Gulf exports recover even as Hormuz attacks continue.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544",
+   "date": "18 Nov 2026",
+   "what": "Brent falls 61 cents to $92.53 and WTI $1.24 to $84.77 on Wednesday morning after API data show US crude stocks up 5.28 mn barrels. US-Iran strikes, Iranian attacks in Bahrain and Houthi drone strikes on Saudi pumping stations limit the fall. Vanda Insights' Vandana Hari cites \"a chorus of analysts forecasting a sizeable market surplus.\"",
+   "why": "Surplus forecasts outweigh supply risks in the Gulf.",
    "aff": "Egypt's fuel import bill and the pound.",
-   "eg": "Brent near $92 eases Egypt's fuel costs.",
+   "eg": "Brent near $92 eases Egypt's energy costs.",
    "egx": "Mildly bullish for importers and energy users.",
    "names": "Importers (sector)."
+  },
+  {
+   "id": "s-gaza",
+   "cat": "Middle East",
+   "imp": "Neutral",
+   "key": {
+    "v": "74,000+",
+    "l": "Palestinians killed since October 2023"
+   },
+   "h": "Board of Peace warns the Gaza ceasefire could collapse",
+   "src": "Al Jazeera (AP)",
+   "url": "https://www.aljazeera.com/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action",
+   "date": "18 Nov 2026",
+   "what": "The US-backed Board of Peace tells the UN Security Council the Israel-Hamas truce may collapse without steps to carry out the 2025 deal. It says Israel blocks the interim civil administration for Gaza, and supply restrictions and funding gaps hurt winter preparations. \"A ceasefire that delivers nothing visible cannot be sustained indefinitely,\" the board says.",
+   "why": "Both sides fall short of their ceasefire commitments, the board says.",
+   "aff": "Regional stability on Egypt's border and reconstruction plans.",
+   "eg": "A collapse would raise security risks on Egypt's border and delay reconstruction work.",
+   "egx": "Neutral; a renewed war would weigh on tourism sentiment.",
+   "names": "Tourism (sector)."
   }
  ],
  "week": [
@@ -701,44 +652,49 @@
  ],
  "sources": [
   [
-   "EnterpriseAM, Fertilizer companies are paying more for gas",
-   "https://enterpriseam.com/egypt/issues/fertilizer-gas-prices-rise-50-as-lng-costs-outrun-urea-prices/",
+   "EnterpriseAM, Misr Life's long-awaited EGX offering is set for December",
+   "https://enterpriseam.com/egypt/issues/misr-lifes-long-awaited-egx-offering-is-set-for-december/",
+   "18 Nov 2026"
+  ],
+  [
+   "Arab Finance, EGX indices flag in red on Tuesday",
+   "https://www.arabfinance.com/en/news/newdetails/egx-indices-flag-in-red-on-tuesday-november-17-2026",
    "17 Nov 2026"
   ],
   [
-   "Arab Finance, EGX shows varied performance on Monday",
-   "https://www.arabfinance.com/en/news/newdetails/egx-shows-varied-performance-on-monday-november-16",
-   "16 Nov 2026"
+   "Amwal Al Ghad, EGX closes in red area on 17 November",
+   "https://en.amwalalghad.com/egx-closes-in-red-area-on-17-november/",
+   "17 Nov 2026"
+  ],
+  [
+   "EnterpriseAM, Arab Energy Fund files USD 70 mn tender offer for 21.3% of Maridive",
+   "https://enterpriseam.com/egypt/2026/11/18/arab-energy-fund-files-usd-70-mn-tender-offer-for-21-3-of-maridive/",
+   "18 Nov 2026"
+  ],
+  [
+   "Investing.com, Gold drops below $3,800 as Fed hike bets deepen bullion selloff",
+   "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463",
+   "18 Nov 2026"
+  ],
+  [
+   "Investing.com (Reuters), Oil prices fall as higher US crude stocks temper supply risks",
+   "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544",
+   "18 Nov 2026"
+  ],
+  [
+   "Al Jazeera, Board of Peace warns Gaza ceasefire faces imminent collapse without action",
+   "https://www.aljazeera.com/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action",
+   "18 Nov 2026"
+  ],
+  [
+   "Banky, Gold prices today in Egypt",
+   "https://www.bankygate.com/en/gold",
+   "18 Nov 2026"
   ],
   [
    "Amwal Al Ghad, EGX closes mixed on 16 November",
    "https://en.amwalalghad.com/egx-closes-mixed-on-16-november/",
    "16 Nov 2026"
-  ],
-  [
-   "Arab Finance, Edita posts record revenues in Q3 2026",
-   "https://www.arabfinance.com/en/news/newdetails/edita-posts-record-revenues-in-q3-2026",
-   "16 Nov 2026"
-  ],
-  [
-   "Arab Finance, Maersk, Hapag-Lloyd to reroute 3 Gemini services to Suez Canal",
-   "https://www.arabfinance.com/en/news/newdetails/maersk-hapag-lloyd-to-reroute-3-gemini-services-to-suez-canal",
-   "17 Nov 2026"
-  ],
-  [
-   "Investing.com (Reuters), Oil slips on supply surplus outlook despite Gulf tensions",
-   "https://www.investing.com/news/commodities-news/oil-slips-on-supply-surplus-outlook-despite-gulf-tensions-5031433",
-   "17 Nov 2026"
-  ],
-  [
-   "EnterpriseAM, Helios, EAEF exit Misr Hytech in USD 110 mn sale to India's Advanta",
-   "https://enterpriseam.com/egypt/2026/11/17/helios-eaef-exit-misr-hytech-in-usd-110-mn-sale-to-indias-advanta/",
-   "17 Nov 2026"
-  ],
-  [
-   "Banky, Gold prices today in Egypt",
-   "https://www.bankygate.com/en/gold",
-   "17 Nov 2026"
   ],
   [
    "Amwal Al Ghad, EGX closes in green area on 15 November",
@@ -754,11 +710,6 @@
    "Amwal Al Ghad, EGX closes mostly red on 11 November",
    "https://en.amwalalghad.com/egx-closes-mostly-red-on-11-november/",
    "11 Nov 2026"
-  ],
-  [
-   "Amwal Al Ghad, EGX closes in green area on 10 November",
-   "https://en.amwalalghad.com/egx-closes-in-green-area-on-10-november/",
-   "10 Nov 2026"
   ],
   [
    "EnterpriseAM, Egypt's annual urban headline inflation slows for third consecutive month",
@@ -781,56 +732,56 @@
    "30 Oct 2026"
   ],
   [
-   "StockAnalysis.com, EGX price history pages for the 21 stocks in the EGX table",
+   "StockAnalysis.com, EGX price history pages for the stocks in the EGX table",
    "https://stockanalysis.com/quote/egx/COMI/history/",
-   "16 Nov 2026"
+   "17 Nov 2026"
   ]
  ],
  "stocks": {
-  "asOf": "Mon 16 Nov 2026",
-  "iso": "2026-11-16",
+  "asOf": "Tue 17 Nov 2026",
+  "iso": "2026-11-17",
   "histLabels": [
-   "Mon 9 Nov",
    "Tue 10 Nov",
    "Wed 11 Nov",
    "Thu 12 Nov",
    "Sun 15 Nov",
-   "Mon 16 Nov"
+   "Mon 16 Nov",
+   "Tue 17 Nov"
   ],
   "indices": [
    {
     "n": "EGX30",
     "sub": "Blue chips",
-    "v": 52199.83,
-    "d": 0.02,
+    "v": 51681.62,
+    "d": -0.99,
     "w": null
    },
    {
     "n": "EGX70 EWI",
     "sub": "Small and mid caps",
-    "v": 18028.42,
-    "d": -3.76,
+    "v": 17592.75,
+    "d": -2.42,
     "w": null
    },
    {
     "n": "EGX100 EWI",
     "sub": "Broad market",
-    "v": 24023.77,
-    "d": -2.88,
+    "v": 23535.06,
+    "d": -2.03,
     "w": null
    },
    {
     "n": "EGX33 Shariah",
     "sub": "Shariah compliant",
-    "v": 6345.73,
-    "d": 0.37,
+    "v": 6268.27,
+    "d": -1.22,
     "w": null
    },
    {
     "n": "EGX35-LV",
     "sub": "Low volatility",
-    "v": 5998.99,
-    "d": -2.2,
+    "v": 5903.88,
+    "d": -1.59,
     "w": null
    }
   ],
@@ -839,16 +790,16 @@
     "t": "COMI",
     "n": "Commercial International Bank (CIB)",
     "sec": "Banks",
-    "px": 128.82,
-    "d": 0.24,
-    "w": 0.6,
+    "px": 128.22,
+    "d": -0.47,
+    "w": -2.12,
     "hist": [
-     128.05,
      131.0,
      130.34,
      128.75,
      128.51,
-     128.82
+     128.82,
+     128.22
     ],
     "url": "https://stockanalysis.com/quote/egx/COMI/history/"
    },
@@ -856,16 +807,16 @@
     "t": "QNBE",
     "n": "QNB Egypt",
     "sec": "Banks",
-    "px": 56.5,
-    "d": -2.59,
-    "w": 3.56,
+    "px": 56.46,
+    "d": -0.07,
+    "w": 1.04,
     "hist": [
-     54.56,
      55.88,
      57.48,
      58.25,
      58.0,
-     56.5
+     56.5,
+     56.46
     ],
     "url": "https://stockanalysis.com/quote/egx/QNBE/history/"
    },
@@ -873,16 +824,16 @@
     "t": "HDBK",
     "n": "Housing and Development Bank",
     "sec": "Banks",
-    "px": 108.61,
-    "d": -1.71,
-    "w": 9.2,
+    "px": 107.82,
+    "d": -0.73,
+    "w": 4.87,
     "hist": [
-     99.46,
      102.81,
      103.02,
      108.99,
      110.5,
-     108.61
+     108.61,
+     107.82
     ],
     "url": "https://stockanalysis.com/quote/egx/HDBK/history/"
    },
@@ -890,16 +841,16 @@
     "t": "CIEB",
     "n": "Credit Agricole Egypt",
     "sec": "Banks",
-    "px": 23.41,
-    "d": -0.51,
-    "w": 2.95,
+    "px": 23.25,
+    "d": -0.68,
+    "w": 0.39,
     "hist": [
-     22.74,
      23.16,
      23.28,
      23.15,
      23.53,
-     23.41
+     23.41,
+     23.25
     ],
     "url": "https://stockanalysis.com/quote/egx/CIEB/history/"
    },
@@ -907,16 +858,16 @@
     "t": "HRHO",
     "n": "EFG Holding",
     "sec": "NBFIs & fintech",
-    "px": 24.1,
-    "d": -3.21,
-    "w": 0.46,
+    "px": 24.09,
+    "d": -0.04,
+    "w": -5.94,
     "hist": [
-     23.99,
      25.61,
      25.25,
      25.36,
      24.9,
-     24.1
+     24.1,
+     24.09
     ],
     "url": "https://stockanalysis.com/quote/egx/HRHO/history/"
    },
@@ -924,16 +875,16 @@
     "t": "EFIH",
     "n": "e-finance",
     "sec": "NBFIs & fintech",
-    "px": 24.9,
-    "d": 0.77,
-    "w": 0.81,
+    "px": 24.91,
+    "d": 0.04,
+    "w": 0.77,
     "hist": [
-     24.7,
      24.72,
      24.8,
      24.97,
      24.71,
-     24.9
+     24.9,
+     24.91
     ],
     "url": "https://stockanalysis.com/quote/egx/EFIH/history/"
    },
@@ -941,16 +892,16 @@
     "t": "FWRY",
     "n": "Fawry",
     "sec": "NBFIs & fintech",
-    "px": 17.44,
-    "d": -1.69,
-    "w": -0.34,
+    "px": 16.95,
+    "d": -2.81,
+    "w": -7.28,
     "hist": [
-     17.5,
      18.28,
      17.99,
      17.87,
      17.74,
-     17.44
+     17.44,
+     16.95
     ],
     "url": "https://stockanalysis.com/quote/egx/FWRY/history/"
    },
@@ -958,16 +909,16 @@
     "t": "TMGH",
     "n": "Talaat Moustafa Group",
     "sec": "Real estate",
-    "px": 83.88,
-    "d": -0.67,
-    "w": 0.46,
+    "px": 82.38,
+    "d": -1.79,
+    "w": -4.21,
     "hist": [
-     83.5,
      86.0,
      85.7,
      83.95,
      84.45,
-     83.88
+     83.88,
+     82.38
     ],
     "url": "https://stockanalysis.com/quote/egx/TMGH/history/"
    },
@@ -975,16 +926,16 @@
     "t": "PHDC",
     "n": "Palm Hills Developments",
     "sec": "Real estate",
-    "px": 11.85,
-    "d": -3.42,
-    "w": -0.25,
+    "px": 11.44,
+    "d": -3.46,
+    "w": -5.77,
     "hist": [
-     11.88,
      12.14,
      12.4,
      12.4,
      12.27,
-     11.85
+     11.85,
+     11.44
     ],
     "url": "https://stockanalysis.com/quote/egx/PHDC/history/"
    },
@@ -992,16 +943,16 @@
     "t": "EMFD",
     "n": "Emaar Misr",
     "sec": "Real estate",
-    "px": 12.8,
-    "d": 0.79,
-    "w": 4.66,
+    "px": 12.79,
+    "d": -0.08,
+    "w": 1.51,
     "hist": [
-     12.23,
      12.6,
      12.52,
      12.69,
      12.7,
-     12.8
+     12.8,
+     12.79
     ],
     "url": "https://stockanalysis.com/quote/egx/EMFD/history/"
    },
@@ -1009,16 +960,16 @@
     "t": "ETEL",
     "n": "Telecom Egypt",
     "sec": "Telecoms",
-    "px": 143.0,
-    "d": 5.19,
-    "w": 6.72,
+    "px": 142.11,
+    "d": -0.62,
+    "w": 5.27,
     "hist": [
-     134.0,
      135.0,
      135.01,
      133.0,
      135.94,
-     143.0
+     143.0,
+     142.11
     ],
     "url": "https://stockanalysis.com/quote/egx/ETEL/history/"
    },
@@ -1026,16 +977,16 @@
     "t": "SWDY",
     "n": "Elsewedy Electric",
     "sec": "Industrials",
-    "px": 121.9,
-    "d": -0.16,
-    "w": 1.28,
+    "px": 119.76,
+    "d": -1.76,
+    "w": -1.79,
     "hist": [
-     120.36,
      121.94,
      121.46,
      120.7,
      122.1,
-     121.9
+     121.9,
+     119.76
     ],
     "url": "https://stockanalysis.com/quote/egx/SWDY/history/"
    },
@@ -1043,50 +994,33 @@
     "t": "ORAS",
     "n": "Orascom Construction",
     "sec": "Construction",
-    "px": 815.38,
-    "d": -1.41,
-    "w": 2.44,
+    "px": 815.1,
+    "d": -0.03,
+    "w": -0.01,
     "hist": [
-     795.94,
      815.15,
      805.1,
      799.9,
      827.02,
-     815.38
+     815.38,
+     815.1
     ],
     "url": "https://stockanalysis.com/quote/egx/ORAS/history/"
-   },
-   {
-    "t": "EGAL",
-    "n": "Egypt Aluminum",
-    "sec": "Basic materials",
-    "px": 326.99,
-    "d": -0.61,
-    "w": 3.97,
-    "hist": [
-     314.5,
-     321.01,
-     321.0,
-     325.0,
-     329.0,
-     326.99
-    ],
-    "url": "https://stockanalysis.com/quote/egx/EGAL/history/"
    },
    {
     "t": "ABUK",
     "n": "Abu Qir Fertilizers",
     "sec": "Fertilizers & chemicals",
-    "px": 77.1,
-    "d": -2.36,
-    "w": 3.84,
+    "px": 77.05,
+    "d": -0.06,
+    "w": 3.76,
     "hist": [
-     74.25,
      74.26,
      78.0,
      77.5,
      78.96,
-     77.1
+     77.1,
+     77.05
     ],
     "url": "https://stockanalysis.com/quote/egx/ABUK/history/"
    },
@@ -1094,16 +1028,16 @@
     "t": "MFPC",
     "n": "Misr Fertilizers (Mopco)",
     "sec": "Fertilizers & chemicals",
-    "px": 39.03,
-    "d": -4.1,
-    "w": 3.8,
+    "px": 38.84,
+    "d": -0.49,
+    "w": 1.94,
     "hist": [
-     37.6,
      38.1,
      39.16,
      39.26,
      40.7,
-     39.03
+     39.03,
+     38.84
     ],
     "url": "https://stockanalysis.com/quote/egx/MFPC/history/"
    },
@@ -1111,16 +1045,16 @@
     "t": "SKPC",
     "n": "Sidi Kerir Petrochemicals",
     "sec": "Fertilizers & chemicals",
-    "px": 15.01,
-    "d": -1.31,
-    "w": 0.07,
+    "px": 14.8,
+    "d": -1.4,
+    "w": -2.7,
     "hist": [
-     15.0,
      15.21,
      15.07,
      14.99,
      15.21,
-     15.01
+     15.01,
+     14.8
     ],
     "url": "https://stockanalysis.com/quote/egx/SKPC/history/"
    },
@@ -1128,16 +1062,16 @@
     "t": "AMOC",
     "n": "Alexandria Mineral Oils",
     "sec": "Energy",
-    "px": 13.36,
-    "d": -2.27,
-    "w": 1.06,
+    "px": 13.5,
+    "d": 1.05,
+    "w": 3.77,
     "hist": [
-     13.22,
      13.01,
      13.15,
      13.04,
      13.67,
-     13.36
+     13.36,
+     13.5
     ],
     "url": "https://stockanalysis.com/quote/egx/AMOC/history/"
    },
@@ -1145,16 +1079,16 @@
     "t": "EAST",
     "n": "Eastern Company",
     "sec": "Food & consumer",
-    "px": 34.8,
-    "d": 2.9,
-    "w": 4.25,
+    "px": 34.09,
+    "d": -2.04,
+    "w": 1.46,
     "hist": [
-     33.38,
      33.6,
      35.0,
      34.55,
      33.82,
-     34.8
+     34.8,
+     34.09
     ],
     "url": "https://stockanalysis.com/quote/egx/EAST/history/"
    },
@@ -1162,16 +1096,16 @@
     "t": "JUFO",
     "n": "Juhayna Food Industries",
     "sec": "Food & consumer",
-    "px": 23.9,
-    "d": -1.61,
-    "w": -3.98,
+    "px": 23.56,
+    "d": -1.42,
+    "w": -5.57,
     "hist": [
-     24.89,
      24.95,
      24.7,
      24.13,
      24.29,
-     23.9
+     23.9,
+     23.56
     ],
     "url": "https://stockanalysis.com/quote/egx/JUFO/history/"
    },
@@ -1179,54 +1113,54 @@
     "t": "EFID",
     "n": "Edita Food Industries",
     "sec": "Food & consumer",
-    "px": 20.66,
-    "d": 7.44,
-    "w": 4.93,
+    "px": 20.85,
+    "d": 0.92,
+    "w": 3.47,
     "hist": [
-     19.69,
      20.15,
      19.85,
      19.59,
      19.23,
-     20.66
+     20.66,
+     20.85
     ],
     "url": "https://stockanalysis.com/quote/egx/EFID/history/"
    }
   ],
-  "note": "Closes and one-day changes are as reported by StockAnalysis.com (delayed EGX data), opened on Tuesday 17 November. The 5-session change compares Monday 16 November with Monday 9 November and is derived. Index closes are from Amwal Al Ghad; the EGX30, EGX70 and EGX100 match Arab Finance. 5-session index changes are not shown.",
-  "source": "StockAnalysis.com price history pages, opened 17 Nov; Amwal Al Ghad, 16 Nov; Arab Finance, 16 Nov"
+  "note": "Closes and one-day changes are as reported by StockAnalysis.com (delayed EGX data), opened on Wednesday 18 November. Egypt Aluminum is left out today because its Tuesday row is inconsistent. The 5-session change compares Tuesday 17 November with Tuesday 10 November and is derived. Index closes are from Amwal Al Ghad; the EGX30, EGX70 and EGX100 match Arab Finance. 5-session index changes are not shown.",
+  "source": "StockAnalysis.com price history pages, opened 18 Nov; Amwal Al Ghad, 17 Nov; Arab Finance, 17 Nov"
  },
  "gold": {
-  "asOf": "Tue 17 Nov 2026",
-  "iso": "2026-11-17",
+  "asOf": "Wed 18 Nov 2026",
+  "iso": "2026-11-18",
   "source": "Banky",
   "url": "https://www.bankygate.com/en/gold",
-  "ounceUsd": 3871.77,
+  "ounceUsd": 3782.01,
   "note": "jewellers' indicative sell prices, before workmanship",
   "items": [
    {
     "k": "24K",
-    "unit": "per gram (buy 6,720)",
-    "v": 6765,
-    "d": -0.59
+    "unit": "per gram (buy 6,695)",
+    "v": 6745,
+    "d": -0.3
    },
    {
     "k": "21K",
-    "unit": "per gram (buy 5,880)",
-    "v": 5920,
-    "d": -0.59
+    "unit": "per gram (buy 5,860)",
+    "v": 5900,
+    "d": -0.34
    },
    {
     "k": "18K",
-    "unit": "per gram (buy 5,040)",
-    "v": 5075,
-    "d": -0.59
+    "unit": "per gram (buy 5,025)",
+    "v": 5055,
+    "d": -0.39
    },
    {
     "k": "Gold pound",
     "unit": "8 grams of 21K",
-    "v": 47360,
-    "d": -0.59
+    "v": 47200,
+    "d": -0.34
    }
   ]
  }
